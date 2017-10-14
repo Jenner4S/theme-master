@@ -119,6 +119,8 @@
 >
 > [![genius](backend/genius/screenshot.png)](backend/genius)
 >
+> [![gentelella](backend/gentelella/screenshot.jpg)](backend/gentelella)
+>
 > [![homer](backend/homer/screenshot.png)](backend/homer)
 >
 > [![infinite](backend/infinite/screenshot.png)](backend/infinite)
