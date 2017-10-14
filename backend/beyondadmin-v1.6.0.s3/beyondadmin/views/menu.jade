@@ -1,0 +1,592 @@
+// Main Container
+    .main-container.container-fluid
+      // Page Container
+      .page-container
+        // Page Sidebar
+        #sidebar.page-sidebar
+          // Page Sidebar Header
+          .sidebar-header-wrapper
+            input.searchinput(type='text')
+            |                     
+            i.searchicon.fa.fa-search
+            |                     
+            .searchhelper Search Reports, Charts, Emails or Notifications
+          // /Page Sidebar Header
+          // Sidebar Menu
+          ul.nav.sidebar-menu
+            // Dashboard
+            li.active
+              a(href='index.html')
+                i.menu-icon.glyphicon.glyphicon-home
+                |                             
+                span.menu-text  Dashboard 
+            // Databoxes
+            li
+              a(href='databoxes.html')
+                i.menu-icon.glyphicon.glyphicon-tasks
+                |                             
+                span.menu-text  Data Boxes 
+            // Widgets
+            li
+              a(href='widgets.html')
+                i.menu-icon.fa.fa-th
+                |                             
+                span.menu-text  Widgets 
+            // UI Elements
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.fa.fa-desktop
+                |                             
+                span.menu-text  Elements 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='elements.html')
+                    span.menu-text Basic Elements
+                |                             
+                li
+                  a.menu-dropdown(href='#')
+                    span.menu-text
+                      | Icons
+                    |                                     
+                    i.menu-expand
+                  |                                 
+                  ul.submenu
+                    li
+                      a(href='font-awesome.html')
+                        i.menu-icon.fa.fa-rocket
+                        |                                             
+                        span.menu-text Font Awesome
+                    |                                     
+                    li
+                      a(href='glyph-icons.html')
+                        i.menu-icon.glyphicon.glyphicon-stats
+                        |                                             
+                        span.menu-text Glyph Icons
+                    |                                     
+                    li
+                      a(href='typicon.html')
+                        i.menu-icon.typcn.typcn-location-outline
+                        |                                             
+                        span.menu-text  Typicons
+                    |                                     
+                    li
+                      a(href='weather-icons.html')
+                        i.menu-icon.wi.wi-hot
+                        |                                             
+                        span.menu-text Weather Icons
+                |                             
+                li
+                  a(href='tabs.html')
+                    span.menu-text Tabs &amp; Accordions
+                |                             
+                li
+                  a(href='alerts.html')
+                    span.menu-text Alerts &amp; Tooltips
+                |                             
+                li
+                  a(href='modals.html')
+                    span.menu-text Modals &amp; Wells
+                |                             
+                li
+                  a(href='buttons.html')
+                    span.menu-text Buttons
+                |                             
+                li
+                  a(href='nestable-list.html')
+                    span.menu-text  Nestable List
+                |                             
+                li
+                  a(href='treeview.html')
+                    span.menu-text Treeview
+            // Tables
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.fa.fa-table
+                |                             
+                span.menu-text  Tables 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='tables-simple.html')
+                    span.menu-text Simple &amp; Responsive
+                |                             
+                li
+                  a(href='tables-data.html')
+                    span.menu-text Data Tables
+            // Forms
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.fa.fa-pencil-square-o
+                |                             
+                span.menu-text  Forms 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='form-layouts.html')
+                    span.menu-text Form Layouts
+                |                             
+                li
+                  a(href='form-inputs.html')
+                    span.menu-text Form Inputs
+                |                             
+                li
+                  a(href='form-pickers.html')
+                    span.menu-text Data Pickers
+                |                             
+                li
+                  a(href='form-wizard.html')
+                    span.menu-text Wizard
+                |                             
+                li
+                  a(href='form-validation.html')
+                    span.menu-text Validation
+                |                             
+                li
+                  a(href='form-editors.html')
+                    span.menu-text Editors
+                |                             
+                li
+                  a(href='form-inputmask.html')
+                    span.menu-text Input Mask
+            // Charts
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.fa.fa-bar-chart-o
+                |                             
+                span.menu-text  Charts 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='flot.html')
+                    span.menu-text Flot Charts
+                |                             
+                li
+                  a(href='morris.html')
+                    span.menu-text  Morris Charts
+                |                             
+                li
+                  a(href='sparkline.html')
+                    span.menu-text Sparkline Charts
+                |                             
+                li
+                  a(href='easypiecharts.html')
+                    span.menu-text Easy Pie Charts
+                |                             
+                li
+                  a(href='chartjs.html')
+                    span.menu-text  ChartJS
+            // Profile
+            li
+              a(href='profile.html')
+                i.menu-icon.fa.fa-picture-o
+                |                             
+                span.menu-text Profile
+            // Mail
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.fa.fa-envelope-o
+                |                             
+                span.menu-text  Mail 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='inbox.html')
+                    span.menu-text Inbox
+                |                             
+                li
+                  a(href='message-view.html')
+                    span.menu-text View Message
+                |                             
+                li
+                  a(href='message-compose.html')
+                    span.menu-text Compose Message
+            // Calendar
+            li
+              a(href='calendar.html')
+                i.menu-icon.fa.fa-calendar
+                |                             
+                span.menu-text
+                  | Calendar
+            // Pages
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.glyphicon.glyphicon-paperclip
+                |                             
+                span.menu-text  Pages 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='timeline.html')
+                    span.menu-text Timeline
+                |                             
+                li
+                  a(href='pricing.html')
+                    span.menu-text Pricing Tables
+                |                             
+                li
+                  a(href='invoice.html')
+                    span.menu-text Invoice
+                |                             
+                li
+                  a(href='login.html')
+                    span.menu-text Login
+                |                             
+                li
+                  a(href='register.html')
+                    span.menu-text Register
+                |                             
+                li
+                  a(href='lock.html')
+                    span.menu-text Lock Screen
+                |                             
+                li
+                  a(href='typography.html')
+                    span.menu-text  Typography 
+            // More Pages
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.glyphicon.glyphicon-link
+                |                             
+                span.menu-text
+                  | More Pages
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='error-404.html')
+                    span.menu-text Error 404
+                |                             
+                li
+                  a(href='error-500.html')
+                    span.menu-text  Error 500
+                |                             
+                li
+                  a(href='blank.html')
+                    span.menu-text Blank Page
+                |                             
+                li
+                  a(href='grid.html')
+                    span.menu-text  Grid
+                |                             
+                li
+                  a.menu-dropdown(href='#')
+                    span.menu-text
+                      | Multi Level Menu
+                    |                                     
+                    i.menu-expand
+                  |                                 
+                  ul.submenu
+                    li
+                      a(href='#')
+                        i.menu-icon.fa.fa-camera
+                        |                                             
+                        span.menu-text Level 3
+                    |                                     
+                    li
+                      a.menu-dropdown(href='#')
+                        i.menu-icon.fa.fa-asterisk
+                        |                                             
+                        span.menu-text
+                          | Level 4
+                        |                                             
+                        i.menu-expand
+                      |                                         
+                      ul.submenu
+                        li
+                          a(href='#')
+                            i.menu-icon.fa.fa-bolt
+                            |                                                     
+                            span.menu-text Some Item
+                        |                                             
+                        li
+                          a(href='#')
+                            i.menu-icon.fa.fa-bug
+                            |                                                     
+                            span.menu-text Another Item
+            // Right to Left
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.fa.fa-align-right
+                |                             
+                span.menu-text  Right to Left 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a
+                    span.menu-text RTL
+                    |                                     
+                    label.pull-right.margin-top-10
+                      input#rtl-changer.checkbox-slider.slider-icon.colored-primary(type='checkbox')
+                      |                                         
+                      span.text
+                |                             
+                li
+                  a(href='index-rtl-ar.html')
+                    span.menu-text Arabic Layout
+                |                             
+                li
+                  a(href='index-rtl-fa.html')
+                    span.menu-text Persian Layout
+            |                     
+            li
+              a(href='versions.html')
+                i.menu-icon.glyphicon.glyphicon-fire.themesecondary
+                |                             
+                span.menu-text
+                  | BeyondAdmin Versions
+          // /Sidebar Menu
+        // /Page Sidebar
+        // Chat Bar
+        #chatbar.page-chatbar
+          .chatbar-contacts
+            .contacts-search
+              input.searchinput(type='text', placeholder='Search Contacts')
+              |                         
+              i.searchicon.fa.fa-search
+              |                         
+              .searchhelper Search Your Contacts and Chat History
+            |                     
+            ul.contacts-list
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/divyia.jpg')
+                |                             
+                .contact-info
+                  .contact-name Divyia Philips
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | last week
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/Nicolai-Larson.jpg')
+                |                             
+                .contact-info
+                  .contact-name Adam Johnson
+                  |                                 
+                  .contact-status
+                    .offline
+                    |                                     
+                    .status left 4 mins ago
+                  |                                 
+                  .last-chat-time
+                    | today
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/John-Smith.jpg')
+                |                             
+                .contact-info
+                  .contact-name John Smith
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | 1:57 am
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/Osvaldus-Valutis.jpg')
+                |                             
+                .contact-info
+                  .contact-name Osvaldus Valutis
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | today
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/Javi-Jimenez.jpg')
+                |                             
+                .contact-info
+                  .contact-name Javi Jimenez
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | today
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/Stephanie-Walter.jpg')
+                |                             
+                .contact-info
+                  .contact-name Stephanie Walter
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | yesterday
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/Sergey-Azovskiy.jpg')
+                |                             
+                .contact-info
+                  .contact-name Sergey Azovskiy
+                  |                                 
+                  .contact-status
+                    .offline
+                    |                                     
+                    .status offline since oct 24
+                  |                                 
+                  .last-chat-time
+                    | 22 oct
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/Lee-Munroe.jpg')
+                |                             
+                .contact-info
+                  .contact-name Lee Munroe
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | today
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/divyia.jpg')
+                |                             
+                .contact-info
+                  .contact-name Divyia Philips
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | last week
+          |                 
+          .chatbar-messages(style='display: none;')
+            .messages-contact
+              .contact-avatar
+                img(src='assets/img/avatars/divyia.jpg')
+              |                         
+              .contact-info
+                .contact-name Divyia Philips
+                |                             
+                .contact-status
+                  .online
+                  |                                 
+                  .status online
+                |                             
+                .last-chat-time
+                  | a moment ago
+                |                             
+                .back
+                  i.fa.fa-arrow-circle-left
+            |                     
+            ul.messages-list
+              li.message
+                .message-info
+                  .bullet
+                  |                                 
+                  .contact-name Me
+                  |                                 
+                  .message-time 10:14 AM, Today
+                |                             
+                .message-body
+                  | Hi, Hope all is good. Are we meeting today?
+              |                         
+              li.message.reply
+                .message-info
+                  .bullet
+                  |                                 
+                  .contact-name Divyia
+                  |                                 
+                  .message-time 10:15 AM, Today
+                |                             
+                .message-body
+                  | Hi, Hope all is good. Are we meeting today?
+              |                         
+              li.message
+                .message-info
+                  .bullet
+                  |                                 
+                  .contact-name Me
+                  |                                 
+                  .message-time 10:14 AM, Today
+                |                             
+                .message-body
+                  | Hi, Hope all is good. Are we meeting today?
+              |                         
+              li.message.reply
+                .message-info
+                  .bullet
+                  |                                 
+                  .contact-name Divyia
+                  |                                 
+                  .message-time 10:15 AM, Today
+                |                             
+                .message-body
+                  | Hi, Hope all is good. Are we meeting today?
+              |                         
+              li.message
+                .message-info
+                  .bullet
+                  |                                 
+                  .contact-name Me
+                  |                                 
+                  .message-time 10:14 AM, Today
+                |                             
+                .message-body
+                  | Hi, Hope all is good. Are we meeting today?
+              |                         
+              li.message.reply
+                .message-info
+                  .bullet
+                  |                                 
+                  .contact-name Divyia
+                  |                                 
+                  .message-time 10:15 AM, Today
+                |                             
+                .message-body
+                  | Hi, Hope all is good. Are we meeting today?
+            |                     
+            .send-message
+              span.input-icon.icon-right
+                textarea.form-control(rows='4', placeholder='Type your message')
+                |                             
+                i.fa.fa-camera.themeprimary
+        // /Chat Bar

@@ -1,0 +1,2252 @@
+doctype html
+//
+  BeyondAdmin - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.6
+  Version: 1.6.0
+  Purchase: https://wrapbootstrap.com/theme/beyondadmin-adminapp-angularjs-mvc-WB06R48S4
+html(xmlns='http://www.w3.org/1999/xhtml')
+  // Head
+  head
+    meta(charset='utf-8')
+    |     
+    title Databoxes
+    |     
+    meta(name='description', content='databoxes')
+    |     
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    |     
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    |     
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    |     
+    link(rel='shortcut icon', href='assets/img/favicon.png', type='image/x-icon')
+    // Basic Styles
+    link(href='assets/css/bootstrap.min.css', rel='stylesheet')
+    |     
+    link#bootstrap-rtl-link(href='', rel='stylesheet')
+    |     
+    link(href='assets/css/font-awesome.min.css', rel='stylesheet')
+    |     
+    link(href='assets/css/weather-icons.min.css', rel='stylesheet')
+    // Fonts
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300', rel='stylesheet', type='text/css')
+    // Beyond styles
+    link#beyond-link(href='assets/css/beyond.min.css', rel='stylesheet')
+    |     
+    link(href='assets/css/demo.min.css', rel='stylesheet')
+    |     
+    link(href='assets/css/typicons.min.css', rel='stylesheet')
+    |     
+    link(href='assets/css/animate.min.css', rel='stylesheet')
+    |     
+    link#skin-link(href='', rel='stylesheet', type='text/css')
+    // Skin Script: Place this script in head to load scripts for skins and rtl support
+    script(src='assets/js/skins.min.js')
+  // /Head
+  // Body
+  body
+    // Loading Container
+    .loading-container
+      .loader
+    // /Loading Container
+    // Navbar
+    .navbar
+      .navbar-inner
+        .navbar-container
+          // Navbar Barnd
+          .navbar-header.pull-left
+            a.navbar-brand(href='#')
+              small
+                img(src='assets/img/logo.png', alt='')
+          // /Navbar Barnd
+          // Sidebar Collapse
+          #sidebar-collapse.sidebar-collapse
+            i.collapse-icon.fa.fa-bars
+          // /Sidebar Collapse
+          // Account Area and Settings -
+          .navbar-header.pull-right
+            .navbar-account
+              ul.account-area
+                li
+                  a.dropdown-toggle(data-toggle='dropdown', title='Help', href='#')
+                    i.icon.fa.fa-warning
+                  // Notification Dropdown
+                  ul.pull-right.dropdown-menu.dropdown-arrow.dropdown-notifications
+                    li
+                      a(href='#')
+                        .clearfix
+                          .notification-icon
+                            i.fa.fa-phone.bg-themeprimary.white
+                          |                                                 
+                          .notification-body
+                            span.title Skype meeting with Patty
+                            |                                                     
+                            span.description 01:00 pm
+                          |                                                 
+                          .notification-extra
+                            i.fa.fa-clock-o.themeprimary
+                            |                                                     
+                            span.description office
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          .notification-icon
+                            i.fa.fa-check.bg-darkorange.white
+                          |                                                 
+                          .notification-body
+                            span.title Uncharted break
+                            |                                                     
+                            span.description 03:30 pm - 05:15 pm
+                          |                                                 
+                          .notification-extra
+                            i.fa.fa-clock-o.darkorange
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          .notification-icon
+                            i.fa.fa-gift.bg-warning.white
+                          |                                                 
+                          .notification-body
+                            span.title Kate birthday party
+                            |                                                     
+                            span.description 08:30 pm
+                          |                                                 
+                          .notification-extra
+                            i.fa.fa-calendar.warning
+                            |                                                     
+                            i.fa.fa-clock-o.warning
+                            |                                                     
+                            span.description at home
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          .notification-icon
+                            i.fa.fa-glass.bg-success.white
+                          |                                                 
+                          .notification-body
+                            span.title Dinner with friends
+                            |                                                     
+                            span.description 10:30 pm
+                    |                                     
+                    li.dropdown-footer
+                      span
+                        | Today, March 28
+                      |                                         
+                      span.pull-right
+                        | 10&deg;c
+                        i.wi.wi-cloudy
+                  // /Notification Dropdown
+                |                             
+                li
+                  a.dropdown-toggle(data-toggle='dropdown', title='Mails', href='#')
+                    i.icon.fa.fa-envelope
+                    |                                     
+                    span.badge 3
+                  // Messages Dropdown
+                  ul.pull-right.dropdown-menu.dropdown-arrow.dropdown-messages
+                    li
+                      a(href='#')
+                        img.message-avatar(src='assets/img/avatars/divyia.jpg', alt='Divyia Austin')
+                        |                                             
+                        .message
+                          span.message-sender
+                            | Divyia Austin
+                          |                                                 
+                          span.message-time
+                            | 2 minutes ago
+                          |                                                 
+                          span.message-subject
+                            | Here&apos;s the recipe for apple pie
+                          |                                                 
+                          span.message-body
+                            | to identify the sending application when the senders image is shown for the main icon
+                    |                                     
+                    li
+                      a(href='#')
+                        img.message-avatar(src='assets/img/avatars/bing.png', alt='Microsoft Bing')
+                        |                                             
+                        .message
+                          span.message-sender
+                            | Bing.com
+                          |                                                 
+                          span.message-time
+                            | Yesterday
+                          |                                                 
+                          span.message-subject
+                            | Bing Newsletter: The January Issue&rlm;
+                          |                                                 
+                          span.message-body
+                            | Discover new music just in time for the Grammy&reg; Awards.
+                    |                                     
+                    li
+                      a(href='#')
+                        img.message-avatar(src='assets/img/avatars/adam-jansen.jpg', alt='Divyia Austin')
+                        |                                             
+                        .message
+                          span.message-sender
+                            | Nicolas
+                          |                                                 
+                          span.message-time
+                            | Friday, September 22
+                          |                                                 
+                          span.message-subject
+                            | New 4K Cameras
+                          |                                                 
+                          span.message-body
+                            | The 4K revolution has come over the horizon and is reaching the general populous
+                  // /Messages Dropdown
+                |                             
+                li
+                  a.dropdown-toggle(data-toggle='dropdown', title='Tasks', href='#')
+                    i.icon.fa.fa-tasks
+                    |                                     
+                    span.badge 4
+                  // Tasks Dropdown
+                  ul.pull-right.dropdown-menu.dropdown-tasks.dropdown-arrow
+                    li.dropdown-header.bordered-darkorange
+                      i.fa.fa-tasks
+                      |                                         4 Tasks In Progress
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          span.pull-left Account Creation
+                          |                                                 
+                          span.pull-right 65%
+                        |                                             
+                        .progress.progress-xs
+                          .progress-bar(style='width:65%')
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          span.pull-left Profile Data
+                          |                                                 
+                          span.pull-right 35%
+                        |                                             
+                        .progress.progress-xs
+                          .progress-bar.progress-bar-success(style='width:35%')
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          span.pull-left Updating Resume
+                          |                                                 
+                          span.pull-right 75%
+                        |                                             
+                        .progress.progress-xs
+                          .progress-bar.progress-bar-darkorange(style='width:75%')
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          span.pull-left Adding Contacts
+                          |                                                 
+                          span.pull-right 10%
+                        |                                             
+                        .progress.progress-xs
+                          .progress-bar.progress-bar-warning(style='width:10%')
+                    |                                     
+                    li.dropdown-footer
+                      a(href='#')
+                        | See All Tasks
+                      |                                         
+                      button.btn.btn-xs.btn-default.shiny.darkorange.icon-only.pull-right
+                        i.fa.fa-check
+                  // /Tasks Dropdown
+                |                             
+                li
+                  a#chat-link.wave.in(title='Chat', href='#')
+                    i.icon.glyphicon.glyphicon-comment
+                |                             
+                li
+                  a.login-area.dropdown-toggle(data-toggle='dropdown')
+                    .avatar(title='View your public profile')
+                      img(src='assets/img/avatars/adam-jansen.jpg')
+                    |                                     
+                    section
+                      h2
+                        span.profile
+                          span David Stevenson
+                  // Login Area Dropdown
+                  ul.pull-right.dropdown-menu.dropdown-arrow.dropdown-login-area
+                    li.username
+                      a David Stevenson
+                    |                                     
+                    li.email
+                      a David.Stevenson@live.com
+                    // Avatar Area
+                    li
+                      .avatar-area
+                        img.avatar(src='assets/img/avatars/adam-jansen.jpg')
+                        |                                             
+                        span.caption Change Photo
+                    // Avatar Area
+                    li.edit
+                      a.pull-left(href='profile.html') Profile
+                      |                                         
+                      a.pull-right(href='#') Setting
+                    // Theme Selector Area
+                    li.theme-area
+                      ul#skin-changer.colorpicker
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#5DB2FF;', rel='assets/css/skins/blue.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#2dc3e8;', rel='assets/css/skins/azure.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#03B3B2;', rel='assets/css/skins/teal.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#53a93f;', rel='assets/css/skins/green.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#FF8F32;', rel='assets/css/skins/orange.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#cc324b;', rel='assets/css/skins/pink.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#AC193D;', rel='assets/css/skins/darkred.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#8C0095;', rel='assets/css/skins/purple.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#0072C6;', rel='assets/css/skins/darkblue.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#585858;', rel='assets/css/skins/gray.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#474544;', rel='assets/css/skins/black.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#001940;', rel='assets/css/skins/deepblue.min.css')
+                    // /Theme Selector Area
+                    li.dropdown-footer
+                      a(href='login.html')
+                        | Sign out
+                  // /Login Area Dropdown
+                // /Account Area
+                //
+                  Note: notice that setting div must start right after account area list.
+                  no space must be between these elements
+                // Settings
+              .setting
+                a#btn-setting(title='Setting', href='#')
+                  i.icon.glyphicon.glyphicon-cog
+              .setting-container
+                label
+                  input#checkbox_fixednavbar(type='checkbox')
+                  |                                 
+                  span.text Fixed Navbar
+                |                             
+                label
+                  input#checkbox_fixedsidebar(type='checkbox')
+                  |                                 
+                  span.text Fixed SideBar
+                |                             
+                label
+                  input#checkbox_fixedbreadcrumbs(type='checkbox')
+                  |                                 
+                  span.text Fixed BreadCrumbs
+                |                             
+                label
+                  input#checkbox_fixedheader(type='checkbox')
+                  |                                 
+                  span.text Fixed Header
+              // Settings
+          // /Account Area and Settings
+    // /Navbar
+    // Main Container
+    .main-container.container-fluid
+      // Page Container
+      .page-container
+        // Page Sidebar
+        #sidebar.page-sidebar
+          // Page Sidebar Header
+          .sidebar-header-wrapper
+            input.searchinput(type='text')
+            |                     
+            i.searchicon.fa.fa-search
+            |                     
+            .searchhelper Search Reports, Charts, Emails or Notifications
+          // /Page Sidebar Header
+          // Sidebar Menu
+          ul.nav.sidebar-menu
+            // Dashboard
+            li
+              a(href='index.html')
+                i.menu-icon.glyphicon.glyphicon-home
+                |                             
+                span.menu-text  Dashboard 
+            // Databoxes
+            li.active
+              a(href='databoxes.html')
+                i.menu-icon.glyphicon.glyphicon-tasks
+                |                             
+                span.menu-text  Data Boxes 
+            // Widgets
+            li
+              a(href='widgets.html')
+                i.menu-icon.fa.fa-th
+                |                             
+                span.menu-text  Widgets 
+            // UI Elements
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.fa.fa-desktop
+                |                             
+                span.menu-text  Elements 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='elements.html')
+                    span.menu-text Basic Elements
+                |                             
+                li
+                  a.menu-dropdown(href='#')
+                    span.menu-text
+                      | Icons
+                    |                                     
+                    i.menu-expand
+                  |                                 
+                  ul.submenu
+                    li
+                      a(href='font-awesome.html')
+                        i.menu-icon.fa.fa-rocket
+                        |                                             
+                        span.menu-text Font Awesome
+                    |                                     
+                    li
+                      a(href='glyph-icons.html')
+                        i.menu-icon.glyphicon.glyphicon-stats
+                        |                                             
+                        span.menu-text Glyph Icons
+                    |                                     
+                    li
+                      a(href='typicon.html')
+                        i.menu-icon.typcn.typcn-location-outline
+                        |                                             
+                        span.menu-text  Typicons
+                    |                                     
+                    li
+                      a(href='weather-icons.html')
+                        i.menu-icon.wi.wi-hot
+                        |                                             
+                        span.menu-text Weather Icons
+                |                             
+                li
+                  a(href='tabs.html')
+                    span.menu-text Tabs &amp; Accordions
+                |                             
+                li
+                  a(href='alerts.html')
+                    span.menu-text Alerts &amp; Tooltips
+                |                             
+                li
+                  a(href='modals.html')
+                    span.menu-text Modals &amp; Wells
+                |                             
+                li
+                  a(href='buttons.html')
+                    span.menu-text Buttons
+                |                             
+                li
+                  a(href='nestable-list.html')
+                    span.menu-text  Nestable List
+                |                             
+                li
+                  a(href='treeview.html')
+                    span.menu-text Treeview
+            // Tables
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.fa.fa-table
+                |                             
+                span.menu-text  Tables 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='tables-simple.html')
+                    span.menu-text Simple &amp; Responsive
+                |                             
+                li
+                  a(href='tables-data.html')
+                    span.menu-text Data Tables
+            // Forms
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.fa.fa-pencil-square-o
+                |                             
+                span.menu-text  Forms 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='form-layouts.html')
+                    span.menu-text Form Layouts
+                |                             
+                li
+                  a(href='form-inputs.html')
+                    span.menu-text Form Inputs
+                |                             
+                li
+                  a(href='form-pickers.html')
+                    span.menu-text Data Pickers
+                |                             
+                li
+                  a(href='form-wizard.html')
+                    span.menu-text Wizard
+                |                             
+                li
+                  a(href='form-validation.html')
+                    span.menu-text Validation
+                |                             
+                li
+                  a(href='form-editors.html')
+                    span.menu-text Editors
+                |                             
+                li
+                  a(href='form-inputmask.html')
+                    span.menu-text Input Mask
+            // Charts
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.fa.fa-bar-chart-o
+                |                             
+                span.menu-text  Charts 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='flot.html')
+                    span.menu-text Flot Charts
+                |                             
+                li
+                  a(href='morris.html')
+                    span.menu-text  Morris Charts
+                |                             
+                li
+                  a(href='sparkline.html')
+                    span.menu-text Sparkline Charts
+                |                             
+                li
+                  a(href='easypiecharts.html')
+                    span.menu-text Easy Pie Charts
+                |                             
+                li
+                  a(href='chartjs.html')
+                    span.menu-text  ChartJS
+            // Profile
+            li
+              a(href='profile.html')
+                i.menu-icon.fa.fa-picture-o
+                |                             
+                span.menu-text Profile
+            // Mail
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.fa.fa-envelope-o
+                |                             
+                span.menu-text  Mail 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='inbox.html')
+                    span.menu-text Inbox
+                |                             
+                li
+                  a(href='message-view.html')
+                    span.menu-text View Message
+                |                             
+                li
+                  a(href='message-compose.html')
+                    span.menu-text Compose Message
+            // Calendar
+            li
+              a(href='calendar.html')
+                i.menu-icon.fa.fa-calendar
+                |                             
+                span.menu-text
+                  | Calendar
+            // Pages
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.glyphicon.glyphicon-paperclip
+                |                             
+                span.menu-text  Pages 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='timeline.html')
+                    span.menu-text Timeline
+                |                             
+                li
+                  a(href='pricing.html')
+                    span.menu-text Pricing Tables
+                |                             
+                li
+                  a(href='invoice.html')
+                    span.menu-text Invoice
+                |                             
+                li
+                  a(href='login.html')
+                    span.menu-text Login
+                |                             
+                li
+                  a(href='register.html')
+                    span.menu-text Register
+                |                             
+                li
+                  a(href='lock.html')
+                    span.menu-text Lock Screen
+                |                             
+                li
+                  a(href='typography.html')
+                    span.menu-text  Typography 
+            // More Pages
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.glyphicon.glyphicon-link
+                |                             
+                span.menu-text
+                  | More Pages
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='error-404.html')
+                    span.menu-text Error 404
+                |                             
+                li
+                  a(href='error-500.html')
+                    span.menu-text  Error 500
+                |                             
+                li
+                  a(href='blank.html')
+                    span.menu-text Blank Page
+                |                             
+                li
+                  a(href='grid.html')
+                    span.menu-text  Grid
+                |                             
+                li
+                  a.menu-dropdown(href='#')
+                    span.menu-text
+                      | Multi Level Menu
+                    |                                     
+                    i.menu-expand
+                  |                                 
+                  ul.submenu
+                    li
+                      a(href='#')
+                        i.menu-icon.fa.fa-camera
+                        |                                             
+                        span.menu-text Level 3
+                    |                                     
+                    li
+                      a.menu-dropdown(href='#')
+                        i.menu-icon.fa.fa-asterisk
+                        |                                             
+                        span.menu-text
+                          | Level 4
+                        |                                             
+                        i.menu-expand
+                      |                                         
+                      ul.submenu
+                        li
+                          a(href='#')
+                            i.menu-icon.fa.fa-bolt
+                            |                                                     
+                            span.menu-text Some Item
+                        |                                             
+                        li
+                          a(href='#')
+                            i.menu-icon.fa.fa-bug
+                            |                                                     
+                            span.menu-text Another Item
+            // Right to Left
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.fa.fa-align-right
+                |                             
+                span.menu-text  Right to Left 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a
+                    span.menu-text RTL
+                    |                                     
+                    label.pull-right.margin-top-10
+                      input#rtl-changer.checkbox-slider.slider-icon.colored-primary(type='checkbox')
+                      |                                         
+                      span.text
+                |                             
+                li
+                  a(href='index-rtl-ar.html')
+                    span.menu-text Arabic Layout
+                |                             
+                li
+                  a(href='index-rtl-fa.html')
+                    span.menu-text Persian Layout
+            |                     
+            li
+              a(href='versions.html')
+                i.menu-icon.glyphicon.glyphicon-fire.themesecondary
+                |                             
+                span.menu-text
+                  | BeyondAdmin Versions
+          // /Sidebar Menu
+        // /Page Sidebar
+        // Chat Bar
+        #chatbar.page-chatbar
+          .chatbar-contacts
+            .contacts-search
+              input.searchinput(type='text', placeholder='Search Contacts')
+              |                         
+              i.searchicon.fa.fa-search
+              |                         
+              .searchhelper Search Your Contacts and Chat History
+            |                     
+            ul.contacts-list
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/divyia.jpg')
+                |                             
+                .contact-info
+                  .contact-name Divyia Philips
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | last week
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/Nicolai-Larson.jpg')
+                |                             
+                .contact-info
+                  .contact-name Adam Johnson
+                  |                                 
+                  .contact-status
+                    .offline
+                    |                                     
+                    .status left 4 mins ago
+                  |                                 
+                  .last-chat-time
+                    | today
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/John-Smith.jpg')
+                |                             
+                .contact-info
+                  .contact-name John Smith
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | 1:57 am
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/Osvaldus-Valutis.jpg')
+                |                             
+                .contact-info
+                  .contact-name Osvaldus Valutis
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | today
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/Javi-Jimenez.jpg')
+                |                             
+                .contact-info
+                  .contact-name Javi Jimenez
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | today
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/Stephanie-Walter.jpg')
+                |                             
+                .contact-info
+                  .contact-name Stephanie Walter
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | yesterday
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/Sergey-Azovskiy.jpg')
+                |                             
+                .contact-info
+                  .contact-name Sergey Azovskiy
+                  |                                 
+                  .contact-status
+                    .offline
+                    |                                     
+                    .status offline since oct 24
+                  |                                 
+                  .last-chat-time
+                    | 22 oct
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/Lee-Munroe.jpg')
+                |                             
+                .contact-info
+                  .contact-name Lee Munroe
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | today
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/divyia.jpg')
+                |                             
+                .contact-info
+                  .contact-name Divyia Philips
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | last week
+          |                 
+          .chatbar-messages(style='display: none;')
+            .messages-contact
+              .contact-avatar
+                img(src='assets/img/avatars/divyia.jpg')
+              |                         
+              .contact-info
+                .contact-name Divyia Philips
+                |                             
+                .contact-status
+                  .online
+                  |                                 
+                  .status online
+                |                             
+                .last-chat-time
+                  | a moment ago
+                |                             
+                .back
+                  i.fa.fa-arrow-circle-left
+            |                     
+            ul.messages-list
+              li.message
+                .message-info
+                  .bullet
+                  |                                 
+                  .contact-name Me
+                  |                                 
+                  .message-time 10:14 AM, Today
+                |                             
+                .message-body
+                  | Hi, Hope all is good. Are we meeting today?
+              |                         
+              li.message.reply
+                .message-info
+                  .bullet
+                  |                                 
+                  .contact-name Divyia
+                  |                                 
+                  .message-time 10:15 AM, Today
+                |                             
+                .message-body
+                  | Hi, Hope all is good. Are we meeting today?
+              |                         
+              li.message
+                .message-info
+                  .bullet
+                  |                                 
+                  .contact-name Me
+                  |                                 
+                  .message-time 10:14 AM, Today
+                |                             
+                .message-body
+                  | Hi, Hope all is good. Are we meeting today?
+              |                         
+              li.message.reply
+                .message-info
+                  .bullet
+                  |                                 
+                  .contact-name Divyia
+                  |                                 
+                  .message-time 10:15 AM, Today
+                |                             
+                .message-body
+                  | Hi, Hope all is good. Are we meeting today?
+              |                         
+              li.message
+                .message-info
+                  .bullet
+                  |                                 
+                  .contact-name Me
+                  |                                 
+                  .message-time 10:14 AM, Today
+                |                             
+                .message-body
+                  | Hi, Hope all is good. Are we meeting today?
+              |                         
+              li.message.reply
+                .message-info
+                  .bullet
+                  |                                 
+                  .contact-name Divyia
+                  |                                 
+                  .message-time 10:15 AM, Today
+                |                             
+                .message-body
+                  | Hi, Hope all is good. Are we meeting today?
+            |                     
+            .send-message
+              span.input-icon.icon-right
+                textarea.form-control(rows='4', placeholder='Type your message')
+                |                             
+                i.fa.fa-camera.themeprimary
+        // /Chat Bar
+        // Page Content
+        .page-content
+          // Page Breadcrumb
+          .page-breadcrumbs
+            ul.breadcrumb
+              li
+                i.fa.fa-home
+                |                             
+                a(href='#') Home
+              |                         
+              li.active Databoxes
+          // /Page Breadcrumb
+          // Page Header
+          .page-header.position-relative
+            .header-title
+              h1
+                | DataBoxes
+                small
+                  i.fa.fa-angle-right
+                  |                                 beyond containers
+            // Header Buttons
+            .header-buttons
+              a.sidebar-toggler(href='#')
+                i.fa.fa-arrows-h
+              |                         
+              a#refresh-toggler.refresh(href='')
+                i.glyphicon.glyphicon-refresh
+              |                         
+              a#fullscreen-toggler.fullscreen(href='#')
+                i.glyphicon.glyphicon-fullscreen
+            // Header Buttons End
+          // /Page Header
+          // Page Body
+          .page-body
+            .row
+              .col-lg-12.col-sm-12.col-xs-12
+                .row
+                  .col-lg-12.col-sm-12.col-xs-12
+                    .well.bordered-left.bordered-themeprimary
+                      p
+                        | BeyondAdmin&apos;s Databoxes are meant to provide you a completely flexible  and very easy to customize tool to visualize data. You can create databoxes in multiple sizes and different styles.
+                      |                                         
+                      p
+                        | Basically there are two types of Databoxes: 
+                        strong Horizontal
+                        |  and 
+                        strong Vertical
+                        | .
+                      |                                         
+                      p
+                        | You can user pre-defined styles to create infinite types of Databoxes to visualize data in your own fashion. These are just examples that i&apos;ve made to show you how databoxes work. There is no limitation in your imagination and creativity.
+                |                             
+                .row
+                  .col-lg-3.col-sm-6.col-xs-12
+                    .databox.databox-graded
+                      .databox-left.no-padding
+                        img(src='assets/img/avatars/divyia.jpg', style='width:65px; height:65px;')
+                      |                                         
+                      .databox-right.padding-top-20
+                        .databox-stat.yellow.radius-bordered
+                          i.stat-icon.fa.fa-envelope-o
+                        |                                             
+                        .databox-text.darkgray DIVYIA JONES
+                        |                                             
+                        .databox-text.darkgray Manager
+                  |                                 
+                  .col-lg-3.col-sm-6.col-xs-12
+                    .databox
+                      .databox-left.bg-white
+                        .databox-sparkline
+                          span(data-sparkline='bar', data-height='40px', data-width='100%', data-barcolor='#57b5e3', data-negbarcolor='#a0d468', data-zerocolor='#d73d32', data-barwidth='5px', data-barspacing='1px')
+                            | 5,6,7,2,0,-4,-2,4
+                      |                                         
+                      .databox-right.bg-white.bordered.bordered-platinum
+                        span.databox-number.sky 2485
+                        |                                             
+                        .databox-text.darkgray PAGE VIEWS
+                        |                                             
+                        .databox-stat.bg-palegreen.radius-bordered
+                          .stat-text 8%
+                          |                                                 
+                          i.stat-icon.fa.fa-arrow-up
+                  |                                 
+                  .col-lg-3.col-sm-6.col-xs-12
+                    .databox.radius-bordered.databox-shadowed.databox-graded
+                      .databox-left.bg-lightred
+                        .databox-piechart
+                          .easyPieChart(data-toggle='easypiechart', data-barcolor='#fff', data-linecap='butt', data-percent='42', data-animate='500', data-linewidth='3', data-size='47', data-trackcolor='#f39e93')
+                            span.white.font-90 42%
+                      |                                         
+                      .databox-right
+                        span.databox-number.lightred 322
+                        |                                             
+                        .databox-text.darkgray UNIQUE USERS
+                        |                                             
+                        .databox-stat.bg-lightred.radius-bordered
+                          .stat-text 4%
+                          |                                                 
+                          i.stat-icon.fa.fa-arrow-down
+                  |                                 
+                  .col-lg-3.col-sm-6.col-xs-12
+                    .databox.databox-halved.radius-bordered.databox-shadowed
+                      .databox-left.bg-whitesmoke
+                        .databox-sparkline
+                          span(data-sparkline='compositeline', data-height='45px', data-width='100%', data-linecolor='#57b5e3', data-secondlinecolor='#f4b400', data-fillcolor='false', data-secondfillcolor='false', data-highlightspotcolor='#a0d468', data-highlightlinecolor='#a0d468', data-composite='4, 1, 5, 7, 9, 9, 8, 7, 6, 6, 4, 7, 8, 4, 3, 2, 2, 5, 6, 7')
+                            | 8,4,0,0,0,0,1,4,4,10,10,10,10,0,0,0,4,6,5,9,10
+                      |                                         
+                      .databox-right.bg-sky.padding-10
+                        span.databox-title.white Users
+                        |                                             
+                        .databox-text.white Visit Statistics
+                |                             
+                .row
+                  .col-lg-3.col-md-3.col-sm-3.col-xs-12
+                    .databox.radius-bordered.databox-shadowed.databox-graded
+                      .databox-left.bg-orange
+                        .databox-piechart
+                          .easyPieChart(data-toggle='easypiechart', data-barcolor='#fff', data-linecap='butt', data-percent='50', data-animate='500', data-linewidth='3', data-size='47', data-trackcolor='#fa8872')
+                            span.white.font-90 50%
+                      |                                         
+                      .databox-right
+                        span.databox-number.orange 14
+                        |                                             
+                        .databox-text.darkgray NEW TASKS
+                        |                                             
+                        .databox-stat.orange.radius-bordered
+                          i.stat-icon.icon-lg.fa.fa-tasks
+                  |                                 
+                  .col-lg-3.col-md-3.col-sm-3.col-xs-12
+                    .databox.radius-bordered.databox-shadowed.databox-graded
+                      .databox-left.bg-yellow
+                        .databox-piechart
+                          .easyPieChart(data-toggle='easypiechart', data-barcolor='#fff', data-linecap='butt', data-percent='15', data-animate='500', data-linewidth='3', data-size='47', data-trackcolor='#fee29f')
+                            span.white.font-90 15%
+                      |                                         
+                      .databox-right
+                        span.databox-number.yellow 1
+                        |                                             
+                        .databox-text.darkgray NEW MESSAGE
+                        |                                             
+                        .databox-stat.yellow.radius-bordered
+                          i.stat-icon.icon-lg.fa.fa-envelope-o
+                  |                                 
+                  .col-lg-3.col-md-3.col-sm-3.col-xs-12
+                    .databox.radius-bordered.databox-shadowed.databox-graded
+                      .databox-left.bg-azure
+                        .databox-piechart
+                          .easyPieChart(data-toggle='easypiechart', data-barcolor='#fff', data-linecap='butt', data-percent='76', data-animate='500', data-linewidth='3', data-size='47', data-trackcolor='#7fe2fa')
+                            span.white.font-90 76%
+                      |                                         
+                      .databox-right
+                        span.databox-number.azure 98
+                        |                                             
+                        .databox-text.darkgray NEW USERS
+                        |                                             
+                        .databox-state.bg-azure
+                          i.fa.fa-check
+                  |                                 
+                  .col-lg-3.col-sm-6.col-xs-12
+                    .databox.databox-transparent
+                      .databox-left.no-padding
+                        .databox-piechart
+                          .easyPieChart.block-center(data-toggle='easypiechart', data-barcolor='#fb6e52', data-linecap='butt', data-percent='80', data-animate='500', data-linewidth='2', data-size='65', data-trackcolor='#eee')
+                            span.databox-text.darkgray VISITS
+                      |                                         
+                      .databox-right
+                        .databox-sparkline.padding-5
+                          span(data-sparkline='compositebar', data-height='50px', data-width='100%', data-barcolor='#fff', data-negbarcolor='#f5f5f5', data-zerocolor='#d73d32', data-barwidth='6px', data-barspacing='5px', data-fillcolor='false', data-linecolor='#fb6e52', data-spotradius='3', data-linewidth='1.5', data-spotcolor='#fff ', data-minspotcolor='#fff ', data-maxspotcolor='#fff', data-highlightspotcolor='#fff', data-highlightlinecolor='#fff', data-composite='4, 1, 5, 7, 6, 4, 8, 7, 2,4,2,1')
+                            | 6,4,0,1,4,6,2,4,4,8,2,4,1
+                |                             
+                h6.row-title.before-blue Large Databoxes
+                |                             
+                .row
+                  .col-lg-4.col-sm-6.col-xs-12
+                    .databox.databox-lg.radius-bordered.databox-shadowed
+                      .databox-left.bg-white
+                        .databox-sparkline
+                          span(data-sparkline='bar', data-height='40px', data-width='100%', data-barwidth='7px', data-barspacing='3px', data-stackedbarcolor='["#11a9cc", "#ffce55"]')
+                            | 2:2,2:3,3:2,1:3,3:3
+                      |                                         
+                      .databox-right.bordered-thick.bordered-sky.bg-white
+                        span.databox-number.sky
+                          i.fa.fa-user
+                          | 2485
+                        |                                             
+                        .databox-text.darkgray NEW &amp; RETURNING USERS
+                        |                                             
+                        .databox-stat.bg-sky.radius-bordered
+                          .stat-text 10 %
+                          |                                                 
+                          i.stat-icon.fa.fa-long-arrow-up
+                  |                                 
+                  .col-lg-4.col-sm-6.col-xs-12
+                    .databox.databox-lg.radius-bordered.databox-shadowed.databox-graded
+                      .databox-left.bg-palegreen
+                        .databox-piechart
+                          .easyPieChart(data-toggle='easypiechart', data-barcolor='#fff', data-linecap='butt', data-percent='50', data-animate='500', data-linewidth='3', data-size='60', data-trackcolor='#aadc95')
+                            span.white.font-90 50%
+                      |                                         
+                      .databox-right
+                        span.databox-number.green 206
+                        |                                             
+                        .databox-text.darkgray TRAFFIC USED (GB)
+                        |                                             
+                        .databox-stat.bg-palegreen.radius-bordered
+                          .stat-text 10%
+                          |                                                 
+                          i.stat-icon.fa.fa-arrow-up
+                  |                                 
+                  .col-lg-4.col-sm-6.col-xs-12
+                    .databox.databox-halved.databox-lg.radius-bordered.databox-shadowed
+                      .databox-left.bg-white
+                        .databox-sparkline
+                          span(data-sparkline='compositebar', data-height='40px', data-width='100%', data-barcolor='#5db2ff', data-negbarcolor='#f4b400', data-zerocolor='#d73d32', data-barwidth='5px', data-barspacing='4px', data-fillcolor='false', data-linecolor='#e75b8d', data-spotradius='3', data-linewidth='2', data-composite='4, 1, 5, 7, 9, 9, 8, 7, 6, 6, 4, 7')
+                            | 8,4,0,1,4,6,2,4,4,8,10,7,10
+                      |                                         
+                      .databox-right.bg-pink
+                        span.databox-title.white Users
+                        |                                             
+                        .databox-text.white Visit Statistics
+                |                             
+                h6.row-title.before-darkorange Larger Databoxes
+                |                             
+                .row
+                  .col-lg-6.col-sm-6.col-xs-12
+                    .databox.databox-xlg.radius-bordered.databox-shadowed
+                      .databox-left.bg-snow
+                        .databox-piechart
+                          .easyPieChart(data-toggle='easypiechart', data-barcolor='#11a9cc ', data-linecap='butt', data-percent='60', data-animate='500', data-linewidth='7', data-size='150', data-trackcolor='#ffce55')
+                            span.sky.font-150
+                              i.fa.fa-envelope
+                              |  Mail
+                      |                                         
+                      .databox-right.no-padding.bordered-thick.bordered-whitesmoke
+                        .databox-row.row-6.bg-orange.padding-10
+                          .databox-sparkline
+                            span(data-sparkline='line', data-height='65px', data-width='100%', data-fillcolor='false', data-linecolor='#fff', data-spotcolor='#fafafa', data-minspotcolor='#fafafa', data-maxspotcolor='#ffce55', data-highlightspotcolor='#fff', data-highlightlinecolor='#fff', data-linewidth='3', data-spotradius='5')
+                              | 2,6,7,9,8,5,3,4,4,3,6,7
+                        |                                             
+                        .databox-row.row-3.bg-yellow.padding-10
+                          span.databox-title.pull-left.no-margin
+                            i.fa.fa-envelope
+                            |  Inbox
+                          |                                                 
+                          span.databox-number.pull-right.no-margin 129
+                        |                                             
+                        .databox-row.row-3.bg-sky.padding-10
+                          span.databox-title.pull-left
+                            i.fa.fa-mail-forward
+                            |  Sent
+                          |                                                 
+                          span.databox-number.pull-right.no-margin 32
+                  |                                 
+                  .col-lg-6.col-sm-6.col-xs-12
+                    .databox.databox-xlg.radius-bordered.databox-shadowed.databox-graded
+                      .databox-left.bg-pink
+                        .databox-piechart
+                          .easyPieChart(data-toggle='easypiechart', data-barcolor='#fff', data-linecap='butt', data-percent='60', data-animate='500', data-linewidth='7', data-size='150', data-trackcolor='#f89cbd')
+                            span.white.font-150
+                              i.fa.fa-bell
+                              |  Users
+                      |                                         
+                      .databox-right.bordered-thick.bordered-warning
+                        .databox-row.row-6.bordered-bottom.bordered-platinum.padding-10
+                          .databox-cell.cell-6.no-padding
+                            span.databox-title.darkgray Overview
+                            |                                                     
+                            span.databox-text.darkgray Your website statistics
+                          |                                                 
+                          .databox-cell.cell-6.no-padding
+                        |                                             
+                        .databox-row.row-3.bordered-bottom.bordered-platinum
+                          span.databox-text.darkgray.padding-10 RETURNING USERS
+                          |                                                 
+                          .databox-stat.bg-yellow.radius-bordered
+                            .stat-text 12 %
+                            |                                                     
+                            i.stat-icon.fa.fa-arrow-down
+                        |                                             
+                        .databox-row.row-3
+                          span.databox-text.darkgray.padding-10 NEW USERS
+                          |                                                 
+                          .databox-stat.bg-pink.radius-bordered
+                            .stat-text 8 %
+                            |                                                     
+                            i.stat-icon.fa.fa-arrow-up
+                |                             
+                .row
+                  .col-lg-6.col-sm-6.col-xs-12
+                    .databox.databox-xlg.radius-bordered.databox-shadowed.databox-graded.databox-inverted
+                      .databox-left.bg-orange.no-padding
+                        .horizontal-space
+                        |                                             
+                        .databox-stat.bg-white.radius-bordered
+                          .stat-text.orange 8%
+                          |                                                 
+                          i.stat-icon.fa.fa-arrow-up.orange
+                        |                                             
+                        .databox-stat.stat-left.radius-bordered
+                          .stat-text Burndown
+                        |                                             
+                        .databox-sparkline
+                          span(data-sparkline='line', data-height='158px', data-width='100%', data-fillcolor='#fc8973', data-linecolor='#fff', data-spotcolor='#fafafa', data-minspotcolor='#fafafa', data-maxspotcolor='#ffce55', data-highlightspotcolor='#fff', data-highlightlinecolor='#fff', data-linewidth='3', data-spotradius='0')
+                            | 2,6,7,9,8,5,3,4,4,3,6,7
+                      |                                         
+                      .databox-right.bordered-thick.bordered-white.bg-whitesmoke
+                        .databox-row.row-3.bordered-bottom.bordered-platinum.padding-10
+                          span.databox-text.darkgray.pull-left.no-margin Messages
+                          |                                                 
+                          span.badge.badge-default.graded.pull-right 1
+                        |                                             
+                        .databox-row.row-3.bordered-bottom.bordered-platinum.padding-10
+                          span.databox-text.darkgray.pull-left.no-margin Tasks In Progress
+                          |                                                 
+                          span.badge.badge-default.graded.pull-right 8
+                        |                                             
+                        .databox-row.row-3.bordered-bottom.bordered-platinum.padding-10
+                          span.databox-text.darkgray.pull-left.no-margin Tasks Done
+                          |                                                 
+                          span.badge.badge-default.graded.pull-right 7
+                        |                                             
+                        .databox-row.row-3.padding-10
+                          span.databox-text.darkgray.pull-left.no-margin Backlogs
+                          |                                                 
+                          span.badge.badge-default.graded.pull-right 2
+                  |                                 
+                  .col-lg-6.col-sm-6.col-xs-12
+                    .databox.databox-xlg.radius-bordered.databox-shadowed.databox-graded
+                      .databox-left.bg-ivory
+                        .databox-piechart.padding-10
+                          .easyPieChart(data-toggle='easypiechart', data-barcolor='#2dc3e8 ', data-linecap='butt', data-percent='25', data-animate='500', data-linewidth='10', data-size='130', data-trackcolor='#fafafa')
+                            span.sky.font-150
+                              i.fa.fa-cloud-download
+                              |  25%
+                      |                                         
+                      .databox-right.bg-azure.bordered-thick.bordered-white.no-padding
+                        .horizontal-space.space-lg
+                        |                                             
+                        .databox-stat.radius-bordered
+                          .stat-text Download/Upload
+                        |                                             
+                        .databox-sparkline
+                          span(data-sparkline='compositeline', data-height='153px', data-width='100%', data-linecolor='#fff', data-secondlinecolor='#f5f5f5', data-fillcolor='rgb(92,211,240)', data-secondfillcolor='rgba(92,211,240,.10)', data-spotradius='0', data-spotcolor='#fafafa', data-minspotcolor='#fafafa', data-maxspotcolor='#ffce55', data-highlightspotcolor='#fff', data-highlightlinecolor='#fff', data-linewidth='2', data-secondlinewidth='2', data-composite='5, 4, 1, 5, 3, 2, 1, 2')
+                            | 3,3,4,3,2,3,3,2
+                |                             
+                h6.row-title.before-yellow Largest Databoxes
+                |                             
+                .row
+                  .col-lg-12.col-sm-12.col-xs-12
+                    .databox.databox-xxlg.radius-bordered.databox-shadowed.databox-halved
+                      .databox-left.bg-whitesmoke.padding-top-10
+                        .databox-stat.bg-orange.radius-bordered
+                          .stat-text 24 %
+                          |                                                 
+                          i.stat-icon.fa.fa-long-arrow-down
+                        |                                             
+                        .databox-stat.stat-left.radius-bordered
+                          .stat-text.darkgray CPU USAGE
+                        |                                             
+                        canvas#pie(height='230', width='230')
+                      |                                         
+                      .databox-right.bordered-thick.bordered-whitesmoke.bg-blue.no-padding
+                        .databox-stat.bg-yellow.radius-bordered
+                          .stat-text 10 %
+                          |                                                 
+                          i.stat-icon.fa.fa-long-arrow-up
+                        |                                             
+                        .databox-stat.stat-left.radius-bordered
+                          .stat-text.white CPU USAGE
+                        |                                             
+                        #realtime-chart.chart.chart-lg
+                // Vertical Databoxes
+                h6.row-title.before-azure Vertical Databoxes
+                |                             
+                .row
+                  .col-lg-3.col-sm-6.col-xs-12
+                    .databox.radius-bordered.databox-shadowed.databox-graded.databox-vertical
+                      .databox-top.bg-blue
+                        .databox-icon
+                          i.fa.fa-clock-o
+                      |                                         
+                      .databox-bottom.text-align-center
+                        span.databox-text FRIDAY - 2014 16 MAY
+                        |                                             
+                        span.databox-text 11:24 - AM
+                  |                                 
+                  .col-lg-3.col-sm-6.col-xs-12
+                    .databox.radius-bordered.databox-shadowed.databox-vertical
+                      .databox-top.bg-orange.no-padding
+                        .databox-row.row-2
+                        |                                             
+                        .databox-row.row-10
+                          .databox-sparkline
+                            span(data-sparkline='bar', data-height='42px', data-width='100%', data-barcolor='#e7573a', data-negbarcolor='#e7573a', data-zerocolor='#e7573a', data-barwidth='7px', data-barspacing='3px')
+                              | 2,4,5,6,3,2,0,4,2,4,3,2,6,4,5,1,4,5,6,9,1
+                      |                                         
+                      .databox-bottom.no-padding.bg-white
+                        .databox-row
+                          .databox-cell.cell-6.text-align-center.bordered-right.bordered-platinum
+                            span.databox-number.lightcarbon 206
+                            |                                                     
+                            span.databox-text.sonic-silver.no-margin FOLLOWERS
+                          |                                                 
+                          .databox-cell.cell-6.text-align-center
+                            span.databox-number.lightcarbon 405
+                            |                                                     
+                            span.databox-text.sonic-silver.no-margin FOLLOWING
+                  |                                 
+                  .col-lg-3.col-sm-6.col-xs-12
+                    .databox.radius-bordered.databox-shadowed.databox-graded.databox-vertical
+                      .databox-top.no-padding
+                        .databox-row
+                          .databox-cell.cell-6.text-align-center.bg-sky
+                            span.databox-number 13
+                            |                                                     
+                            span.databox-text TASKS
+                          |                                                 
+                          .databox-cell.cell-6.text-align-center.bg-azure
+                            span.databox-number 9
+                            |                                                     
+                            span.databox-text BACKLOGS
+                      |                                         
+                      .databox-bottom
+                        span.databox-text TASKS
+                        |                                             
+                        .progress.progress-sm
+                          .progress-bar.progress-bar-azure(role='progressbar', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100', style='width: 70%')
+                            span.sr-only
+                              | 20% Complete
+                  |                                 
+                  .col-lg-3.col-sm-6.col-xs-12
+                    .databox.radius-bordered.databox-shadowed.databox-graded.databox-vertical
+                      .databox-top.no-padding
+                        .databox-row
+                          .databox-cell.cell-6.text-align-center.bg-orange
+                            span.databox-number 9
+                            |                                                     
+                            span.databox-text ORDERS
+                          |                                                 
+                          .databox-cell.cell-6.text-align-center.bg-darkorange
+                            span.databox-number 3
+                            |                                                     
+                            span.databox-text DELIVERED
+                      |                                         
+                      .databox-bottom
+                        span.databox-text DELIVERY PERCENT
+                        |                                             
+                        .progress.progress-sm
+                          .progress-bar.progress-bar-orange(role='progressbar', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100', style='width:30%')
+                |                             
+                h6.row-title.before-orange Large Vertical Databoxes
+                |                             
+                .row
+                  .col-lg-3.col-sm-6.col-xs-12
+                    .databox.databox-lg.databox-inverted.radius-bordered.databox-shadowed.databox-graded.databox-vertical
+                      .databox-top.bg-palegreen.no-padding
+                        .horizontal-space.space-lg
+                        |                                             
+                        .databox-sparkline.no-margin
+                          span(data-sparkline='compositebar', data-height='82px', data-width='100%', data-barcolor='#b0dc81', data-barwidth='10px', data-barspacing='5px', data-fillcolor='false', data-linecolor='#fff', data-spotradius='3', data-linewidth='2', data-spotcolor='#fafafa', data-minspotcolor='#fafafa', data-maxspotcolor='#fff', data-highlightspotcolor='#fff', data-highlightlinecolor='#fff', data-composite='7, 6, 5, 7, 9, 10, 8, 7, 6, 6, 4, 7, 8')
+                            | 8,4,1,2,4,6,2,4,4,8,10,7,10
+                      |                                         
+                      .databox-bottom.no-padding
+                        .databox-row
+                          .databox-cell.cell-6.text-align-left
+                            span.databox-text Sales Total
+                            |                                                     
+                            span.databox-number $23,657
+                          |                                                 
+                          .databox-cell.cell-6.text-align-right
+                            span.databox-text September
+                            |                                                     
+                            span.databox-number.font-70 $1,257
+                  |                                 
+                  .col-lg-3.col-sm-6.col-xs-12
+                    .databox.databox-lg.databox-inverted.radius-bordered.databox-shadowed.databox-graded.databox-vertical
+                      .databox-top.no-padding
+                        img(src='assets/img/temp1.png', alt='', style='height:100px; width:100%;')
+                      |                                         
+                      .databox-bottom.no-padding.bordered-thick.bordered-orange
+                        .databox-row
+                          .databox-cell.cell-4.no-padding.text-align-center.bordered-right.bordered-platinum
+                            span.databox-number.lightcarbon.no-margin 510
+                            |                                                     
+                            span.databox-text.sonic-silver.no-margin Posts
+                          |                                                 
+                          .databox-cell.cell-4.no-padding.text-align-center.bordered-right.bordered-platinum
+                            span.databox-number.lightcarbon.no-margin 908
+                            |                                                     
+                            span.databox-text.sonic-silver.no-margin Followers
+                          |                                                 
+                          .databox-cell.cell-4.no-padding.text-align-center
+                            span.databox-number.lightcarbon.no-margin 286
+                            |                                                     
+                            span.databox-text.sonic-silver.no-margin Following
+                  |                                 
+                  .col-lg-2.col-sm-6.col-xs-12
+                    .databox.databox-lg.databox-halved.radius-bordered.databox-shadowed.databox-vertical
+                      .databox-top.bg-darkorange.no-padding
+                        .databox-icon
+                          i.wi.wi-cloudy-windy
+                      |                                         
+                      .databox-bottom.bg-white.no-padding
+                        .databox-row.text-align-center
+                          .databox-cell.cell-6.bordered-right.bordered-platinum.padding-5
+                            span.databox-number.lightcarbon 14&deg;
+                            |                                                     
+                            span.databox-header.lightcarbon
+                              i.wi.wi-strong-wind
+                          |                                                 
+                          .databox-cell.cell-6.padding-5
+                            span.databox-number.lightcarbon 13&deg;
+                            |                                                     
+                            span.databox-header.lightcarbon
+                              i.wi.wi-rain
+                  |                                 
+                  .col-lg-2.col-sm-4.col-xs-6
+                    .databox.databox-lg.databox-vertical.databox-inverted.bg-white.databox-shadowed
+                      .databox-top
+                        .databox-piechart
+                          .easyPieChart.block-center(data-toggle='easypiechart', data-barcolor='#e75b8d', data-linecap='butt', data-percent='40', data-animate='500', data-linewidth='8', data-size='100', data-trackcolor='#eee')
+                            span.white.font-200
+                              i.fa.fa-tags.pink
+                      |                                         
+                      .databox-bottom.no-padding.text-align-center
+                        span.databox-number.lightcarbon.no-margin 11
+                        |                                             
+                        span.databox-text.lightcarbon.no-margin NEW TICKETS
+                  |                                 
+                  .col-lg-2.col-sm-4.col-xs-6
+                    .databox.databox-lg.databox-vertical.databox-inverted.databox-graded
+                      .databox-top
+                        .databox-piechart
+                          .easyPieChart.block-center(data-toggle='easypiechart', data-barcolor='#11a9cc', data-linecap='butt', data-percent='80', data-animate='500', data-linewidth='8', data-size='100', data-trackcolor='#eee')
+                            span.white.font-200
+                              i.fa.fa-gift.sky
+                      |                                         
+                      .databox-bottom.no-padding.text-align-center
+                        span.databox-number.lightcarbon.no-margin 9
+                        |                                             
+                        span.databox-text.lightcarbon.no-margin NEW PRODUCTS
+                |                             
+                h6.row-title.before-blueberry Larger Vertical Databoxes
+                |                             
+                .row
+                  .col-lg-3.col-sm-6.col-xs-12
+                    .databox.databox-xlg.radius-bordered.databox-shadowed.databox-vertical
+                      .databox-top.bg-blue
+                        span.databox-header JANUARY 2014
+                      |                                         
+                      .databox-bottom.bg-white.no-padding
+                        #donut-chart(style='height:150px;')
+                  |                                 
+                  .col-lg-4.col-sm-6.col-xs-12
+                    .databox.databox-xlg.databox-halved.radius-bordered.databox-shadowed.databox-vertical
+                      .databox-top.bg-white.padding-10
+                        .col-lg-4.col-sm-4.col-xs-4
+                          img.image-circular.bordered-3.bordered-palegreen(src='assets/img/avatars/Sergey-Azovskiy.jpg', style='width:75px; height:75px;')
+                        |                                             
+                        .col-lg-8.col-sm-8.col-xs-8.text-align-left.padding-10
+                          span.databox-header.carbon.no-margin Martin James
+                          |                                                 
+                          span.databox-text.lightcarbon.no-margin  Software Manager at Microsoft 
+                      |                                         
+                      .databox-bottom.bg-white.no-padding
+                        .databox-row.row-12
+                          .databox-row.row-6.no-padding
+                            .databox-cell.cell-4.no-padding.text-align-center.bordered-right.bordered-platinum
+                              span.databox-text.sonic-silver.no-margin Posts
+                              |                                                         
+                              span.databox-number.lightcarbon.no-margin 510
+                            |                                                     
+                            .databox-cell.cell-4.no-padding.text-align-center.bordered-right.bordered-platinum
+                              span.databox-text.sonic-silver.no-margin Followers
+                              |                                                         
+                              span.databox-number.lightcarbon.no-margin 908
+                            |                                                     
+                            .databox-cell.cell-4.no-padding.text-align-center
+                              span.databox-text.sonic-silver.no-margin Following
+                              |                                                         
+                              span.databox-number.lightcarbon.no-margin 286
+                          |                                                 
+                          .databox-row.row-6.padding-10
+                            button.btn.btn-palegreen.btn-sm.pull-right FOLLOW
+                  |                                 
+                  .col-lg-5.col-sm-6.col-xs-12
+                    .databox.databox-xlg.radius-bordered.databox-shadowed.databox-vertical
+                      .databox-top.bg-white
+                        span.databox-header.orange WEEKLY SALE STAT
+                      |                                         
+                      .databox-bottom.bg-white.no-padding
+                        .databox-sparkline
+                          span(data-sparkline='line', data-height='158px', data-width='100%', data-fillcolor='#ffce55', data-linecolor='#fb6e52', data-spotcolor='#fafafa', data-minspotcolor='#fafafa', data-maxspotcolor='#ffce55', data-highlightspotcolor='#fb6e52', data-highlightlinecolor='#fb6e52', data-linewidth='3', data-spotradius='0')
+                            | 2,6,7,9,8,5,3,4,4,3,6,7
+                |                             
+                h6.row-title.before-pink Larger-er Vertical Databoxes
+                |                             
+                .row
+                  .col-lg-3.col-sm-6.col-xs-12
+                    .databox.databox-xxlg.databox-inverted.databox-vertical.databox-shadowed.databox-graded
+                      .databox-top.padding-10
+                        #pie-chart-bandwidth.chart.chart
+                        |                                             
+                        .flot-donut-caption
+                          span.databox-number.lightcarbon.no-margin 160GB
+                          |                                                 
+                          span.databox-text.sonic-silver.no-margin Total Usage
+                      |                                         
+                      .databox-bottom.no-padding.bg-white.bordered.bordered-platinum
+                        .databox-row.row-12.no-padding
+                          .databox-cell.cell-4.no-padding.text-align-center.bordered-bottom-5.bordered-sky
+                            span.databox-title.lightcarbon.no-margin
+                              i.fa.fa-picture-o
+                            |                                                     
+                            span.databox-text.sonic-silver.no-margin 50GB
+                          |                                                 
+                          .databox-cell.cell-4.no-padding.text-align-center.bordered-bottom-5.bordered-yellow
+                            span.databox-title.lightcarbon.no-margin
+                              i.fa.fa-video-camera
+                            |                                                     
+                            span.databox-text.sonic-silver.no-margin 80GB
+                          |                                                 
+                          .databox-cell.cell-4.no-padding.text-align-center.bordered-bottom-5.bordered-pink
+                            span.databox-title.lightcarbon.no-margin
+                              i.fa.fa-music
+                            |                                                     
+                            span.databox-text.sonic-silver.no-margin 30GB
+                  |                                 
+                  .col-lg-6.col-sm-6.col-xs-12
+                    .databox.databox-xxlg.databox-vertical.databox-inverted
+                      .databox-top.bg-whitesmoke.no-padding
+                        .databox-row.row-2.bg-orange.no-padding
+                          .databox-cell.cell-1.text-align-center.no-padding.padding-top-5
+                            span.databox-number.white
+                              i.fa.fa-bar-chart-o.no-margin
+                          |                                                 
+                          .databox-cell.cell-8.no-padding.padding-top-5.text-align-left
+                            span.databox-number.white PAGE VIEWS
+                          |                                                 
+                          .databox-cell.cell-3.text-align-right.padding-10
+                            span.databox-text.white 13 DECEMBER
+                        |                                             
+                        .databox-row.row-4
+                          .databox-cell.cell-6.no-padding.padding-10.padding-left-20.text-align-left
+                            span.databox-number.orange.no-margin 534,908
+                            |                                                     
+                            span.databox-text.sky.no-margin OVERAL VIEWS
+                          |                                                 
+                          .databox-cell.cell-2.no-padding.padding-10.text-align-left
+                            span.databox-number.orange.no-margin 4,129
+                            |                                                     
+                            span.databox-text.darkgray.no-margin THIS WEEK
+                          |                                                 
+                          .databox-cell.cell-2.no-padding.padding-10.text-align-left
+                            span.databox-number.orange.no-margin 329
+                            |                                                     
+                            span.databox-text.darkgray.no-margin YESTERDAY
+                          |                                                 
+                          .databox-cell.cell-2.no-padding.padding-10.text-align-left
+                            span.databox-number.orange.no-margin 104
+                            |                                                     
+                            span.databox-text.darkgray.no-margin TODAY
+                        |                                             
+                        .databox-row.row-6.no-padding
+                          .databox-sparkline
+                            span(data-sparkline='line', data-height='126px', data-width='100%', data-fillcolor='#37c2e2', data-linecolor='#37c2e2', data-spotcolor='#fafafa', data-minspotcolor='#fafafa', data-maxspotcolor='#ffce55', data-highlightspotcolor='#f5f5f5 ', data-highlightlinecolor='#f5f5f5', data-linewidth='2', data-spotradius='0')
+                              | 5,7,6,5,9,4,3,7,2
+                      |                                         
+                      .databox-bottom.bg-sky.no-padding
+                        .databox-cell.cell-2.text-align-center.no-padding.padding-top-5
+                          span.databox-header.white Mon
+                        |                                             
+                        .databox-cell.cell-2.text-align-center.no-padding.padding-top-5
+                          span.databox-header.white Tues
+                        |                                             
+                        .databox-cell.cell-2.text-align-center.no-padding.padding-top-5
+                          span.databox-header.white Wed
+                        |                                             
+                        .databox-cell.cell-2.text-align-center.no-padding.padding-top-5
+                          span.databox-header.white Thu
+                        |                                             
+                        .databox-cell.cell-2.text-align-center.no-padding.padding-top-5
+                          span.databox-header.white Fri
+                        |                                             
+                        .databox-cell.cell-2.text-align-center.no-padding.padding-top-5
+                          span.databox-header.white Sat
+                  |                                 
+                  .col-lg-3.col-sm-6.col-xs-12
+                    .databox.databox-xxlg.databox-inverted.databox-vertical.databox-shadowed.databox-graded.radius-bordered
+                      .databox-top.bg-white
+                        .databox-row.row-1
+                          .databox-stat.orange.radius-bordered.font-120
+                            i.stat-icon.wi.wi-rain.icon-xlg
+                        |                                             
+                        .databox-row.row-8
+                          #pie-chart-weather.chart(style='height:160px;')
+                          |                                                 
+                          .flot-donut-caption
+                            span.databox-number.sonic-silver.no-margin 2014
+                            |                                                     
+                            span.databox-text.sonic-silver.no-margin December
+                        |                                             
+                        .databox-row.row-3.padding-10
+                          span.databox-number.darkorange.no-margin Weather
+                          |                                                 
+                          span.databox-text.carbon.no-margin ALL SEASON
+                      |                                         
+                      .databox-bottom.no-padding.bg-white.bordered.bordered-platinum
+                        .databox-row.row-12.no-padding
+                          .databox-cell.cell-3.no-padding.text-align-center.bg-yellow
+                            span.databox-number.no-margin 30%
+                            |                                                     
+                            span.databox-text.no-margin Rain
+                          |                                                 
+                          .databox-cell.cell-3.no-padding.text-align-center.bg-orange
+                            span.databox-number.no-margin 11%
+                            |                                                     
+                            span.databox-text.no-margin Wind
+                          |                                                 
+                          .databox-cell.cell-3.no-padding.text-align-center.bg-darkorange
+                            span.databox-number.no-margin 37%
+                            |                                                     
+                            span.databox-text.no-margin Sunny
+                          |                                                 
+                          .databox-cell.cell-3.no-padding.text-align-center.bg-danger
+                            span.databox-number.no-margin 22%
+                            |                                                     
+                            span.databox-text.no-margin Snow
+                |                             
+                .row
+                  .col-lg-3.col-sm-6.col-xs-12
+                    .databox.databox-vertical.databox-xxlg.databox-halved.radius-bordered.databox-shadowed
+                      .databox-top.no-padding.bg-palegreen
+                        .databox-row.row-5.text-align-left.padding-10
+                          .databox-stat.white.bg-palegreen.font-120
+                            i.stat-icon.fa.fa-caret-up.icon-xlg
+                          |                                                 
+                          span.databox-number.no-margin 639.73
+                          |                                                 
+                          span.databox-text.no-margin -29 (4.2%)
+                        |                                             
+                        .databox-row.row-7
+                          .databox-sparkline.no-margin
+                            span(data-sparkline='compositebar', data-height='88px', data-width='100%', data-barcolor='#bfe19a', data-barwidth='5px', data-barspacing='5px', data-fillcolor='false', data-linecolor='#fff', data-spotradius='3', data-linewidth='3', data-spotcolor='#fafafa', data-minspotcolor='#fafafa', data-maxspotcolor='#fff', data-highlightspotcolor='#fff', data-highlightlinecolor='#fff', data-composite='7, 6, 5, 7, 9, 10, 8, 7, 6, 4, 7, 8, 8,4,1,2,4,6,2,4,8,10')
+                              | 8,4,1,2,4,6,2,4,4,8,10,7, 7, 6, 5, 7, 9, 10, 8, 7, 6, 6
+                      |                                         
+                      .databox-bottom.bg-white.no-padding
+                        .databox-row.row-2.padding-10
+                          span.databox-text.sonic-silver.no-margin
+                            i.glyphicon.glyphicon-time.gray
+                            | Today, 4:15 PM
+                        |                                             
+                        .databox-row.row-4.padding-10
+                          .col-lg-6.bg-whitesmoke.text-align-center
+                            span.databox-number.gray 16.8 M
+                          |                                                 
+                          .col-lg-6.bg-whitesmoke.text-align-center.bordered-left-3.bordered-white
+                            span.databox-number.gray 12 M
+                        |                                             
+                        .databox-row.row-2
+                          .col-lg-6
+                            span.databox-text.sonic-silver.no-margin
+                              i.fa.fa-caret-down.orange
+                              | Monthly
+                          |                                                 
+                          .col-lg-6
+                            span.databox-text.sonic-silver.no-margin
+                              i.fa.fa-caret-up.palegreen
+                              | Yearly
+                        |                                             
+                        .databox-row.row-4
+                          .col-lg-6.text-align-center
+                            .databox-sparkline
+                              span(data-sparkline='bar', data-height='35px', data-width='100%', data-barwidth='5px', data-barspacing='3px', data-stackedbarcolor='["#a0d468", "#ffce55"]')
+                                | 2:2,2:3,3:2,1:3,4:2,2:2,3:2,1:3,3:2
+                          |                                                 
+                          .col-lg-6.padding-5.text-align-center
+                            .databox-sparkline
+                              span(data-sparkline='line', data-height='35px', data-width='100%', data-fillcolor='false', data-linecolor='#bfe19a', data-spotcolor='#fafafa', data-minspotcolor='#fafafa', data-maxspotcolor='#ffce55', data-highlightspotcolor='#fb6e52 ', data-highlightlinecolor='#fb6e52 ', data-linewidth='2', data-spotradius='3')
+                                | 2,6,7,9,8,5,3,4,4,3,6,7
+                  |                                 
+                  .col-lg-6.col-sm-6.col-xs-12
+                    .databox.databox-xxlg.radius-bordered.databox-shadowed.databox-vertical.databox-graded
+                      .databox-top.bordered-bottom-2.bordered-orange.bg-ivory
+                        .col-lg-8.col-sm-8.col-xs-8.text-align-left
+                          span.databox-text.carbon DATA TRANSFER STATS
+                          |                                                 
+                          span.databox-text.carbon.no-margin Last Week
+                        |                                             
+                        .col-lg-4.col-sm-4.col-xs-4.text-align-right
+                          .databox-stat.bg-palegreen.radius-bordered
+                            .stat-text 58%
+                            |                                                     
+                            i.stat-icon.fa.fa-arrow-up
+                      |                                         
+                      .databox-bottom
+                        #bar-chart.chart
+                  |                                 
+                  .col-lg-3.col-sm-6.col-xs-12
+                    .databox.databox-xxlg.databox-halved.radius-bordered.databox-shadowed.databox-graded.databox-vertical
+                      .databox-top.bg-pink.padding-30
+                        .databox-stat.stat-left.radius-bordered
+                          .stat-text.white PAGE VIEWS
+                        |                                             
+                        .databox-stat.white.font-120
+                          i.stat-icon.fa.fa-caret-down.icon-xlg
+                        |                                             
+                        .databox-sparkline
+                          span(data-sparkline='line', data-height='90px', data-width='100%', data-fillcolor='false', data-linecolor='#fff', data-spotcolor='#fafafa', data-minspotcolor='#fafafa', data-maxspotcolor='#ffce55', data-highlightspotcolor='#f5f5f5 ', data-highlightlinecolor='#f5f5f5', data-linewidth='3', data-spotradius='0')
+                            | 1,3,2,5,4,0,5,7,6,5
+                      |                                         
+                      .databox-bottom.padding-20
+                        .databox-row.row-6
+                          .databox-cell.cell-4
+                            span.databox-number.pink.no-margin 4,129
+                            |                                                     
+                            span.databox-text.darkgray.no-margin Profile
+                          |                                                 
+                          .databox-cell.cell-8.padding-10
+                            .databox-sparkline
+                              span(data-sparkline='bar', data-height='20px', data-width='100%', data-barcolor='#ccc', data-negbarcolor='#ccc', data-zerocolor='#ccc', data-barwidth='5px', data-barspacing='2px')
+                                | 2,4,5,6,3,2,0,4,2,4,3,2,6,3,2
+                        |                                             
+                        .databox-row.row-6
+                          .databox-cell.cell-4
+                            span.databox-number.pink.no-margin 2,703
+                            |                                                     
+                            span.databox-text.darkgray.no-margin About
+                          |                                                 
+                          .databox-cell.cell-8.padding-10
+                            .databox-sparkline
+                              span(data-sparkline='bar', data-height='20px', data-width='100%', data-barcolor='#ccc', data-negbarcolor='#ccc', data-zerocolor='#ccc', data-barwidth='5px', data-barspacing='2px')
+                                | 4,2,4,3,2,6,3,2,2,4,5,6,3,2,0
+                |                             
+                h6.row-title.before-sky Largest Vertical Databoxes
+                |                             
+                .row
+                  .col-lg-8.col-sm-12.col-xs-12
+                    .databox.databox-vertical.databox-xxxlg.radius-bordered.databox-shadowed
+                      .databox-top.bg-white.bordered-bottom-1.bordered-platinum.text-align-left.padding-10
+                        .databox-text.darkgray CONSUMPTION
+                      |                                         
+                      .databox-bottom.bg-white.no-padding
+                        .databox-row.row-3.block-center.bg-ivory
+                          .databox-cell.cell-4.padding-10
+                            .databox-piechart
+                              .easyPieChart.pull-right(data-toggle='easypiechart', style='margin:0 auto;', data-barcolor='#5db2ff', data-linecap='butt', data-percent='60', data-animate='500', data-linewidth='5', data-size='100', data-trackcolor='#eeeeee')
+                                span.white.font-180
+                                  i.glyphicon.glyphicon-map-marker.blue
+                          |                                                 
+                          .databox-cell.cell-4.padding-10
+                            .databox-piechart
+                              .easyPieChart.block-center(data-toggle='easypiechart', style='margin:0 auto;', data-barcolor='#e75b8d', data-linecap='butt', data-percent='70', data-animate='500', data-linewidth='5', data-size='100', data-trackcolor='#eeeeee')
+                                span.white.font-150
+                                  i.fa.fa-camera.pink
+                          |                                                 
+                          .databox-cell.cell-4.padding-10
+                            .databox-piechart
+                              .easyPieChart.pull-left(data-toggle='easypiechart', style='margin:0 auto;', data-barcolor='#8cc474', data-linecap='butt', data-percent='60', data-animate='500', data-linewidth='5', data-size='100', data-trackcolor='#eeeeee')
+                                span.white.font-200
+                                  i.fa.fa-bolt.green
+                        |                                             
+                        .databox-row.row-1.bg-ivory.bordered-bottom-1.bordered-lightgray(style='border-bottom-style:dashed;')
+                          .databox-cell.cell-4.padding-right-20
+                            span.databox-text.darkcarbon.pull-right.no-margin
+                              i.fa.fa-arrow-up.green
+                            |                                                     
+                            span.databox-number.carbon.pull-right 909
+                            |                                                     
+                            span.databox-number.gray.pull-right  $
+                          |                                                 
+                          .databox-cell.cell-4
+                            .block-center(style='width:75px;')
+                              span.databox-text.darkcarbon.pull-right.no-margin
+                                i.fa.fa-check.blue
+                              |                                                         
+                              span.databox-number.carbon.pull-right 643
+                              |                                                         
+                              span.databox-number.gray.pull-right  $
+                          |                                                 
+                          .databox-cell.cell-4.padding-left-30
+                            span.databox-number.gray.pull-left  $
+                            |                                                     
+                            span.databox-number.carbon.pull-left 257
+                            |                                                     
+                            span.databox-text.darkcarbon.pull-left.no-margin
+                              i.fa.fa-arrow-down.orange
+                        |                                             
+                        .databox-row.row-2.no-padding.bg-ivory
+                          .databox-cell.cell-12.no-padding.bordered-left-3.bordered-pink
+                            .horizontal-space
+                            |                                                     
+                            .databox-sparkline
+                              span(data-sparkline='bar', data-height='62px', data-width='100%', data-barcolor='#cfd3de', data-negbarcolor='#cfd3de', data-zerocolor='#cfd3de', data-barwidth='16px', data-barspacing='5px')
+                                | 2,4,5,6,3,2,0,4,2,4,3,2,6,4,5,1,4,5,6,9,1
+                        |                                             
+                        .databox-row.row-1.padding-10
+                          .databox-text.darkgray.no-margin DISTRIBUTION
+                        |                                             
+                        .databox-row.row-3.no-padding.bg-ivory.bordered-bottom-1.bordered-platinum.silver(style='font-size:12px;')
+                          table.table.table-condensed.table-striped
+                            tbody
+                              tr
+                                td.padding-left-10
+                                  | iPad
+                                |                                                             
+                                td
+                                  | 1208
+                                |                                                             
+                                td
+                                  | 874,993
+                              |                                                         
+                              tr
+                                td.padding-left-10
+                                  | iPhone
+                                |                                                             
+                                td
+                                  | 7864
+                                |                                                             
+                                td
+                                  | 761,083
+                              |                                                         
+                              tr
+                                td.padding-left-10
+                                  | iPod
+                                |                                                             
+                                td
+                                  | 903
+                                |                                                             
+                                td
+                                  | 874,032
+                              |                                                         
+                              tr
+                                td.padding-left-10
+                                  | iMac
+                                |                                                             
+                                td
+                                  | 987
+                                |                                                             
+                                td
+                                  | 165,973
+                        |                                             
+                        .databox-row.row-2.padding-20.bg-whitesmoke
+                          a.btn.btn-default.pull-right(href='javascript:void(0);') Save Report
+                  |                                 
+                  .col-lg-4.col-sm-6.col-xs-12
+                    .databox.databox-vertical.databox-xxxlg.radius-bordered.databox-shadowed
+                      .databox-top.bg-orange.text-align-left.padding-left-30
+                        span.databox-header
+                          i.glyphicon.glyphicon-map-marker
+                          |  NEW YORK CITY
+                      |                                         
+                      .databox-bottom.no-padding.bg-sky
+                        .databox-row.row-4.bg-yellow.padding-30.text-align-left
+                          span.databox-text.padding-bottom-5(style='font-size:20px;') FRI 29/09
+                          |                                                 
+                          span.databox-number(style='font-size:44px;')
+                            | 14&deg; 
+                            i.wi.wi-day-cloudy
+                        |                                             
+                        .databox-row.row-1.padding-5.padding-left-30.text-align-left.bordered-bottom.bordered-whitesmoke
+                          .databox-cell.cell-8
+                            span.databox-title.no-margin SAT
+                          |                                                 
+                          .databox-cell.cell-4
+                            span.databox-number
+                              | 18&deg;  
+                              i.wi.wi-day-cloudy
+                        |                                             
+                        .databox-row.row-1.padding-5.padding-left-30.text-align-left.bordered-bottom.bordered-whitesmoke
+                          .databox-cell.cell-8
+                            span.databox-title.no-margin SUN
+                          |                                                 
+                          .databox-cell.cell-4
+                            span.databox-number
+                              | 25&deg;  
+                              i.wi.wi-cloudy-gusts
+                        |                                             
+                        .databox-row.row-1.padding-5.padding-left-30.text-align-left.bordered-bottom.bordered-whitesmoke
+                          .databox-cell.cell-8
+                            span.databox-title.no-margin MON
+                          |                                                 
+                          .databox-cell.cell-4
+                            span.databox-number
+                              | 22&deg;  
+                              i.wi.wi-windy
+                        |                                             
+                        .databox-row.row-1.padding-5.padding-left-30.text-align-left.bordered-bottom.bordered-whitesmoke
+                          .databox-cell.cell-8
+                            span.databox-title.no-margin TUE
+                          |                                                 
+                          .databox-cell.cell-4
+                            span.databox-number
+                              | 19&deg;  
+                              i.wi.wi-day-showers
+                        |                                             
+                        .databox-row.row-1.padding-5.padding-left-30.text-align-left.bordered-bottom.bordered-whitesmoke
+                          .databox-cell.cell-8
+                            span.databox-title.no-margin WED
+                          |                                                 
+                          .databox-cell.cell-4
+                            span.databox-number
+                              | 16&deg;  
+                              i.wi.wi-day-fog
+                        |                                             
+                        .databox-row.row-1.padding-5.padding-left-30.text-align-left.bordered-bottom.bordered-whitesmoke
+                          .databox-cell.cell-8
+                            span.databox-title.no-margin THU
+                          |                                                 
+                          .databox-cell.cell-4
+                            span.databox-number
+                              | 14&deg;  
+                              i.wi.wi-day-lightning
+                        |                                             
+                        .databox-row.row-1.padding-5.padding-left-30.text-align-left.bordered-bottom.bordered-whitesmoke
+                          .databox-cell.cell-8
+                            span.databox-title.no-margin FRI
+                          |                                                 
+                          .databox-cell.cell-4
+                            span.databox-number
+                              | 11&deg;  
+                              i.wi.wi-day-rain-mix
+                        |                                             
+                        .databox-row.row-1.padding-5.padding-left-30.text-align-left
+                          .databox-cell.cell-8
+                            span.databox-title.no-margin SAT
+                          |                                                 
+                          .databox-cell.cell-4
+                            span.databox-number
+                              | 29&deg;  
+                              i.wi.wi-day-hail
+          // /Page Body
+        // /Page Content
+      // /Page Container
+      // Main Container
+    // Basic Scripts
+    script(src='assets/js/jquery.min.js')
+    |     
+    script(src='assets/js/bootstrap.min.js')
+    |     
+    script(src='assets/js/slimscroll/jquery.slimscroll.min.js')
+    // Beyond Scripts
+    script(src='assets/js/beyond.min.js')
+    // Page Related Scripts
+    script(src='assets/js/charts/sparkline/jquery.sparkline.js')
+    |     
+    script(src='assets/js/charts/sparkline/sparkline-init.js')
+    |     
+    script(src='assets/js/charts/easypiechart/jquery.easypiechart.js')
+    |     
+    script(src='assets/js/charts/easypiechart/easypiechart-init.js')
+    |     
+    script(src='assets/js/charts/morris/raphael-2.0.2.min.js')
+    |     
+    script(src='assets/js/charts/morris/morris.js')
+    |     
+    script(src='assets/js/charts/morris/morris-init.js')
+    |     
+    script(src='assets/js/charts/flot/jquery.flot.js')
+    |     
+    script(src='assets/js/charts/flot/jquery.flot.orderBars.js')
+    |     
+    script(src='assets/js/charts/flot/jquery.flot.tooltip.js')
+    |     
+    script(src='assets/js/charts/flot/jquery.flot.resize.js')
+    |     
+    script(src='assets/js/charts/flot/jquery.flot.selection.js')
+    |     
+    script(src='assets/js/charts/flot/jquery.flot.crosshair.js')
+    |     
+    script(src='assets/js/charts/flot/jquery.flot.stack.js')
+    |     
+    script(src='assets/js/charts/flot/jquery.flot.time.js')
+    |     
+    script(src='assets/js/charts/flot/jquery.flot.pie.js')
+    |     
+    script(src='assets/js/charts/chartjs/Chart.js')
+    |     
+    script.
+      var chartfirstcolor = "#57b5e3";
+      var chartsecondcolor = "#f4b400";
+      var chartthirdcolor = "#d73d32";
+      var chartfourthcolor = "#8cc474";
+      var chartfifthcolor = "#bc5679";
+      var gridbordercolor = "#eee";
+      var pieData = [
+      {
+      value: 30,
+      color: chartfirstcolor
+      },
+      {
+      value: 50,
+      color: chartsecondcolor
+      },
+      {
+      value: 100,
+      color: chartfourthcolor
+      }
+      ];
+      new Chart(document.getElementById("pie").getContext("2d")).Pie(pieData);
+      InitiateEasyPieChart.init();
+      InitiateSparklineCharts.init();
+      InitiateDonutChart.init();
+      //Pie Chart BandWidth
+      var data = [
+      { data: [[1, 50]], color: '#11a9cc' },
+      { data: [[1, 80]], color: '#ffce55' },
+      { data: [[1, 30]], color: '#e75b8d' }
+      ];
+      var placeholder = $("#pie-chart-bandwidth");
+      placeholder.unbind();
+      $.plot(placeholder, data, {
+      series: {
+      pie: {
+      innerRadius: 0.7,
+      show: true,
+      gradient: {
+      radial: true,
+      colors: [
+      { opacity: 1.0 },
+      { opacity: 1.0 },
+      { opacity: 1.0 }
+      ]
+      }
+      }
+      }
+      });
+      //Pie Chart Weather
+      var data = [
+      { data: [[1, 30]], color: '#ffce55' },
+      { data: [[1, 11]], color: '#e46f61' },
+      { data: [[1, 37]], color: '#ed4e2a' },
+      { data: [[1, 22]], color: '#fb6e52' }
+      ];
+      var placeholder = $("#pie-chart-weather");
+      placeholder.unbind();
+      $.plot(placeholder, data, {
+      series: {
+      pie: {
+      innerRadius: 0.80,
+      show: true,
+      gradient: {
+      radial: true,
+      colors: [
+      { opacity: 1.0 },
+      { opacity: 1.0 },
+      { opacity: 1.0 },
+      { opacity: 1.0 }
+      ]
+      }
+      }
+      }
+      });
+      //Bar Chart
+      var d1_1 = [];
+      for (var i = 1; i <= 7; i += 1)
+      d1_1.push([i, parseInt(Math.random() * 50)]);
+      var d1_2 = [];
+      for (var i = 1; i <= 7; i += 1)
+      d1_2.push([i, parseInt(Math.random() * 50)]);
+      var d1_3 = [];
+      for (var i = 1; i <= 7; i += 1)
+      d1_3.push([i, parseInt(Math.random() * 50)]);
+      var data1 = [
+      {
+      label: "Windows Phone",
+      data: d1_1,
+      bars: {
+      show: true,
+      order: 1,
+      fillColor: { colors: [{ color: chartthirdcolor }, { color: chartthirdcolor }] }
+      },
+      color: chartthirdcolor
+      },
+      {
+      label: "Android",
+      data: d1_2,
+      bars: {
+      show: true,
+      order: 2,
+      fillColor: { colors: [{ color: chartsecondcolor }, { color: chartsecondcolor }] }
+      },
+      color: chartsecondcolor
+      },
+      {
+      label: "IOS",
+      data: d1_3,
+      bars: {
+      show: true,
+      order: 3,
+      fillColor: { colors: [{ color: chartfirstcolor }, { color: chartfirstcolor }] }
+      },
+      color: chartfirstcolor
+      }
+      ];
+      $.plot($("#bar-chart"), data1, {
+      bars: {
+      barWidth: 0.2,
+      lineWidth: 1,
+      borderWidth: 0,
+      fillColor: { colors: [{ opacity: 0.6 }, { opacity: 1 }] }
+      },
+      xaxis: {
+      ticks: [[1, 'Sun'], [2, 'Mon'], [3, 'Tues'], [4, 'Wed'], [5, 'Thu'], [6, 'Fri'], [7, 'Sat']],
+      color: gridbordercolor
+      },
+      yaxis: {
+      color: gridbordercolor
+      },
+      grid: {
+      hoverable: true,
+      clickable: false,
+      borderWidth: 0,
+      aboveData: false
+      },
+      legend: true,
+      tooltip: true,
+      tooltipOpts: {
+      defaultTheme: false,
+      content: "<b>%s</b> : <span>%x</span> : <span>%y</span>",
+      }
+      });
+      //Real-Time Chart
+      var data = [],
+      totalPoints = 300;
+      function getRandomData() {
+      if (data.length > 0)
+      data = data.slice(1);
+      // Do a random walk
+      while (data.length < totalPoints) {
+      var prev = data.length > 0 ? data[data.length - 1] : 50,
+      y = prev + Math.random() * 10 - 5;
+      if (y < 0) {
+      y = 0;
+      } else if (y > 100) {
+      y = 100;
+      }
+      data.push(y);
+      }
+      // Zip the generated y values with the x values
+      var res = [];
+      for (var i = 0; i < data.length; ++i) {
+      res.push([i, data[i]])
+      }
+      return res;
+      }
+      // Set up the control widget
+      var updateInterval = 100;
+      var plot = $.plot("#realtime-chart", [getRandomData()], {
+      yaxis: {
+      color: '#f3f3f3',
+      min: 0,
+      max: 100,
+      tickFormatter: function (val, axis) {
+      return "";
+      }
+      },
+      xaxis: {
+      color: '#f3f3f3',
+      min: 0,
+      max: 100,
+      tickFormatter: function (val, axis) {
+      return "";
+      }
+      },
+      colors: ['#fff'],
+      series: {
+      lines: {
+      lineWidth: 2,
+      fill: false,
+      fillColor: {
+      colors: [{
+      opacity: 0.5
+      }, {
+      opacity: 0
+      }]
+      },
+      steps: false
+      },
+      shadowSize: 0
+      },
+      grid: {
+      show: false,
+      hoverable: true,
+      clickable: false,
+      borderWidth: 0,
+      aboveData: false
+      }
+      });
+      function update() {
+      plot.setData([getRandomData()]);
+      plot.draw();
+      setTimeout(update, updateInterval);
+      }
+      update();
+  // /Body

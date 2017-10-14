@@ -1,0 +1,2079 @@
+doctype html
+//
+  BeyondAdmin - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.6
+  Version: 1.6.0
+  Purchase: https://wrapbootstrap.com/theme/beyondadmin-adminapp-angularjs-mvc-WB06R48S4
+html(xmlns='http://www.w3.org/1999/xhtml')
+  // Head
+  head
+    meta(charset='utf-8')
+    |     
+    title Data Pickers
+    |     
+    meta(name='description', content='Form Elements Data Pickers')
+    |     
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    |     
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    |     
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    |     
+    link(rel='shortcut icon', href='assets/img/favicon.png', type='image/x-icon')
+    // Basic Styles
+    link(href='assets/css/bootstrap.min.css', rel='stylesheet')
+    |     
+    link#bootstrap-rtl-link(href='', rel='stylesheet')
+    |     
+    link(href='assets/css/font-awesome.min.css', rel='stylesheet')
+    |     
+    link(href='assets/css/weather-icons.min.css', rel='stylesheet')
+    // Fonts
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300', rel='stylesheet', type='text/css')
+    // Beyond styles
+    link#beyond-link(href='assets/css/beyond.min.css', rel='stylesheet')
+    |     
+    link(href='assets/css/demo.min.css', rel='stylesheet')
+    |     
+    link(href='assets/css/typicons.min.css', rel='stylesheet')
+    |     
+    link(href='assets/css/animate.min.css', rel='stylesheet')
+    |     
+    link#skin-link(href='', rel='stylesheet', type='text/css')
+    // Skin Script: Place this script in head to load scripts for skins and rtl support
+    script(src='assets/js/skins.min.js')
+  // /Head
+  // Body
+  body
+    // Loading Container
+    .loading-container
+      .loader
+    // /Loading Container
+    // Navbar
+    .navbar
+      .navbar-inner
+        .navbar-container
+          // Navbar Barnd
+          .navbar-header.pull-left
+            a.navbar-brand(href='#')
+              small
+                img(src='assets/img/logo.png', alt='')
+          // /Navbar Barnd
+          // Sidebar Collapse
+          #sidebar-collapse.sidebar-collapse
+            i.collapse-icon.fa.fa-bars
+          // /Sidebar Collapse
+          // Account Area and Settings -
+          .navbar-header.pull-right
+            .navbar-account
+              ul.account-area
+                li
+                  a.dropdown-toggle(data-toggle='dropdown', title='Help', href='#')
+                    i.icon.fa.fa-warning
+                  // Notification Dropdown
+                  ul.pull-right.dropdown-menu.dropdown-arrow.dropdown-notifications
+                    li
+                      a(href='#')
+                        .clearfix
+                          .notification-icon
+                            i.fa.fa-phone.bg-themeprimary.white
+                          |                                                 
+                          .notification-body
+                            span.title Skype meeting with Patty
+                            |                                                     
+                            span.description 01:00 pm
+                          |                                                 
+                          .notification-extra
+                            i.fa.fa-clock-o.themeprimary
+                            |                                                     
+                            span.description office
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          .notification-icon
+                            i.fa.fa-check.bg-darkorange.white
+                          |                                                 
+                          .notification-body
+                            span.title Uncharted break
+                            |                                                     
+                            span.description 03:30 pm - 05:15 pm
+                          |                                                 
+                          .notification-extra
+                            i.fa.fa-clock-o.darkorange
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          .notification-icon
+                            i.fa.fa-gift.bg-warning.white
+                          |                                                 
+                          .notification-body
+                            span.title Kate birthday party
+                            |                                                     
+                            span.description 08:30 pm
+                          |                                                 
+                          .notification-extra
+                            i.fa.fa-calendar.warning
+                            |                                                     
+                            i.fa.fa-clock-o.warning
+                            |                                                     
+                            span.description at home
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          .notification-icon
+                            i.fa.fa-glass.bg-success.white
+                          |                                                 
+                          .notification-body
+                            span.title Dinner with friends
+                            |                                                     
+                            span.description 10:30 pm
+                    |                                     
+                    li.dropdown-footer
+                      span
+                        | Today, March 28
+                      |                                         
+                      span.pull-right
+                        | 10&deg;c
+                        i.wi.wi-cloudy
+                  // /Notification Dropdown
+                |                             
+                li
+                  a.dropdown-toggle(data-toggle='dropdown', title='Mails', href='#')
+                    i.icon.fa.fa-envelope
+                    |                                     
+                    span.badge 3
+                  // Messages Dropdown
+                  ul.pull-right.dropdown-menu.dropdown-arrow.dropdown-messages
+                    li
+                      a(href='#')
+                        img.message-avatar(src='assets/img/avatars/divyia.jpg', alt='Divyia Austin')
+                        |                                             
+                        .message
+                          span.message-sender
+                            | Divyia Austin
+                          |                                                 
+                          span.message-time
+                            | 2 minutes ago
+                          |                                                 
+                          span.message-subject
+                            | Here&apos;s the recipe for apple pie
+                          |                                                 
+                          span.message-body
+                            | to identify the sending application when the senders image is shown for the main icon
+                    |                                     
+                    li
+                      a(href='#')
+                        img.message-avatar(src='assets/img/avatars/bing.png', alt='Microsoft Bing')
+                        |                                             
+                        .message
+                          span.message-sender
+                            | Bing.com
+                          |                                                 
+                          span.message-time
+                            | Yesterday
+                          |                                                 
+                          span.message-subject
+                            | Bing Newsletter: The January Issue&rlm;
+                          |                                                 
+                          span.message-body
+                            | Discover new music just in time for the Grammy&reg; Awards.
+                    |                                     
+                    li
+                      a(href='#')
+                        img.message-avatar(src='assets/img/avatars/adam-jansen.jpg', alt='Divyia Austin')
+                        |                                             
+                        .message
+                          span.message-sender
+                            | Nicolas
+                          |                                                 
+                          span.message-time
+                            | Friday, September 22
+                          |                                                 
+                          span.message-subject
+                            | New 4K Cameras
+                          |                                                 
+                          span.message-body
+                            | The 4K revolution has come over the horizon and is reaching the general populous
+                  // /Messages Dropdown
+                |                             
+                li
+                  a.dropdown-toggle(data-toggle='dropdown', title='Tasks', href='#')
+                    i.icon.fa.fa-tasks
+                    |                                     
+                    span.badge 4
+                  // Tasks Dropdown
+                  ul.pull-right.dropdown-menu.dropdown-tasks.dropdown-arrow
+                    li.dropdown-header.bordered-darkorange
+                      i.fa.fa-tasks
+                      |                                         4 Tasks In Progress
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          span.pull-left Account Creation
+                          |                                                 
+                          span.pull-right 65%
+                        |                                             
+                        .progress.progress-xs
+                          .progress-bar(style='width:65%')
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          span.pull-left Profile Data
+                          |                                                 
+                          span.pull-right 35%
+                        |                                             
+                        .progress.progress-xs
+                          .progress-bar.progress-bar-success(style='width:35%')
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          span.pull-left Updating Resume
+                          |                                                 
+                          span.pull-right 75%
+                        |                                             
+                        .progress.progress-xs
+                          .progress-bar.progress-bar-darkorange(style='width:75%')
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          span.pull-left Adding Contacts
+                          |                                                 
+                          span.pull-right 10%
+                        |                                             
+                        .progress.progress-xs
+                          .progress-bar.progress-bar-warning(style='width:10%')
+                    |                                     
+                    li.dropdown-footer
+                      a(href='#')
+                        | See All Tasks
+                      |                                         
+                      button.btn.btn-xs.btn-default.shiny.darkorange.icon-only.pull-right
+                        i.fa.fa-check
+                  // /Tasks Dropdown
+                |                             
+                li
+                  a#chat-link.wave.in(title='Chat', href='#')
+                    i.icon.glyphicon.glyphicon-comment
+                |                             
+                li
+                  a.login-area.dropdown-toggle(data-toggle='dropdown')
+                    .avatar(title='View your public profile')
+                      img(src='assets/img/avatars/adam-jansen.jpg')
+                    |                                     
+                    section
+                      h2
+                        span.profile
+                          span David Stevenson
+                  // Login Area Dropdown
+                  ul.pull-right.dropdown-menu.dropdown-arrow.dropdown-login-area
+                    li.username
+                      a David Stevenson
+                    |                                     
+                    li.email
+                      a David.Stevenson@live.com
+                    // Avatar Area
+                    li
+                      .avatar-area
+                        img.avatar(src='assets/img/avatars/adam-jansen.jpg')
+                        |                                             
+                        span.caption Change Photo
+                    // Avatar Area
+                    li.edit
+                      a.pull-left(href='profile.html') Profile
+                      |                                         
+                      a.pull-right(href='#') Setting
+                    // Theme Selector Area
+                    li.theme-area
+                      ul#skin-changer.colorpicker
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#5DB2FF;', rel='assets/css/skins/blue.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#2dc3e8;', rel='assets/css/skins/azure.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#03B3B2;', rel='assets/css/skins/teal.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#53a93f;', rel='assets/css/skins/green.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#FF8F32;', rel='assets/css/skins/orange.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#cc324b;', rel='assets/css/skins/pink.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#AC193D;', rel='assets/css/skins/darkred.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#8C0095;', rel='assets/css/skins/purple.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#0072C6;', rel='assets/css/skins/darkblue.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#585858;', rel='assets/css/skins/gray.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#474544;', rel='assets/css/skins/black.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#001940;', rel='assets/css/skins/deepblue.min.css')
+                    // /Theme Selector Area
+                    li.dropdown-footer
+                      a(href='login.html')
+                        | Sign out
+                  // /Login Area Dropdown
+                // /Account Area
+                //
+                  Note: notice that setting div must start right after account area list.
+                  no space must be between these elements
+                // Settings
+              .setting
+                a#btn-setting(title='Setting', href='#')
+                  i.icon.glyphicon.glyphicon-cog
+              .setting-container
+                label
+                  input#checkbox_fixednavbar(type='checkbox')
+                  |                                 
+                  span.text Fixed Navbar
+                |                             
+                label
+                  input#checkbox_fixedsidebar(type='checkbox')
+                  |                                 
+                  span.text Fixed SideBar
+                |                             
+                label
+                  input#checkbox_fixedbreadcrumbs(type='checkbox')
+                  |                                 
+                  span.text Fixed BreadCrumbs
+                |                             
+                label
+                  input#checkbox_fixedheader(type='checkbox')
+                  |                                 
+                  span.text Fixed Header
+              // Settings
+          // /Account Area and Settings
+    // /Navbar
+    // Main Container
+    .main-container.container-fluid
+      // Page Container
+      .page-container
+        // Page Sidebar
+        #sidebar.page-sidebar
+          // Page Sidebar Header
+          .sidebar-header-wrapper
+            input.searchinput(type='text')
+            |                     
+            i.searchicon.fa.fa-search
+            |                     
+            .searchhelper Search Reports, Charts, Emails or Notifications
+          // /Page Sidebar Header
+          // Sidebar Menu
+          ul.nav.sidebar-menu
+            // Dashboard
+            li
+              a(href='index.html')
+                i.menu-icon.glyphicon.glyphicon-home
+                |                             
+                span.menu-text  Dashboard 
+            // Databoxes
+            li
+              a(href='databoxes.html')
+                i.menu-icon.glyphicon.glyphicon-tasks
+                |                             
+                span.menu-text  Data Boxes 
+            // Widgets
+            li
+              a(href='widgets.html')
+                i.menu-icon.fa.fa-th
+                |                             
+                span.menu-text  Widgets 
+            // UI Elements
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.fa.fa-desktop
+                |                             
+                span.menu-text  Elements 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='elements.html')
+                    span.menu-text Basic Elements
+                |                             
+                li
+                  a.menu-dropdown(href='#')
+                    span.menu-text
+                      | Icons
+                    |                                     
+                    i.menu-expand
+                  |                                 
+                  ul.submenu
+                    li
+                      a(href='font-awesome.html')
+                        i.menu-icon.fa.fa-rocket
+                        |                                             
+                        span.menu-text Font Awesome
+                    |                                     
+                    li
+                      a(href='glyph-icons.html')
+                        i.menu-icon.glyphicon.glyphicon-stats
+                        |                                             
+                        span.menu-text Glyph Icons
+                    |                                     
+                    li
+                      a(href='typicon.html')
+                        i.menu-icon.typcn.typcn-location-outline
+                        |                                             
+                        span.menu-text  Typicons
+                    |                                     
+                    li
+                      a(href='weather-icons.html')
+                        i.menu-icon.wi.wi-hot
+                        |                                             
+                        span.menu-text Weather Icons
+                |                             
+                li
+                  a(href='tabs.html')
+                    span.menu-text Tabs &amp; Accordions
+                |                             
+                li
+                  a(href='alerts.html')
+                    span.menu-text Alerts &amp; Tooltips
+                |                             
+                li
+                  a(href='modals.html')
+                    span.menu-text Modals &amp; Wells
+                |                             
+                li
+                  a(href='buttons.html')
+                    span.menu-text Buttons
+                |                             
+                li
+                  a(href='nestable-list.html')
+                    span.menu-text  Nestable List
+                |                             
+                li
+                  a(href='treeview.html')
+                    span.menu-text Treeview
+            // Tables
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.fa.fa-table
+                |                             
+                span.menu-text  Tables 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='tables-simple.html')
+                    span.menu-text Simple &amp; Responsive
+                |                             
+                li
+                  a(href='tables-data.html')
+                    span.menu-text Data Tables
+            // Forms
+            li.active.open
+              a.menu-dropdown(href='#')
+                i.menu-icon.fa.fa-pencil-square-o
+                |                             
+                span.menu-text  Forms 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='form-layouts.html')
+                    span.menu-text Form Layouts
+                |                             
+                li
+                  a(href='form-inputs.html')
+                    span.menu-text Form Inputs
+                |                             
+                li.active
+                  a(href='form-pickers.html')
+                    span.menu-text Data Pickers
+                |                             
+                li
+                  a(href='form-wizard.html')
+                    span.menu-text Wizard
+                |                             
+                li
+                  a(href='form-validation.html')
+                    span.menu-text Validation
+                |                             
+                li
+                  a(href='form-editors.html')
+                    span.menu-text Editors
+                |                             
+                li
+                  a(href='form-inputmask.html')
+                    span.menu-text Input Mask
+            // Charts
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.fa.fa-bar-chart-o
+                |                             
+                span.menu-text  Charts 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='flot.html')
+                    span.menu-text Flot Charts
+                |                             
+                li
+                  a(href='morris.html')
+                    span.menu-text  Morris Charts
+                |                             
+                li
+                  a(href='sparkline.html')
+                    span.menu-text Sparkline Charts
+                |                             
+                li
+                  a(href='easypiecharts.html')
+                    span.menu-text Easy Pie Charts
+                |                             
+                li
+                  a(href='chartjs.html')
+                    span.menu-text  ChartJS
+            // Profile
+            li
+              a(href='profile.html')
+                i.menu-icon.fa.fa-picture-o
+                |                             
+                span.menu-text Profile
+            // Mail
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.fa.fa-envelope-o
+                |                             
+                span.menu-text  Mail 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='inbox.html')
+                    span.menu-text Inbox
+                |                             
+                li
+                  a(href='message-view.html')
+                    span.menu-text View Message
+                |                             
+                li
+                  a(href='message-compose.html')
+                    span.menu-text Compose Message
+            // Calendar
+            li
+              a(href='calendar.html')
+                i.menu-icon.fa.fa-calendar
+                |                             
+                span.menu-text
+                  | Calendar
+            // Pages
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.glyphicon.glyphicon-paperclip
+                |                             
+                span.menu-text  Pages 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='timeline.html')
+                    span.menu-text Timeline
+                |                             
+                li
+                  a(href='pricing.html')
+                    span.menu-text Pricing Tables
+                |                             
+                li
+                  a(href='invoice.html')
+                    span.menu-text Invoice
+                |                             
+                li
+                  a(href='login.html')
+                    span.menu-text Login
+                |                             
+                li
+                  a(href='register.html')
+                    span.menu-text Register
+                |                             
+                li
+                  a(href='lock.html')
+                    span.menu-text Lock Screen
+                |                             
+                li
+                  a(href='typography.html')
+                    span.menu-text  Typography 
+            // More Pages
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.glyphicon.glyphicon-link
+                |                             
+                span.menu-text
+                  | More Pages
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='error-404.html')
+                    span.menu-text Error 404
+                |                             
+                li
+                  a(href='error-500.html')
+                    span.menu-text  Error 500
+                |                             
+                li
+                  a(href='blank.html')
+                    span.menu-text Blank Page
+                |                             
+                li
+                  a(href='grid.html')
+                    span.menu-text  Grid
+                |                             
+                li
+                  a.menu-dropdown(href='#')
+                    span.menu-text
+                      | Multi Level Menu
+                    |                                     
+                    i.menu-expand
+                  |                                 
+                  ul.submenu
+                    li
+                      a(href='#')
+                        i.menu-icon.fa.fa-camera
+                        |                                             
+                        span.menu-text Level 3
+                    |                                     
+                    li
+                      a.menu-dropdown(href='#')
+                        i.menu-icon.fa.fa-asterisk
+                        |                                             
+                        span.menu-text
+                          | Level 4
+                        |                                             
+                        i.menu-expand
+                      |                                         
+                      ul.submenu
+                        li
+                          a(href='#')
+                            i.menu-icon.fa.fa-bolt
+                            |                                                     
+                            span.menu-text Some Item
+                        |                                             
+                        li
+                          a(href='#')
+                            i.menu-icon.fa.fa-bug
+                            |                                                     
+                            span.menu-text Another Item
+            // Right to Left
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.fa.fa-align-right
+                |                             
+                span.menu-text  Right to Left 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a
+                    span.menu-text RTL
+                    |                                     
+                    label.pull-right.margin-top-10
+                      input#rtl-changer.checkbox-slider.slider-icon.colored-primary(type='checkbox')
+                      |                                         
+                      span.text
+                |                             
+                li
+                  a(href='index-rtl-ar.html')
+                    span.menu-text Arabic Layout
+                |                             
+                li
+                  a(href='index-rtl-fa.html')
+                    span.menu-text Persian Layout
+            |                     
+            li
+              a(href='versions.html')
+                i.menu-icon.glyphicon.glyphicon-fire.themesecondary
+                |                             
+                span.menu-text
+                  | BeyondAdmin Versions
+          // /Sidebar Menu
+        // /Page Sidebar
+        // Chat Bar
+        #chatbar.page-chatbar
+          .chatbar-contacts
+            .contacts-search
+              input.searchinput(type='text', placeholder='Search Contacts')
+              |                         
+              i.searchicon.fa.fa-search
+              |                         
+              .searchhelper Search Your Contacts and Chat History
+            |                     
+            ul.contacts-list
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/divyia.jpg')
+                |                             
+                .contact-info
+                  .contact-name Divyia Philips
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | last week
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/Nicolai-Larson.jpg')
+                |                             
+                .contact-info
+                  .contact-name Adam Johnson
+                  |                                 
+                  .contact-status
+                    .offline
+                    |                                     
+                    .status left 4 mins ago
+                  |                                 
+                  .last-chat-time
+                    | today
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/John-Smith.jpg')
+                |                             
+                .contact-info
+                  .contact-name John Smith
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | 1:57 am
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/Osvaldus-Valutis.jpg')
+                |                             
+                .contact-info
+                  .contact-name Osvaldus Valutis
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | today
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/Javi-Jimenez.jpg')
+                |                             
+                .contact-info
+                  .contact-name Javi Jimenez
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | today
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/Stephanie-Walter.jpg')
+                |                             
+                .contact-info
+                  .contact-name Stephanie Walter
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | yesterday
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/Sergey-Azovskiy.jpg')
+                |                             
+                .contact-info
+                  .contact-name Sergey Azovskiy
+                  |                                 
+                  .contact-status
+                    .offline
+                    |                                     
+                    .status offline since oct 24
+                  |                                 
+                  .last-chat-time
+                    | 22 oct
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/Lee-Munroe.jpg')
+                |                             
+                .contact-info
+                  .contact-name Lee Munroe
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | today
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/divyia.jpg')
+                |                             
+                .contact-info
+                  .contact-name Divyia Philips
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | last week
+          |                 
+          .chatbar-messages(style='display: none;')
+            .messages-contact
+              .contact-avatar
+                img(src='assets/img/avatars/divyia.jpg')
+              |                         
+              .contact-info
+                .contact-name Divyia Philips
+                |                             
+                .contact-status
+                  .online
+                  |                                 
+                  .status online
+                |                             
+                .last-chat-time
+                  | a moment ago
+                |                             
+                .back
+                  i.fa.fa-arrow-circle-left
+            |                     
+            ul.messages-list
+              li.message
+                .message-info
+                  .bullet
+                  |                                 
+                  .contact-name Me
+                  |                                 
+                  .message-time 10:14 AM, Today
+                |                             
+                .message-body
+                  | Hi, Hope all is good. Are we meeting today?
+              |                         
+              li.message.reply
+                .message-info
+                  .bullet
+                  |                                 
+                  .contact-name Divyia
+                  |                                 
+                  .message-time 10:15 AM, Today
+                |                             
+                .message-body
+                  | Hi, Hope all is good. Are we meeting today?
+              |                         
+              li.message
+                .message-info
+                  .bullet
+                  |                                 
+                  .contact-name Me
+                  |                                 
+                  .message-time 10:14 AM, Today
+                |                             
+                .message-body
+                  | Hi, Hope all is good. Are we meeting today?
+              |                         
+              li.message.reply
+                .message-info
+                  .bullet
+                  |                                 
+                  .contact-name Divyia
+                  |                                 
+                  .message-time 10:15 AM, Today
+                |                             
+                .message-body
+                  | Hi, Hope all is good. Are we meeting today?
+              |                         
+              li.message
+                .message-info
+                  .bullet
+                  |                                 
+                  .contact-name Me
+                  |                                 
+                  .message-time 10:14 AM, Today
+                |                             
+                .message-body
+                  | Hi, Hope all is good. Are we meeting today?
+              |                         
+              li.message.reply
+                .message-info
+                  .bullet
+                  |                                 
+                  .contact-name Divyia
+                  |                                 
+                  .message-time 10:15 AM, Today
+                |                             
+                .message-body
+                  | Hi, Hope all is good. Are we meeting today?
+            |                     
+            .send-message
+              span.input-icon.icon-right
+                textarea.form-control(rows='4', placeholder='Type your message')
+                |                             
+                i.fa.fa-camera.themeprimary
+        // /Chat Bar
+        // Page Content
+        .page-content
+          // Page Breadcrumb
+          .page-breadcrumbs
+            ul.breadcrumb
+              li
+                i.fa.fa-home
+                |                             
+                a(href='#') Home
+              |                         
+              li
+                a(href='#') Form Elements
+              |                         
+              li.active Data Pickers
+          // /Page Breadcrumb
+          // Page Header
+          .page-header.position-relative
+            .header-title
+              h1
+                | Forms
+                small
+                  i.fa.fa-angle-right
+                  |                                 Data Pickers
+            // Header Buttons
+            .header-buttons
+              a.sidebar-toggler(href='#')
+                i.fa.fa-arrows-h
+              |                         
+              a#refresh-toggler.refresh(href='')
+                i.glyphicon.glyphicon-refresh
+              |                         
+              a#fullscreen-toggler.fullscreen(href='#')
+                i.glyphicon.glyphicon-fullscreen
+            // Header Buttons End
+          // /Page Header
+          // Page Body
+          .page-body
+            .row
+              .col-lg-12.col-sm-12.col-xs-12
+                h5.row-title.before-blue
+                  i.fa.fa-tags.blue
+                  | Select and Tags Input
+                |                             
+                .row
+                  .col-lg-6.col-sm-6.col-xs-12
+                    .well.with-header
+                      .header.bordered-palegreen Jquery Select2
+                      |                                         
+                      div
+                        h6 Single Select With Search
+                        |                                             
+                        select#e1(style='width:100%;')
+                          option(value='AL')
+                            | Alabama
+                          option(value='AK')
+                            | Alaska
+                          option(value='AZ')
+                            | Arizona
+                          option(value='AR')
+                            | Arkansas
+                          option(value='CA')
+                            | California
+                          option(value='CO')
+                            | Colorado
+                          option(value='CT')
+                            | Connecticut
+                          option(value='DE')
+                            | Delaware
+                          option(value='FL')
+                            | Florida
+                          option(value='GA')
+                            | Georgia
+                          option(value='HI')
+                            | Hawaii
+                          option(value='ID')
+                            | Idaho
+                          option(value='IL')
+                            | Illinois
+                          option(value='IN')
+                            | Indiana
+                          option(value='IA')
+                            | Iowa
+                          option(value='KS')
+                            | Kansas
+                          option(value='KY')
+                            | Kentucky
+                          option(value='LA')
+                            | Louisiana
+                          option(value='ME')
+                            | Maine
+                          option(value='MD')
+                            | Maryland
+                          option(value='MA')
+                            | Massachusetts
+                          option(value='MI')
+                            | Michigan
+                          option(value='MN')
+                            | Minnesota
+                          option(value='MS')
+                            | Mississippi
+                          option(value='MO')
+                            | Missouri
+                          option(value='MT')
+                            | Montana
+                          option(value='NE')
+                            | Nebraska
+                          option(value='NV')
+                            | Nevada
+                          option(value='NH')
+                            | New Hampshire
+                          option(value='NJ')
+                            | New Jersey
+                          option(value='NM')
+                            | New Mexico
+                          option(value='NY')
+                            | New York
+                          option(value='NC')
+                            | North Carolina
+                          option(value='ND')
+                            | North Dakota
+                          option(value='OH')
+                            | Ohio
+                          option(value='OK')
+                            | Oklahoma
+                          option(value='OR')
+                            | Oregon
+                          option(value='PA')
+                            | Pennsylvania
+                          option(value='RI')
+                            | Rhode Island
+                          option(value='SC')
+                            | South Carolina
+                          option(value='SD')
+                            | South Dakota
+                          option(value='TN')
+                            | Tennessee
+                          option(value='TX')
+                            | Texas
+                          option(value='UT')
+                            | Utah
+                          option(value='VT')
+                            | Vermont
+                          option(value='VA')
+                            | Virginia
+                          option(value='WA')
+                            | Washington
+                          option(value='WV')
+                            | West Virginia
+                          option(value='WI')
+                            | Wisconsin
+                          option(value='WY')
+                            | Wyoming
+                        |                                             
+                        hr.wide
+                        |                                             
+                        h6 Multiple Select
+                        |                                             
+                        select#e2(multiple='multiple', style='width: 100%;')
+                          option(value='AL')
+                            | Alabama
+                          option(value='AK')
+                            | Alaska
+                          option(value='AZ')
+                            | Arizona
+                          option(value='AR')
+                            | Arkansas
+                          option(value='CA')
+                            | California
+                          option(value='CO')
+                            | Colorado
+                          option(value='CT')
+                            | Connecticut
+                          option(value='DE')
+                            | Delaware
+                          option(value='FL')
+                            | Florida
+                          option(value='GA')
+                            | Georgia
+                          option(value='HI')
+                            | Hawaii
+                          option(value='ID')
+                            | Idaho
+                          option(value='IL')
+                            | Illinois
+                          option(value='IN')
+                            | Indiana
+                          option(value='IA')
+                            | Iowa
+                          option(value='KS')
+                            | Kansas
+                          option(value='KY')
+                            | Kentucky
+                          option(value='LA')
+                            | Louisiana
+                          option(value='ME')
+                            | Maine
+                          option(value='MD')
+                            | Maryland
+                          option(value='MA')
+                            | Massachusetts
+                          option(value='MI')
+                            | Michigan
+                          option(value='MN')
+                            | Minnesota
+                          option(value='MS')
+                            | Mississippi
+                          option(value='MO')
+                            | Missouri
+                          option(value='MT')
+                            | Montana
+                          option(value='NE')
+                            | Nebraska
+                          option(value='NV')
+                            | Nevada
+                          option(value='NH')
+                            | New Hampshire
+                          option(value='NJ')
+                            | New Jersey
+                          option(value='NM')
+                            | New Mexico
+                          option(value='NY')
+                            | New York
+                          option(value='NC')
+                            | North Carolina
+                          option(value='ND')
+                            | North Dakota
+                          option(value='OH')
+                            | Ohio
+                          option(value='OK')
+                            | Oklahoma
+                          option(value='OR')
+                            | Oregon
+                          option(value='PA')
+                            | Pennsylvania
+                          option(value='RI')
+                            | Rhode Island
+                          option(value='SC')
+                            | South Carolina
+                          option(value='SD')
+                            | South Dakota
+                          option(value='TN')
+                            | Tennessee
+                          option(value='TX')
+                            | Texas
+                          option(value='UT')
+                            | Utah
+                          option(value='VT')
+                            | Vermont
+                          option(value='VA')
+                            | Virginia
+                          option(value='WA')
+                            | Washington
+                          option(value='WV')
+                            | West Virginia
+                          option(value='WI')
+                            | Wisconsin
+                          option(value='WY')
+                            | Wyoming
+                  |                                 
+                  .col-lg-6.col-sm-6.col-xs-12
+                    .well.with-header
+                      .header.bordered-darkorange Bootstrap Tags Input
+                      |                                         
+                      div
+                        input(type='text', value='Amsterdam', data-role='tagsinput', placeholder='Add tags')
+                |                             
+                h5.row-title.before-red
+                  i.glyphicon.glyphicon-time.red
+                  | Date and Time Pickers
+                |                             
+                .row
+                  .col-lg-6.col-sm-6.col-xs-12
+                    .well.with-header
+                      .header.bordered-pink Bootstrap Date Picker
+                      |                                         
+                      div
+                        .input-group
+                          input#id-date-picker-1.form-control.date-picker(type='text', data-date-format='dd-mm-yyyy')
+                          |                                                 
+                          span.input-group-addon
+                            i.fa.fa-calendar
+                  |                                 
+                  .col-lg-6.col-sm-6.col-xs-12
+                    .well.with-header
+                      .header.bordered-blue Bootstrap Time Picker
+                      |                                         
+                      div
+                        .input-group
+                          input#timepicker1.form-control(type='text')
+                          |                                                 
+                          span.input-group-addon
+                            i.fa.fa-clock-o
+                |                             
+                .row
+                  .col-lg-6.col-sm-6.col-xs-12
+                    .well.with-header
+                      .header.bordered-yellow Bootstrap Range Date Picker
+                      |                                         
+                      .form-group
+                        label(for='reservation') Reservation dates
+                        |                                             
+                        .controls
+                          .input-group
+                            span.input-group-addon
+                              i.fa.fa-calendar
+                            input#reservation.form-control(type='text')
+                |                             
+                h5.row-title.before-sky
+                  i.fa.fa-square-o.sky
+                  | Text Area and Spinboxs
+                |                             
+                .row
+                  .col-lg-6.col-sm-6.col-xs-12
+                    .well.with-header
+                      .header.bordered-darkpink Text Area
+                      |                                         
+                      h6 Default Text Area
+                      |                                         
+                      textarea#form-field-8.form-control(rows='6', placeholder='Default Text')
+                      |                                         
+                      hr.wide
+                      |                                         
+                      h6 AutoSize Text Area With Animation
+                      |                                         
+                      textarea#textareaanimated.form-control(placeholder='Write Something to See Autosize Function')
+                  |                                 
+                  .col-lg-6.col-sm-6.col-xs-12
+                    .well.with-header
+                      .header.bordered-palegreen Spinbox Controls
+                      |                                         
+                      h6 Vertical Spinboxs
+                      |                                         
+                      .row
+                        .col-lg-6.col-sm-6.col-xs-12
+                          .spinbox
+                            input.spinbox-input.form-control(type='text', value='1')
+                            |                                                     
+                            .spinbox-buttons.btn-group.btn-group-vertical
+                              button.btn.spinbox-up.blue(type='button')
+                                i.fa.fa-chevron-up
+                              |                                                         
+                              button.btn.spinbox-down.danger(type='button')
+                                i.fa.fa-chevron-down
+                        |                                             
+                        .col-lg-6.col-sm-6.col-xs-12
+                          .spinbox
+                            input.spinbox-input.form-control(type='text')
+                            |                                                     
+                            .spinbox-buttons.btn-group.btn-group-vertical
+                              button.btn.spinbox-up.blue(type='button')
+                                i.fa.fa-angle-up
+                              |                                                         
+                              button.btn.spinbox-down.darkorange(type='button')
+                                i.fa.fa-angle-down
+                      |                                         
+                      .horizontal-space
+                      |                                         
+                      .row
+                        .col-lg-6.col-sm-6.col-xs-6
+                          .spinbox
+                            input.spinbox-input.form-control(type='text')
+                            |                                                     
+                            .spinbox-buttons.btn-group.btn-group-vertical
+                              button.btn.spinbox-up.success(type='button')
+                                i.fa.fa-angle-up
+                              |                                                         
+                              button.btn.spinbox-down.danger(type='button')
+                                i.fa.fa-angle-down
+                        |                                             
+                        .col-lg-6.col-sm-6.col-xs-6
+                          .spinbox
+                            input.spinbox-input.form-control(type='text')
+                            |                                                     
+                            .spinbox-buttons.btn-group.btn-group-vertical
+                              button.btn.spinbox-up.maroon(type='button')
+                                i.fa.fa-angle-up
+                              |                                                         
+                              button.btn.spinbox-down.magenta(type='button')
+                                i.fa.fa-angle-down
+                      |                                         
+                      .horizontal-space
+                      |                                         
+                      .row
+                        .col-lg-6.col-sm-6.col-xs-6
+                          .spinbox
+                            input.spinbox-input.form-control(type='text')
+                            |                                                     
+                            .spinbox-buttons.btn-group.btn-group-vertical
+                              button.btn.spinbox-up.darkcarbon(type='button')
+                                i.fa.fa-arrow-up
+                              |                                                         
+                              button.btn.spinbox-down.sonic-silver(type='button')
+                                i.fa.fa-arrow-down
+                        |                                             
+                        .col-lg-6.col-sm-6.col-xs-6
+                          .spinbox.spinbox-right
+                            .spinbox-buttons.btn-group.btn-group-vertical
+                              button.btn.spinbox-up.success(type='button')
+                                i.fa.fa-plus
+                              |                                                         
+                              button.btn.spinbox-down.danger(type='button')
+                                i.fa.fa-minus
+                            |                                                     
+                            input.spinbox-input.form-control(type='text')
+                      |                                         
+                      .horizontal-space
+                      |                                         
+                      .row
+                        .col-lg-6.col-sm-6.col-xs-6
+                          .spinbox
+                            input.spinbox-input.form-control(type='text')
+                            |                                                     
+                            .spinbox-buttons.btn-group.btn-group-vertical
+                              button.btn.spinbox-up.success(type='button')
+                                i.fa.fa-chevron-up
+                              |                                                         
+                              button.btn.spinbox-down.danger(type='button')
+                                i.fa.fa-chevron-down
+                        |                                             
+                        .col-lg-6.col-sm-6.col-xs-6
+                      |                                         
+                      .horizontal-space
+                      |                                         
+                      h6 Horizontal Spinbox
+                      |                                         
+                      .row
+                        .col-lg-6.col-sm-6.col-xs-6
+                          .spinbox.spinbox-horizontal
+                            input.spinbox-input.form-control(type='text')
+                            |                                                     
+                            .spinbox-buttons.btn-group
+                              button.btn.spinbox-down.blueberry(type='button')
+                                i.fa.fa-minus
+                              |                                                         
+                              button.btn.spinbox-up.purple(type='button')
+                                i.fa.fa-plus
+                        |                                             
+                        .col-lg-6.col-sm-6.col-xs-6
+                          .spinbox.spinbox-horizontal.spinbox-right
+                            .spinbox-buttons.btn-group
+                              button.btn.spinbox-down.blueberry(type='button')
+                                i.fa.fa-minus
+                              |                                                         
+                              button.btn.spinbox-up.purple(type='button')
+                                i.fa.fa-plus
+                            |                                                     
+                            input.spinbox-input.form-control(type='text')
+                      |                                         
+                      .horizontal-space
+                      |                                         
+                      h6 Two-Sided Horizontal Spinbox
+                      |                                         
+                      .row
+                        .col-lg-6.col-sm-6.col-xs-6
+                          .spinbox.spinbox-horizontal.spinbox-two-sided
+                            .spinbox-buttons.btn-group.spinbox-buttons-left
+                              button.btn.spinbox-down.danger(type='button')
+                                i.fa.fa-minus
+                            |                                                     
+                            input.spinbox-input.form-control(type='text')
+                            |                                                     
+                            .spinbox-buttons.btn-group.spinbox-buttons-right
+                              button.btn.spinbox-up.blue(type='button')
+                                i.fa.fa-plus
+                        |                                             
+                        .col-lg-6.col-sm-6.col-xs-6
+                |                             
+                h5.row-title.before-darkpink
+                  i.fa.fa-upload.darkpink
+                  | DropzoneJs
+                |                             
+                .row
+                  .col-lg-12
+                    .well.with-header
+                      .header.bordered-darkpink File Uploader with preview
+                      |                                         
+                      form.dropzone(action='/upload')
+                |                             
+                h5.row-title.before-palegreen
+                  i.fa.fa-circle-o.palegreen
+                  | Jquery Knob
+                |                             
+                .row
+                  .col-lg-2.col-sm-6.col-xs-12
+                    .well.with-header
+                      .header.bordered-darkorange Previous Value
+                      |                                         
+                      .knob-container
+                        input.knob(data-width='75', data-displayprevious='true', data-fgcolor='#ed4e2a', data-cursor='true', value='75', data-thickness='.2')
+                  |                                 
+                  .col-lg-2.col-sm-6.col-xs-12
+                    .well.with-header
+                      .header.bordered-warning Color and Size
+                      |                                         
+                      .knob-container
+                        input.knob(data-width='100', data-cursor='true', data-fgcolor='#f4b400', data-thickness='.25', value='29')
+                  |                                 
+                  .col-lg-4.col-sm-6.col-xs-12
+                    .well.with-header
+                      .header.bordered-blue  Angle offset
+                      |                                         
+                      .knob-container
+                        input.knob(data-angleoffset='90', data-linecap='round', data-fgcolor='#5DB2FF', value='15', data-thickness='.25')
+                  |                                 
+                  .col-lg-4.col-sm-6.col-xs-12
+                    .well.with-header
+                      .header.bordered-palegreen Angle offset and arc
+                      |                                         
+                      .knob-container
+                        input.knob(data-angleoffset='-125', data-anglearc='250', data-fgcolor='#8cc474', data-rotation='clockwise', value='35', data-thickness='.25')
+                |                             
+                .row
+                  .col-lg-6.col-sm-6.col-xs-12
+                    h5.row-title.before-blueberry
+                      i.fa.fa-picture-o.blueberry
+                      | jQuery MiniColors
+                    |                                     
+                    .well.bordered-top.bordered-blueberry
+                      .row
+                        .col-lg-12.col-sm-12.col-xs-12
+                          .form-group
+                            label(for='hue-demo') Hue (default)
+                            |                                                     
+                            input#hue-demo.form-control.colorpicker(type='text', data-control='hue', value='#ff6161')
+                          |                                                 
+                          .form-group
+                            label(for='saturation-demo') Saturation
+                            |                                                     
+                            input#saturation-demo.form-control.colorpicker(type='text', data-control='saturation', value='#0088cc')
+                      |                                         
+                      .row
+                        .col-lg-12.col-sm-12.col-xs-12
+                          .form-group
+                            label(for='brightness-demo') Brightness
+                            |                                                     
+                            input#brightness-demo.form-control.colorpicker(type='text', data-control='brightness', value='#00ffff')
+                          |                                                 
+                          .form-group
+                            label(for='wheel-demo') Wheel
+                            |                                                     
+                            input#wheel-demo.form-control.colorpicker(type='text', data-control='wheel', value='#ff99ee')
+                      |                                         
+                      hr.wide
+                      |                                         
+                      h5 Input Modes
+                      |                                         
+                      .row
+                        .col-lg-12.col-sm-12.col-xs-12
+                          .form-group
+                            label(for='text-field') Text field
+                            |                                                     
+                            br
+                            |                                                     
+                            input#text-field.form-control.colorpicker(type='text', value='#70c24a')
+                          |                                                 
+                          .form-group
+                            label(for='hidden-input') Hidden Input
+                            |                                                     
+                            br
+                            |                                                     
+                            input#hidden-input.colorpicker(type='hidden', value='#5DB2FF', style='width:34px;')
+                      |                                         
+                      .row
+                        .col-lg-12.col-sm-12.col-xs-12
+                          .form-group
+                            label(for='inline') Inline
+                            |                                                     
+                            br
+                            |                                                     
+                            input#inline.form-control.colorpicker(type='text', data-inline='true', value='#4fc8db')
+                      |                                         
+                      hr.wide
+                      |                                         
+                      h5 Positions
+                      |                                         
+                      p
+                        | Valid positions include 
+                        code bottom left
+                        | , 
+                        code bottom right
+                        | , 
+                        code
+                          | top
+                          | left
+                        | , and 
+                        code top right
+                        | .
+                      |                                         
+                      .row
+                        .col-lg-12.col-sm-12.col-xs-12
+                          .form-group
+                            label(for='position-bottom-left') bottom left (default)
+                            |                                                     
+                            input#position-bottom-left.form-control.colorpicker(type='text', data-position='bottom left', value='#11a9cc')
+                          |                                                 
+                          .form-group
+                            label(for='position-top-left') top left
+                            |                                                     
+                            input#position-top-left.form-control.colorpicker(type='text', data-position='top left', value='#8cc474')
+                      |                                         
+                      .row
+                        .col-lg-12.col-sm-12.col-xs-12
+                          .form-group
+                            label(for='position-bottom-right') bottom right
+                            |                                                     
+                            input#position-bottom-right.form-control.colorpicker(type='text', data-position='bottom right', value='#f4b400')
+                          |                                                 
+                          .form-group
+                            label(for='position-top-right') top right
+                            |                                                     
+                            input#position-top-right.form-control.colorpicker(type='text', data-position='top right', value='#bc5679')
+                      |                                         
+                      hr.wide
+                      |                                         
+                      .row
+                        .col-lg-12.col-sm-12.col-xs-12
+                          .form-group
+                            label(for='opacity') Opacity
+                            |                                                     
+                            br
+                            |                                                     
+                            input#opacity.form-control.colorpicker(type='text', data-opacity='.5', value='#766fa8')
+                            |                                                     
+                            span.help-block
+                              | Opacity can be assigned by including the 
+                              code data-opacity
+                              |  attribute
+                              |                                                         or by setting the 
+                              code opacity
+                              |  option to 
+                              code true
+                              | .
+                      |                                         
+                      .row
+                        .col-lg-12.col-sm-12.col-xs-12
+                          .form-group
+                            label(for='default-value') Default Value
+                            |                                                     
+                            br
+                            |                                                     
+                            input#default-value.form-control.colorpicker(type='text', data-defaultvalue='#ff6600')
+                            |                                                     
+                            span.help-block
+                              | This field has a default value assigned to it, so it will never be empty.
+                      |                                         
+                      .row
+                        .col-lg-12.col-sm-12.col-xs-12
+                          .form-group
+                            label(for='letter-case') Letter Case
+                            |                                                     
+                            br
+                            |                                                     
+                            input#letter-case.form-control.colorpicker(type='text', data-lettercase='uppercase', value='#abcdef')
+                            |                                                     
+                            span.help-block
+                              | This field will always be uppercase.
+                      |                                         
+                      .row
+                        .col-lg-12.col-sm-12.col-xs-12
+                          .form-group
+                            label(for='letter-case') Letter Case
+                            |                                                     
+                            br
+                            |                                                     
+                            input#letter-case.form-control.colorpicker(type='text', data-lettercase='uppercase', value='#abcdef')
+                            |                                                     
+                            span.help-block
+                              | This field will always be uppercase.
+                      |                                         
+                      hr.wide
+                      |                                         
+                      h5 Simple ColorPicker
+                      |                                         
+                      select(data-toggle='simplecolorpicker')
+                        option(value='#ac725e')
+                          | #ac725e
+                        option(value='#d06b64')
+                          | #d06b64
+                        option(value='#f83a22')
+                          | #f83a22
+                        option(value='#fa573c')
+                          | #fa573c
+                        option(value='#ff7537')
+                          | #ff7537
+                        option(value='#ffad46', selected='')
+                          | #ffad46
+                        option(value='#42d692')
+                          | #42d692
+                        option(value='#16a765')
+                          | #16a765
+                        option(value='#7bd148')
+                          | #7bd148
+                        option(value='#b3dc6c')
+                          | #b3dc6c
+                        option(value='#fbe983')
+                          | #fbe983
+                        option(value='#fad165')
+                          | #fad165
+                        option(value='#92e1c0')
+                          | #92e1c0
+                        option(value='#9fe1e7')
+                          | #9fe1e7
+                        option(value='#9fc6e7')
+                          | #9fc6e7
+                        option(value='#4986e7')
+                          | #4986e7
+                        option(value='#9a9cff')
+                          | #9a9cff
+                        option(value='#b99aff')
+                          | #b99aff
+                        option(value='#c2c2c2')
+                          | #c2c2c2
+                        option(value='#cabdbf')
+                          | #cabdbf
+                        option(value='#cca6ac')
+                          | #cca6ac
+                        option(value='#f691b2')
+                          | #f691b2
+                        option(value='#cd74e6')
+                          | #cd74e6
+                        option(value='#a47ae2')
+                          | #a47ae2
+                        option(value='#555')
+                          | #555
+                  |                                 
+                  .col-lg-6.col-sm-6.col-xs-12
+                    h5.row-title.before-darkpink
+                      i.fa.fa-exchange.darkpink
+                      | noUiSlider: Simple Lightweighted Responsive Slider
+                    |                                     
+                    .well.bordered-top.bordered-darkpink
+                      h6 Simple Slider
+                      |                                         
+                      #sample-minimal.colored-blue.slider-xs
+                      |                                         
+                      .horizontal-space
+                      |                                         
+                      div(style='height:20px;')
+                        span#minimal-label1.label.label-palegreen.pull-left
+                        |                                             
+                        span#minimal-label2.label.label-darkorange.pull-right
+                      |                                         
+                      hr.wide
+                      |                                         
+                      h6 Slider with One Handle
+                      |                                         
+                      #sample-onehandle.slider-xs
+                      |                                         
+                      hr.wide
+                      |                                         
+                      h6 One Handle Upper
+                      |                                         
+                      #sample-onehandle-upper.slider-xs
+                      |                                         
+                      hr.wide
+                      |                                         
+                      h6 Slider Sizes
+                      |                                         
+                      #sizes
+                        .sized-slider.bg-yellow.slider-xs
+                        |                                             
+                        .sized-slider.bg-warning.slider-sm
+                        |                                             
+                        .sized-slider.bg-lightred
+                        |                                             
+                        .sized-slider.bg-red.slider-lg
+                        |                                             
+                        .sized-slider.bg-darkorange.slider-xl
+                      |                                         
+                      hr.wide
+                      |                                         
+                      h6 Slider Colors
+                      |                                         
+                      #colors
+                        .colored-slider.bg-darkorange.slider-xs
+                        |                                             
+                        .colored-slider.bg-blueberry.slider-xs
+                        |                                             
+                        .colored-slider.bg-warning.slider-xs
+                        |                                             
+                        .colored-slider.bg-info.slider-xs
+                        |                                             
+                        .colored-slider.bg-danger.slider-xs
+                        |                                             
+                        .colored-slider.bg-success.slider-xs
+                      |                                         
+                      hr.wide
+                      |                                         
+                      h6 Sample Color Picker
+                      |                                         
+                      #colorpicker
+                        #red.slider.slider-xs.bg-danger
+                        |                                             
+                        #green.slider.slider-xs.bg-success
+                        |                                             
+                        #blue.slider.slider-xs.bg-primary
+                        |                                             
+                        .result
+                |                             
+                h5.row-title.before-magenta
+                  i.fa.fa-arrows-h.magenta
+                  | jQRangeSlider: Responsible Touch-Friendly Slider
+                |                             
+                .row
+                  .col-lg-6.col-sm-6.col-xs-12
+                    .well.bordered-top.bordered-palegreen
+                      h6 Simple Slider
+                      |                                         
+                      #rangeslider.slider-xs
+                      |                                         
+                      hr.wide
+                      |                                         
+                      h6 Without Arrows
+                      |                                         
+                      #noarrowsrangeslider.slider-xs
+                      |                                         
+                      h6 Without Value Labels
+                      |                                         
+                      #labelsrangeslider.slider-xs
+                      |                                         
+                      hr.wide
+                      |                                         
+                      h6 Default Values
+                      |                                         
+                      #dvrangeslider.slider-xs
+                      |                                         
+                      h6 Steps
+                      |                                         
+                      #steprangeslider.slider-xs
+                      |                                         
+                      h6 Bounds
+                      |                                         
+                      #boundsrangeslider.slider-xs
+                      |                                         
+                      hr.wide
+                      |                                         
+                      h6 Delay Out
+                      |                                         
+                      #delayrangeslider.slider-xs
+                      |                                         
+                      h6 Duration In/Out
+                      |                                         
+                      #durationrangeslider.slider-xs
+                      |                                         
+                      h6 Disabled
+                      |                                         
+                      #disabledrangeslider.slider-xs
+                      |                                         
+                      hr.wide
+                      |                                         
+                      h6 Editable Values
+                      |                                         
+                      #editrangeslider.slider-xs
+                      |                                         
+                      h6 Date Value Labels
+                      |                                         
+                      #daterangeslider.slider-xs
+                  |                                 
+                  .col-lg-6.col-sm-6.col-xs-12
+                    .well.bordered-top.bordered-warning
+                      h6 Slider Sizes
+                      |                                         
+                      .sized-rangeslider.slider-xs
+                      |                                         
+                      .sized-rangeslider.slider-sm
+                      |                                         
+                      .sized-rangeslider
+                      |                                         
+                      hr.wide
+                      |                                         
+                      h6 Slider Colors
+                      |                                         
+                      .colored-rangeslider.slider-xs.valuelabel-blue.silder-blue
+                      |                                         
+                      .colored-rangeslider.slider-xs.valuelabel-yellow.silder-yellow
+                      |                                         
+                      .colored-rangeslider.slider-xs.valuelabel-darkorange.silder-darkorange
+                      |                                         
+                      .colored-rangeslider.slider-xs.valuelabel-blue.silder-danger
+                      |                                         
+                      .colored-rangeslider.slider-xs.valuelabel-warning.silder-blueberry
+                      |                                         
+                      .colored-rangeslider.slider-xs.valuelabel-palegreen.silder-darkorange
+                      |                                         
+                      .colored-rangeslider.slider-xs.valuelabel-darkorange.silder-success
+                      |                                         
+                      .colored-rangeslider.slider-xs.valuelabel-purple.silder-magenta
+                      |                                         
+                      .colored-rangeslider.slider-xs.valuelabel-magenta.silder-silver
+                      |                                         
+                      .colored-rangeslider.slider-xs.valuelabel-blue.silder-warning
+                      |                                         
+                      .colored-rangeslider.slider-xs.valuelabel-yellow.silder-blueberry
+                      |                                         
+                      .colored-rangeslider.slider-xs.valuelabel-purple.silder-warning
+                      |                                         
+                      .colored-rangeslider.slider-xs.valuelabel-silver.silder-silver
+                |                             
+                h5.row-title.before-blue
+                  i.fa.fa-sort.blue
+                  | jQRangeSlider Scales
+                |                             
+                .row
+                  .col-lg-12.col-sm-12.col-xs-12
+                    .well.bordered-top.bordered-blue
+                      h5 Simple Scale
+                      |                                         
+                      #simlescalesrangeslider.valuelabel-yellow.silder-yellow
+                      |                                         
+                      hr.wide
+                      |                                         
+                      h5 Date Scale
+                      |                                         
+                      #dateRulersExample.valuelabel-darkorange.silder-darkorange
+          // /Page Body
+        // /Page Content
+      // /Page Container
+      // Main Container
+    // Basic Scripts
+    script(src='assets/js/jquery.min.js')
+    |     
+    script(src='assets/js/bootstrap.min.js')
+    |     
+    script(src='assets/js/slimscroll/jquery.slimscroll.min.js')
+    // Beyond Scripts
+    script(src='assets/js/beyond.min.js')
+    // Page Related Scripts
+    // Jquery Select2
+    script(src='assets/js/select2/select2.js')
+    // Bootstrap Tags Input
+    script(src='assets/js/tagsinput/bootstrap-tagsinput.js')
+    // Bootstrap Date Picker
+    script(src='assets/js/datetime/bootstrap-datepicker.js')
+    // Bootstrap Time Picker
+    script(src='assets/js/datetime/bootstrap-timepicker.js')
+    // Bootstrap Date Range Picker
+    script(src='assets/js/datetime/moment.js')
+    |     
+    script(src='assets/js/datetime/daterangepicker.js')
+    // Jquery Autosize
+    script(src='assets/js/textarea/jquery.autosize.js')
+    // Fuelux Spinbox
+    script(src='assets/js/fuelux/spinbox/fuelux.spinbox.min.js')
+    // jQUery MiniColors
+    script(src='assets/js/colorpicker/jquery.minicolors.js')
+    // jQUery Knob
+    script(src='assets/js/knob/jquery.knob.js')
+    // noUiSlider
+    script(src='assets/js/slider/jquery.nouislider.js')
+    // jQRangeSlider
+    script(src='assets/js/jquery-ui-1.10.4.custom.js')
+    |     
+    script(src='assets/js/slider/jQRangeSlider/jQAllRangeSliders-withRuler-min.js')
+    // Dropzone
+    script(src='assets/js/dropzone/dropzone.min.js')
+    |     
+    script.
+      //--Jquery Select2--
+      $("#e1").select2();
+      $("#e2").select2({
+      placeholder: "Select a State",
+      allowClear: true
+      });
+      //--Bootstrap Date Picker--
+      $('.date-picker').datepicker();
+      //--Bootstrap Time Picker--
+      $('#timepicker1').timepicker();
+      //--Bootstrap Date Range Picker--
+      $('#reservation').daterangepicker();
+      //--JQuery Autosize--
+      $('#textareaanimated').autosize({ append: "\\n" });
+      //--Fuelux Spinbox--
+      $('.spinbox').spinbox();
+      //--jQuery MiniColors--
+      $('.colorpicker').each(function () {
+      $(this).minicolors({
+      control: $(this).attr('data-control') || 'hue',
+      defaultValue: $(this).attr('data-defaultValue') || '',
+      inline: $(this).attr('data-inline') === 'true',
+      letterCase: $(this).attr('data-letterCase') || 'lowercase',
+      opacity: $(this).attr('data-opacity'),
+      position: $(this).attr('data-position') || 'bottom left',
+      change: function (hex, opacity) {
+      if (!hex) return;
+      if (opacity) hex += ', ' + opacity;
+      try {
+      console.log(hex);
+      } catch (e) { }
+      },
+      theme: 'bootstrap'
+      });
+      });
+      //---Jquery Knob--
+      $(".knob").knob();
+      //---noUiSlider--
+      $("#sample-minimal").noUiSlider({
+      range: [0, 100],
+      start: [20, 80],
+      connect: true,
+      serialization: {
+      mark: ',',
+      resolution: 0.1,
+      to: [[$("#minimal-label1"), 'html'],
+      [$('#minimal-label2'), 'html']]
+      }
+      });
+      $("#sample-onehandle").noUiSlider({
+      range: [20, 100],
+      start: 40,
+      step: 20,
+      handles: 1,
+      connect: "lower",
+      serialization: {
+      to: [$("#low"), 'html']
+      }
+      });
+      $("#sample-onehandle-upper").noUiSlider({
+      range: [20, 100],
+      start: 70,
+      step: 20,
+      handles: 1,
+      connect: "upper",
+      serialization: {
+      to: [$("#low"), 'html']
+      }
+      });
+      $('.slider').noUiSlider({
+      range: [0, 255],
+      start: 127,
+      handles: 1,
+      connect: "lower",
+      orientation: "vertical",
+      serialization: {
+      resolution: 1
+      }
+      , slide: function () {
+      var color = 'rgb(' + $("#red").val()
+      + ',' + $("#green").val()
+      + ',' + $("#blue").val()
+      + ')';
+      $(".result").css({
+      background: color
+      , color: color
+      });
+      }
+      });
+      $(".sized-slider").noUiSlider({
+      range: [0, 100],
+      start: 50,
+      handles: 1,
+      connect: "lower",
+      serialization: {
+      to: [$("#low"), 'html']
+      }
+      });
+      $(".colored-slider").noUiSlider({
+      range: [0, 100],
+      start: 30,
+      handles: 1,
+      connect: "lower",
+      serialization: {
+      to: [$("#low"), 'html']
+      }
+      });
+      //--jQRangeSlider--
+      $(".sized-rangeslider").rangeSlider();
+      $(".colored-rangeslider").rangeSlider();
+      $("#rangeslider").rangeSlider();
+      $("#editrangeslider").editRangeSlider();
+      $("#daterangeslider").dateRangeSlider();
+      $("#noarrowsrangeslider").rangeSlider({ arrows: false });
+      $("#boundsrangeslider").rangeSlider({ bounds: { min: 10, max: 90 } });
+      $("#dvrangeslider").rangeSlider({ defaultValues: { min: 13, max: 66 } });
+      $("#delayrangeslider").rangeSlider({ valueLabels: "change", delayOut: 4000 });
+      $("#durationrangeslider").rangeSlider({ valueLabels: "change", durationIn: 1000, durationOut: 1000 });
+      $("#disabledrangeslider").rangeSlider({ enabled: false });
+      $("#steprangeslider").rangeSlider({ step: 10 });
+      $("#labelsrangeslider").rangeSlider({ valueLabels: "hide" });
+      $("#simlescalesrangeslider").rangeSlider({
+      scales: [
+      // Primary scale
+      {
+      first: function (val) { return val; },
+      next: function (val) { return val + 10; },
+      stop: function (val) { return false; },
+      label: function (val) { return val; },
+      format: function (tickContainer, tickStart, tickEnd) {
+      tickContainer.addClass("myCustomClass");
+      }
+      },
+      // Secondary scale
+      {
+      first: function (val) { return val; },
+      next: function (val) {
+      if (val % 10 === 9) {
+      return val + 2;
+      }
+      return val + 1;
+      },
+      stop: function (val) { return false; },
+      label: function () { return null; }
+      }]
+      });
+      var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
+      $("#dateRulersExample").dateRangeSlider({
+      bounds: { min: new Date(2012, 0, 1), max: new Date(2012, 11, 31, 12, 59, 59) },
+      defaultValues: { min: new Date(2012, 1, 10), max: new Date(2012, 4, 22) },
+      scales: [{
+      first: function (value) { return value; },
+      end: function (value) { return value; },
+      next: function (value) {
+      var next = new Date(value);
+      return new Date(next.setMonth(value.getMonth() + 1));
+      },
+      label: function (value) {
+      return months[value.getMonth()];
+      },
+      format: function (tickContainer, tickStart, tickEnd) {
+      tickContainer.addClass("myCustomClass");
+      }
+      }]
+      });
+  // /Body

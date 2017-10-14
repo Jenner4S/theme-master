@@ -1,0 +1,2134 @@
+doctype html
+//
+  BeyondAdmin - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.6
+  Version: 1.6.0
+  Purchase: https://wrapbootstrap.com/theme/beyondadmin-adminapp-angularjs-mvc-WB06R48S4
+html(xmlns='http://www.w3.org/1999/xhtml')
+  // Head
+  head
+    meta(charset='utf-8')
+    |     
+    title Basic Elements
+    |     
+    meta(name='description', content='basic elements')
+    |     
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    |     
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    |     
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    |     
+    link(rel='shortcut icon', href='assets/img/favicon.png', type='image/x-icon')
+    // Basic Styles
+    link(href='assets/css/bootstrap.min.css', rel='stylesheet')
+    |     
+    link#bootstrap-rtl-link(href='', rel='stylesheet')
+    |     
+    link(href='assets/css/font-awesome.min.css', rel='stylesheet')
+    |     
+    link(href='assets/css/weather-icons.min.css', rel='stylesheet')
+    // Fonts
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300', rel='stylesheet', type='text/css')
+    // Beyond styles
+    link#beyond-link(href='assets/css/beyond.min.css', rel='stylesheet')
+    |     
+    link(href='assets/css/demo.min.css', rel='stylesheet')
+    |     
+    link(href='assets/css/typicons.min.css', rel='stylesheet')
+    |     
+    link(href='assets/css/animate.min.css', rel='stylesheet')
+    |     
+    link#skin-link(href='', rel='stylesheet', type='text/css')
+    // Skin Script: Place this script in head to load scripts for skins and rtl support
+    script(src='assets/js/skins.min.js')
+  // /Head
+  // Body
+  body
+    // Loading Container
+    .loading-container
+      .loader
+    // /Loading Container
+    // Navbar
+    .navbar
+      .navbar-inner
+        .navbar-container
+          // Navbar Barnd
+          .navbar-header.pull-left
+            a.navbar-brand(href='#')
+              small
+                img(src='assets/img/logo.png', alt='')
+          // /Navbar Barnd
+          // Sidebar Collapse
+          #sidebar-collapse.sidebar-collapse
+            i.collapse-icon.fa.fa-bars
+          // /Sidebar Collapse
+          // Account Area and Settings -
+          .navbar-header.pull-right
+            .navbar-account
+              ul.account-area
+                li
+                  a.dropdown-toggle(data-toggle='dropdown', title='Help', href='#')
+                    i.icon.fa.fa-warning
+                  // Notification Dropdown
+                  ul.pull-right.dropdown-menu.dropdown-arrow.dropdown-notifications
+                    li
+                      a(href='#')
+                        .clearfix
+                          .notification-icon
+                            i.fa.fa-phone.bg-themeprimary.white
+                          |                                                 
+                          .notification-body
+                            span.title Skype meeting with Patty
+                            |                                                     
+                            span.description 01:00 pm
+                          |                                                 
+                          .notification-extra
+                            i.fa.fa-clock-o.themeprimary
+                            |                                                     
+                            span.description office
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          .notification-icon
+                            i.fa.fa-check.bg-darkorange.white
+                          |                                                 
+                          .notification-body
+                            span.title Uncharted break
+                            |                                                     
+                            span.description 03:30 pm - 05:15 pm
+                          |                                                 
+                          .notification-extra
+                            i.fa.fa-clock-o.darkorange
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          .notification-icon
+                            i.fa.fa-gift.bg-warning.white
+                          |                                                 
+                          .notification-body
+                            span.title Kate birthday party
+                            |                                                     
+                            span.description 08:30 pm
+                          |                                                 
+                          .notification-extra
+                            i.fa.fa-calendar.warning
+                            |                                                     
+                            i.fa.fa-clock-o.warning
+                            |                                                     
+                            span.description at home
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          .notification-icon
+                            i.fa.fa-glass.bg-success.white
+                          |                                                 
+                          .notification-body
+                            span.title Dinner with friends
+                            |                                                     
+                            span.description 10:30 pm
+                    |                                     
+                    li.dropdown-footer
+                      span
+                        | Today, March 28
+                      |                                         
+                      span.pull-right
+                        | 10&deg;c
+                        i.wi.wi-cloudy
+                  // /Notification Dropdown
+                |                             
+                li
+                  a.dropdown-toggle(data-toggle='dropdown', title='Mails', href='#')
+                    i.icon.fa.fa-envelope
+                    |                                     
+                    span.badge 3
+                  // Messages Dropdown
+                  ul.pull-right.dropdown-menu.dropdown-arrow.dropdown-messages
+                    li
+                      a(href='#')
+                        img.message-avatar(src='assets/img/avatars/divyia.jpg', alt='Divyia Austin')
+                        |                                             
+                        .message
+                          span.message-sender
+                            | Divyia Austin
+                          |                                                 
+                          span.message-time
+                            | 2 minutes ago
+                          |                                                 
+                          span.message-subject
+                            | Here&apos;s the recipe for apple pie
+                          |                                                 
+                          span.message-body
+                            | to identify the sending application when the senders image is shown for the main icon
+                    |                                     
+                    li
+                      a(href='#')
+                        img.message-avatar(src='assets/img/avatars/bing.png', alt='Microsoft Bing')
+                        |                                             
+                        .message
+                          span.message-sender
+                            | Bing.com
+                          |                                                 
+                          span.message-time
+                            | Yesterday
+                          |                                                 
+                          span.message-subject
+                            | Bing Newsletter: The January Issue&rlm;
+                          |                                                 
+                          span.message-body
+                            | Discover new music just in time for the Grammy&reg; Awards.
+                    |                                     
+                    li
+                      a(href='#')
+                        img.message-avatar(src='assets/img/avatars/adam-jansen.jpg', alt='Divyia Austin')
+                        |                                             
+                        .message
+                          span.message-sender
+                            | Nicolas
+                          |                                                 
+                          span.message-time
+                            | Friday, September 22
+                          |                                                 
+                          span.message-subject
+                            | New 4K Cameras
+                          |                                                 
+                          span.message-body
+                            | The 4K revolution has come over the horizon and is reaching the general populous
+                  // /Messages Dropdown
+                |                             
+                li
+                  a.dropdown-toggle(data-toggle='dropdown', title='Tasks', href='#')
+                    i.icon.fa.fa-tasks
+                    |                                     
+                    span.badge 4
+                  // Tasks Dropdown
+                  ul.pull-right.dropdown-menu.dropdown-tasks.dropdown-arrow
+                    li.dropdown-header.bordered-darkorange
+                      i.fa.fa-tasks
+                      |                                         4 Tasks In Progress
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          span.pull-left Account Creation
+                          |                                                 
+                          span.pull-right 65%
+                        |                                             
+                        .progress.progress-xs
+                          .progress-bar(style='width:65%')
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          span.pull-left Profile Data
+                          |                                                 
+                          span.pull-right 35%
+                        |                                             
+                        .progress.progress-xs
+                          .progress-bar.progress-bar-success(style='width:35%')
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          span.pull-left Updating Resume
+                          |                                                 
+                          span.pull-right 75%
+                        |                                             
+                        .progress.progress-xs
+                          .progress-bar.progress-bar-darkorange(style='width:75%')
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          span.pull-left Adding Contacts
+                          |                                                 
+                          span.pull-right 10%
+                        |                                             
+                        .progress.progress-xs
+                          .progress-bar.progress-bar-warning(style='width:10%')
+                    |                                     
+                    li.dropdown-footer
+                      a(href='#')
+                        | See All Tasks
+                      |                                         
+                      button.btn.btn-xs.btn-default.shiny.darkorange.icon-only.pull-right
+                        i.fa.fa-check
+                  // /Tasks Dropdown
+                |                             
+                li
+                  a#chat-link.wave.in(title='Chat', href='#')
+                    i.icon.glyphicon.glyphicon-comment
+                |                             
+                li
+                  a.login-area.dropdown-toggle(data-toggle='dropdown')
+                    .avatar(title='View your public profile')
+                      img(src='assets/img/avatars/adam-jansen.jpg')
+                    |                                     
+                    section
+                      h2
+                        span.profile
+                          span David Stevenson
+                  // Login Area Dropdown
+                  ul.pull-right.dropdown-menu.dropdown-arrow.dropdown-login-area
+                    li.username
+                      a David Stevenson
+                    |                                     
+                    li.email
+                      a David.Stevenson@live.com
+                    // Avatar Area
+                    li
+                      .avatar-area
+                        img.avatar(src='assets/img/avatars/adam-jansen.jpg')
+                        |                                             
+                        span.caption Change Photo
+                    // Avatar Area
+                    li.edit
+                      a.pull-left(href='profile.html') Profile
+                      |                                         
+                      a.pull-right(href='#') Setting
+                    // Theme Selector Area
+                    li.theme-area
+                      ul#skin-changer.colorpicker
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#5DB2FF;', rel='assets/css/skins/blue.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#2dc3e8;', rel='assets/css/skins/azure.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#03B3B2;', rel='assets/css/skins/teal.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#53a93f;', rel='assets/css/skins/green.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#FF8F32;', rel='assets/css/skins/orange.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#cc324b;', rel='assets/css/skins/pink.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#AC193D;', rel='assets/css/skins/darkred.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#8C0095;', rel='assets/css/skins/purple.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#0072C6;', rel='assets/css/skins/darkblue.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#585858;', rel='assets/css/skins/gray.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#474544;', rel='assets/css/skins/black.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#001940;', rel='assets/css/skins/deepblue.min.css')
+                    // /Theme Selector Area
+                    li.dropdown-footer
+                      a(href='login.html')
+                        | Sign out
+                  // /Login Area Dropdown
+                // /Account Area
+                //
+                  Note: notice that setting div must start right after account area list.
+                  no space must be between these elements
+                // Settings
+              .setting
+                a#btn-setting(title='Setting', href='#')
+                  i.icon.glyphicon.glyphicon-cog
+              .setting-container
+                label
+                  input#checkbox_fixednavbar(type='checkbox')
+                  |                                 
+                  span.text Fixed Navbar
+                |                             
+                label
+                  input#checkbox_fixedsidebar(type='checkbox')
+                  |                                 
+                  span.text Fixed SideBar
+                |                             
+                label
+                  input#checkbox_fixedbreadcrumbs(type='checkbox')
+                  |                                 
+                  span.text Fixed BreadCrumbs
+                |                             
+                label
+                  input#checkbox_fixedheader(type='checkbox')
+                  |                                 
+                  span.text Fixed Header
+              // Settings
+          // /Account Area and Settings
+    // /Navbar
+    // Main Container
+    .main-container.container-fluid
+      // Page Container
+      .page-container
+        // Page Sidebar
+        #sidebar.page-sidebar
+          // Page Sidebar Header
+          .sidebar-header-wrapper
+            input.searchinput(type='text')
+            |                     
+            i.searchicon.fa.fa-search
+            |                     
+            .searchhelper Search Reports, Charts, Emails or Notifications
+          // /Page Sidebar Header
+          // Sidebar Menu
+          ul.nav.sidebar-menu
+            // Dashboard
+            li
+              a(href='index.html')
+                i.menu-icon.glyphicon.glyphicon-home
+                |                             
+                span.menu-text  Dashboard 
+            // Databoxes
+            li
+              a(href='databoxes.html')
+                i.menu-icon.glyphicon.glyphicon-tasks
+                |                             
+                span.menu-text  Data Boxes 
+            // Widgets
+            li
+              a(href='widgets.html')
+                i.menu-icon.fa.fa-th
+                |                             
+                span.menu-text  Widgets 
+            // UI Elements
+            li.active.open
+              a.menu-dropdown(href='#')
+                i.menu-icon.fa.fa-desktop
+                |                             
+                span.menu-text  Elements 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li.active
+                  a(href='elements.html')
+                    span.menu-text Basic Elements
+                |                             
+                li
+                  a.menu-dropdown(href='#')
+                    span.menu-text
+                      | Icons
+                    |                                     
+                    i.menu-expand
+                  |                                 
+                  ul.submenu
+                    li
+                      a(href='font-awesome.html')
+                        i.menu-icon.fa.fa-rocket
+                        |                                             
+                        span.menu-text Font Awesome
+                    |                                     
+                    li
+                      a(href='glyph-icons.html')
+                        i.menu-icon.glyphicon.glyphicon-stats
+                        |                                             
+                        span.menu-text Glyph Icons
+                    |                                     
+                    li
+                      a(href='typicon.html')
+                        i.menu-icon.typcn.typcn-location-outline
+                        |                                             
+                        span.menu-text  Typicons
+                    |                                     
+                    li
+                      a(href='weather-icons.html')
+                        i.menu-icon.wi.wi-hot
+                        |                                             
+                        span.menu-text Weather Icons
+                |                             
+                li
+                  a(href='tabs.html')
+                    span.menu-text Tabs &amp; Accordions
+                |                             
+                li
+                  a(href='alerts.html')
+                    span.menu-text Alerts &amp; Tooltips
+                |                             
+                li
+                  a(href='modals.html')
+                    span.menu-text Modals &amp; Wells
+                |                             
+                li
+                  a(href='buttons.html')
+                    span.menu-text Buttons
+                |                             
+                li
+                  a(href='nestable-list.html')
+                    span.menu-text  Nestable List
+                |                             
+                li
+                  a(href='treeview.html')
+                    span.menu-text Treeview
+            // Tables
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.fa.fa-table
+                |                             
+                span.menu-text  Tables 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='tables-simple.html')
+                    span.menu-text Simple &amp; Responsive
+                |                             
+                li
+                  a(href='tables-data.html')
+                    span.menu-text Data Tables
+            // Forms
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.fa.fa-pencil-square-o
+                |                             
+                span.menu-text  Forms 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='form-layouts.html')
+                    span.menu-text Form Layouts
+                |                             
+                li
+                  a(href='form-inputs.html')
+                    span.menu-text Form Inputs
+                |                             
+                li
+                  a(href='form-pickers.html')
+                    span.menu-text Data Pickers
+                |                             
+                li
+                  a(href='form-wizard.html')
+                    span.menu-text Wizard
+                |                             
+                li
+                  a(href='form-validation.html')
+                    span.menu-text Validation
+                |                             
+                li
+                  a(href='form-editors.html')
+                    span.menu-text Editors
+                |                             
+                li
+                  a(href='form-inputmask.html')
+                    span.menu-text Input Mask
+            // Charts
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.fa.fa-bar-chart-o
+                |                             
+                span.menu-text  Charts 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='flot.html')
+                    span.menu-text Flot Charts
+                |                             
+                li
+                  a(href='morris.html')
+                    span.menu-text  Morris Charts
+                |                             
+                li
+                  a(href='sparkline.html')
+                    span.menu-text Sparkline Charts
+                |                             
+                li
+                  a(href='easypiecharts.html')
+                    span.menu-text Easy Pie Charts
+                |                             
+                li
+                  a(href='chartjs.html')
+                    span.menu-text  ChartJS
+            // Profile
+            li
+              a(href='profile.html')
+                i.menu-icon.fa.fa-picture-o
+                |                             
+                span.menu-text Profile
+            // Mail
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.fa.fa-envelope-o
+                |                             
+                span.menu-text  Mail 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='inbox.html')
+                    span.menu-text Inbox
+                |                             
+                li
+                  a(href='message-view.html')
+                    span.menu-text View Message
+                |                             
+                li
+                  a(href='message-compose.html')
+                    span.menu-text Compose Message
+            // Calendar
+            li
+              a(href='calendar.html')
+                i.menu-icon.fa.fa-calendar
+                |                             
+                span.menu-text
+                  | Calendar
+            // Pages
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.glyphicon.glyphicon-paperclip
+                |                             
+                span.menu-text  Pages 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='timeline.html')
+                    span.menu-text Timeline
+                |                             
+                li
+                  a(href='pricing.html')
+                    span.menu-text Pricing Tables
+                |                             
+                li
+                  a(href='invoice.html')
+                    span.menu-text Invoice
+                |                             
+                li
+                  a(href='login.html')
+                    span.menu-text Login
+                |                             
+                li
+                  a(href='register.html')
+                    span.menu-text Register
+                |                             
+                li
+                  a(href='lock.html')
+                    span.menu-text Lock Screen
+                |                             
+                li
+                  a(href='typography.html')
+                    span.menu-text  Typography 
+            // More Pages
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.glyphicon.glyphicon-link
+                |                             
+                span.menu-text
+                  | More Pages
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='error-404.html')
+                    span.menu-text Error 404
+                |                             
+                li
+                  a(href='error-500.html')
+                    span.menu-text  Error 500
+                |                             
+                li
+                  a(href='blank.html')
+                    span.menu-text Blank Page
+                |                             
+                li
+                  a(href='grid.html')
+                    span.menu-text  Grid
+                |                             
+                li
+                  a.menu-dropdown(href='#')
+                    span.menu-text
+                      | Multi Level Menu
+                    |                                     
+                    i.menu-expand
+                  |                                 
+                  ul.submenu
+                    li
+                      a(href='#')
+                        i.menu-icon.fa.fa-camera
+                        |                                             
+                        span.menu-text Level 3
+                    |                                     
+                    li
+                      a.menu-dropdown(href='#')
+                        i.menu-icon.fa.fa-asterisk
+                        |                                             
+                        span.menu-text
+                          | Level 4
+                        |                                             
+                        i.menu-expand
+                      |                                         
+                      ul.submenu
+                        li
+                          a(href='#')
+                            i.menu-icon.fa.fa-bolt
+                            |                                                     
+                            span.menu-text Some Item
+                        |                                             
+                        li
+                          a(href='#')
+                            i.menu-icon.fa.fa-bug
+                            |                                                     
+                            span.menu-text Another Item
+            // Right to Left
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.fa.fa-align-right
+                |                             
+                span.menu-text  Right to Left 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a
+                    span.menu-text RTL
+                    |                                     
+                    label.pull-right.margin-top-10
+                      input#rtl-changer.checkbox-slider.slider-icon.colored-primary(type='checkbox')
+                      |                                         
+                      span.text
+                |                             
+                li
+                  a(href='index-rtl-ar.html')
+                    span.menu-text Arabic Layout
+                |                             
+                li
+                  a(href='index-rtl-fa.html')
+                    span.menu-text Persian Layout
+            |                     
+            li
+              a(href='versions.html')
+                i.menu-icon.glyphicon.glyphicon-fire.themesecondary
+                |                             
+                span.menu-text
+                  | BeyondAdmin Versions
+          // /Sidebar Menu
+        // /Page Sidebar
+        // Chat Bar
+        #chatbar.page-chatbar
+          .chatbar-contacts
+            .contacts-search
+              input.searchinput(type='text', placeholder='Search Contacts')
+              |                         
+              i.searchicon.fa.fa-search
+              |                         
+              .searchhelper Search Your Contacts and Chat History
+            |                     
+            ul.contacts-list
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/divyia.jpg')
+                |                             
+                .contact-info
+                  .contact-name Divyia Philips
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | last week
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/Nicolai-Larson.jpg')
+                |                             
+                .contact-info
+                  .contact-name Adam Johnson
+                  |                                 
+                  .contact-status
+                    .offline
+                    |                                     
+                    .status left 4 mins ago
+                  |                                 
+                  .last-chat-time
+                    | today
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/John-Smith.jpg')
+                |                             
+                .contact-info
+                  .contact-name John Smith
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | 1:57 am
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/Osvaldus-Valutis.jpg')
+                |                             
+                .contact-info
+                  .contact-name Osvaldus Valutis
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | today
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/Javi-Jimenez.jpg')
+                |                             
+                .contact-info
+                  .contact-name Javi Jimenez
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | today
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/Stephanie-Walter.jpg')
+                |                             
+                .contact-info
+                  .contact-name Stephanie Walter
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | yesterday
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/Sergey-Azovskiy.jpg')
+                |                             
+                .contact-info
+                  .contact-name Sergey Azovskiy
+                  |                                 
+                  .contact-status
+                    .offline
+                    |                                     
+                    .status offline since oct 24
+                  |                                 
+                  .last-chat-time
+                    | 22 oct
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/Lee-Munroe.jpg')
+                |                             
+                .contact-info
+                  .contact-name Lee Munroe
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | today
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/divyia.jpg')
+                |                             
+                .contact-info
+                  .contact-name Divyia Philips
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | last week
+          |                 
+          .chatbar-messages(style='display: none;')
+            .messages-contact
+              .contact-avatar
+                img(src='assets/img/avatars/divyia.jpg')
+              |                         
+              .contact-info
+                .contact-name Divyia Philips
+                |                             
+                .contact-status
+                  .online
+                  |                                 
+                  .status online
+                |                             
+                .last-chat-time
+                  | a moment ago
+                |                             
+                .back
+                  i.fa.fa-arrow-circle-left
+            |                     
+            ul.messages-list
+              li.message
+                .message-info
+                  .bullet
+                  |                                 
+                  .contact-name Me
+                  |                                 
+                  .message-time 10:14 AM, Today
+                |                             
+                .message-body
+                  | Hi, Hope all is good. Are we meeting today?
+              |                         
+              li.message.reply
+                .message-info
+                  .bullet
+                  |                                 
+                  .contact-name Divyia
+                  |                                 
+                  .message-time 10:15 AM, Today
+                |                             
+                .message-body
+                  | Hi, Hope all is good. Are we meeting today?
+              |                         
+              li.message
+                .message-info
+                  .bullet
+                  |                                 
+                  .contact-name Me
+                  |                                 
+                  .message-time 10:14 AM, Today
+                |                             
+                .message-body
+                  | Hi, Hope all is good. Are we meeting today?
+              |                         
+              li.message.reply
+                .message-info
+                  .bullet
+                  |                                 
+                  .contact-name Divyia
+                  |                                 
+                  .message-time 10:15 AM, Today
+                |                             
+                .message-body
+                  | Hi, Hope all is good. Are we meeting today?
+              |                         
+              li.message
+                .message-info
+                  .bullet
+                  |                                 
+                  .contact-name Me
+                  |                                 
+                  .message-time 10:14 AM, Today
+                |                             
+                .message-body
+                  | Hi, Hope all is good. Are we meeting today?
+              |                         
+              li.message.reply
+                .message-info
+                  .bullet
+                  |                                 
+                  .contact-name Divyia
+                  |                                 
+                  .message-time 10:15 AM, Today
+                |                             
+                .message-body
+                  | Hi, Hope all is good. Are we meeting today?
+            |                     
+            .send-message
+              span.input-icon.icon-right
+                textarea.form-control(rows='4', placeholder='Type your message')
+                |                             
+                i.fa.fa-camera.themeprimary
+        // /Chat Bar
+        // Page Content
+        .page-content
+          // Page Breadcrumb
+          .page-breadcrumbs
+            ul.breadcrumb
+              li
+                i.fa.fa-home
+                |                             
+                a(href='#') Home
+              |                         
+              li
+                a(href='#') Elements
+              |                         
+              li.active Basic Elements
+          // /Page Breadcrumb
+          // Page Header
+          .page-header.position-relative
+            .header-title
+              h1
+                | UI Elements
+                small
+                  i.fa.fa-angle-right
+                  |                                 Basics
+            // Header Buttons
+            .header-buttons
+              a.sidebar-toggler(href='#')
+                i.fa.fa-arrows-h
+              |                         
+              a#refresh-toggler.refresh(href='')
+                i.glyphicon.glyphicon-refresh
+              |                         
+              a#fullscreen-toggler.fullscreen(href='#')
+                i.glyphicon.glyphicon-fullscreen
+            // Header Buttons End
+          // /Page Header
+          // Page Body
+          .page-body
+            .row
+              .col-lg-12.col-sm-12.col-xs-12
+                h5.row-title
+                  i.fa.fa-tags.blue
+                  | Labels &amp; Badges
+                |                             
+                .row
+                  .col-lg-6.col-sm-6.col-xs-12
+                    .well.with-header
+                      .header.bordered-purple Default Labels &amp; Badges
+                      |                                         
+                      .labels-container
+                        h6 Labels
+                        |                                             
+                        span.label.label-default
+                          | Default
+                        |                                             
+                        span.label.label-primary
+                          | Primary
+                        |                                             
+                        span.label.label-info
+                          | Info
+                        |                                             
+                        span.label.label-success
+                          | Success
+                        |                                             
+                        span.label.label-danger
+                          | Danger
+                        |                                             
+                        span.label.label-warning
+                          | Warning
+                        |                                             
+                        span.label.label-sky
+                          | sky
+                        |                                             
+                        span.label.label-blueberry
+                          | blueberry
+                        |                                             
+                        span.label.label-yellow
+                          | yellow
+                        |                                             
+                        span.label.label-darkorange
+                          | darkorange
+                        |                                             
+                        span.label.label-magenta
+                          | magenta
+                        |                                             
+                        span.label.label-purple
+                          | purple
+                        |                                             
+                        span.label.label-maroon
+                          | maroon
+                        |                                             
+                        span.label.label-darkpink
+                          | darkpink
+                        |                                             
+                        span.label.label-pink
+                          | pink
+                        |                                             
+                        span.label.label-azure
+                          | azure
+                        |                                             
+                        span.label.label-orange
+                          | orange
+                      |                                         
+                      hr.wide
+                      |                                         
+                      .Badges-container
+                        h6 Badges
+                        |                                             
+                        span.badge.badge-default
+                          | 1
+                        |                                             
+                        span.badge.badge-primary
+                          | 2
+                        |                                             
+                        span.badge.badge-info
+                          | 3
+                        |                                             
+                        span.badge.badge-success
+                          | 4
+                        |                                             
+                        span.badge.badge-danger
+                          | 5
+                        |                                             
+                        span.badge.badge-warning
+                          | 6
+                        |                                             
+                        span.badge.badge-sky
+                          | 7
+                        |                                             
+                        span.badge.badge-blueberry
+                          | 8
+                        |                                             
+                        span.badge.badge-yellow
+                          | 9
+                        |                                             
+                        span.badge.badge-darkorange
+                          | 0
+                        |                                             
+                        span.badge.badge-magenta
+                          | 1
+                        |                                             
+                        span.badge.badge-purple
+                          | 2
+                        |                                             
+                        span.badge.badge-maroon
+                          | 3
+                        |                                             
+                        span.badge.badge-darkpink
+                          | 4
+                        |                                             
+                        span.badge.badge-pink
+                          | 5
+                        |                                             
+                        span.badge.badge-azure
+                          | 6
+                        |                                             
+                        span.badge.badge-orange
+                          | 7
+                      |                                         
+                      hr.wide
+                      |                                         
+                      .Badges-container
+                        h6 Square Badges
+                        |                                             
+                        span.badge.badge-default.badge-square
+                          | 1
+                        |                                             
+                        span.badge.badge-primary.badge-square
+                          | 2
+                        |                                             
+                        span.badge.badge-info.badge-square
+                          | 3
+                        |                                             
+                        span.badge.badge-success.badge-square
+                          | 4
+                        |                                             
+                        span.badge.badge-danger.badge-square
+                          | 5
+                        |                                             
+                        span.badge.badge-warning.badge-square
+                          | 6
+                        |                                             
+                        span.badge.badge-sky.badge-square
+                          | 7
+                        |                                             
+                        span.badge.badge-blueberry.badge-square
+                          | 8
+                        |                                             
+                        span.badge.badge-yellow.badge-square
+                          | 9
+                        |                                             
+                        span.badge.badge-darkorange.badge-square
+                          | 0
+                        |                                             
+                        span.badge.badge-magenta.badge-square
+                          | 1
+                        |                                             
+                        span.badge.badge-purple.badge-square
+                          | 2
+                        |                                             
+                        span.badge.badge-maroon.badge-square
+                          | 3
+                        |                                             
+                        span.badge.badge-darkpink.badge-square
+                          | 4
+                        |                                             
+                        span.badge.badge-pink.badge-square
+                          | 5
+                        |                                             
+                        span.badge.badge-azure.badge-square
+                          | 6
+                        |                                             
+                        span.badge.badge-orange.badge-square
+                          | 7
+                  |                                 
+                  .col-lg-6.col-sm-6.col-xs-12
+                    .well.with-header
+                      .header.bordered-sky Graded Labels &amp; Badges
+                      |                                         
+                      .labels-container
+                        h6 Labels
+                        |                                             
+                        span.label.label-default.graded
+                          | Default
+                        |                                             
+                        span.label.label-primary.graded
+                          | Primary
+                        |                                             
+                        span.label.label-info.graded
+                          | Info
+                        |                                             
+                        span.label.label-success.graded
+                          | Success
+                        |                                             
+                        span.label.label-danger.graded
+                          | Danger
+                        |                                             
+                        span.label.label-warning.graded
+                          | Warning
+                        |                                             
+                        span.label.label-sky.graded
+                          | sky
+                        |                                             
+                        span.label.label-blueberry.graded
+                          | blueberry
+                        |                                             
+                        span.label.label-yellow.graded
+                          | yellow
+                        |                                             
+                        span.label.label-darkorange.graded
+                          | darkorange
+                        |                                             
+                        span.label.label-magenta.graded
+                          | magenta
+                        |                                             
+                        span.label.label-purple.graded
+                          | purple
+                        |                                             
+                        span.label.label-maroon.graded
+                          | maroon
+                        |                                             
+                        span.label.label-darkpink.graded
+                          | darkpink
+                        |                                             
+                        span.label.label-pink.graded
+                          | pink
+                        |                                             
+                        span.label.label-azure.graded
+                          | azure
+                        |                                             
+                        span.label.label-orange.graded
+                          | orange
+                      |                                         
+                      hr.wide
+                      |                                         
+                      .Badges-container
+                        h6 Badges
+                        |                                             
+                        span.badge.badge-default.graded
+                          | 1
+                        |                                             
+                        span.badge.badge-primary.graded
+                          | 2
+                        |                                             
+                        span.badge.badge-info.graded
+                          | 3
+                        |                                             
+                        span.badge.badge-success.graded
+                          | 4
+                        |                                             
+                        span.badge.badge-danger.graded
+                          | 5
+                        |                                             
+                        span.badge.badge-warning.graded
+                          | 6
+                        |                                             
+                        span.badge.badge-sky.graded
+                          | 7
+                        |                                             
+                        span.badge.badge-blueberry.graded
+                          | 8
+                        |                                             
+                        span.badge.badge-yellow.graded
+                          | 9
+                        |                                             
+                        span.badge.badge-darkorange.graded
+                          | 0
+                        |                                             
+                        span.badge.badge-magenta.graded
+                          | 1
+                        |                                             
+                        span.badge.badge-purple.graded
+                          | 2
+                        |                                             
+                        span.badge.badge-maroon.graded
+                          | 3
+                        |                                             
+                        span.badge.badge-darkpink.graded
+                          | 4
+                        |                                             
+                        span.badge.badge-pink.graded
+                          | 5
+                        |                                             
+                        span.badge.badge-azure.graded
+                          | 6
+                        |                                             
+                        span.badge.badge-orange.graded
+                          | 7
+                      |                                         
+                      hr.wide
+                      |                                         
+                      .Badges-container
+                        h6 Square Badges
+                        |                                             
+                        span.badge.badge-default.badge-square.graded
+                          | 1
+                        |                                             
+                        span.badge.badge-primary.badge-square.graded
+                          | 2
+                        |                                             
+                        span.badge.badge-info.badge-square.graded
+                          | 3
+                        |                                             
+                        span.badge.badge-success.badge-square.graded
+                          | 4
+                        |                                             
+                        span.badge.badge-danger.badge-square.graded
+                          | 5
+                        |                                             
+                        span.badge.badge-warning.badge-square.graded
+                          | 6
+                        |                                             
+                        span.badge.badge-sky.badge-square.graded
+                          | 7
+                        |                                             
+                        span.badge.badge-blueberry.badge-square.graded
+                          | 8
+                        |                                             
+                        span.badge.badge-yellow.badge-square.graded
+                          | 9
+                        |                                             
+                        span.badge.badge-darkorange.badge-square.graded
+                          | 0
+                        |                                             
+                        span.badge.badge-magenta.badge-square.graded
+                          | 1
+                        |                                             
+                        span.badge.badge-purple.badge-square.graded
+                          | 2
+                        |                                             
+                        span.badge.badge-maroon.badge-square.graded
+                          | 3
+                        |                                             
+                        span.badge.badge-darkpink.badge-square.graded
+                          | 4
+                        |                                             
+                        span.badge.badge-pink.badge-square.graded
+                          | 5
+                        |                                             
+                        span.badge.badge-azure.badge-square.graded
+                          | 6
+                        |                                             
+                        span.badge.badge-orange.badge-square.graded
+                          | 7
+            |                     
+            .row
+              .col-lg-12.col-sm-12.col-xs-12
+                h5.row-title.before-darkorange
+                  i.fa.fa-list-alt.darkorange
+                  | DropDowns
+                |                             
+                .row
+                  .col-lg-3.col-sm-6.col-xs-12
+                    .well.with-header
+                      .header.bordered-blue Default DropDown
+                      |                                         
+                      .dropdown-container
+                        .dropdown-preview
+                          ul.dropdown-menu
+                            li
+                              a(href='#', tabindex='-1') Action
+                            |                                                     
+                            li
+                              a(href='#', tabindex='-1') Another action
+                            |                                                     
+                            li
+                              a(href='#', tabindex='-1') Something else here
+                            |                                                     
+                            li.divider
+                            |                                                     
+                            li
+                              a(href='#', tabindex='-1') Separated link
+                            |                                                     
+                            li
+                              a(href='#', tabindex='-1') Another link
+                  |                                 
+                  .col-lg-3.col-sm-6.col-xs-12
+                    .well.with-header
+                      .header.bordered-darkorange Multi Level DropDown
+                      |                                         
+                      .dropdown-container
+                        .dropdown-preview
+                          ul.dropdown-menu.dropdown-darkorange
+                            li
+                              a(href='#', tabindex='-1') Action
+                            |                                                     
+                            li
+                              a(href='#', tabindex='-1') Another action
+                            |                                                     
+                            li
+                              a(href='#', tabindex='-1') Something else here
+                            |                                                     
+                            li.divider
+                            |                                                     
+                            li.dropdown-hover
+                              a.clearfix(href='#', tabindex='-1')
+                                span.pull-left More options
+                                |                                                             
+                                i.dropdown-expand.fa.fa-angle-right
+                              |                                                         
+                              ul.dropdown-menu.dropdown-danger
+                                li
+                                  a(href='#', tabindex='-1') Second level link
+                                |                                                             
+                                li
+                                  a(href='#', tabindex='-1') Second level link
+                                |                                                             
+                                li
+                                  a(href='#', tabindex='-1') Second level link
+                                |                                                             
+                                li
+                                  a(href='#', tabindex='-1') Second level link
+                                |                                                             
+                                li
+                                  a(href='#', tabindex='-1') Second level link
+                            |                                                     
+                            li
+                              a(href='#', tabindex='-1') Another Option
+                  |                                 
+                  .col-lg-3.col-sm-6.col-xs-12
+                    .well.with-header
+                      .header.bordered-palegreen DropDown With Icons
+                      |                                         
+                      .dropdown-container
+                        .dropdown-preview
+                          ul.dropdown-menu.dropdown-palegreen
+                            li
+                              a(href='#', tabindex='-1')
+                                i.dropdown-icon.fa.fa-camera
+                                |                                                             Gallery
+                            |                                                     
+                            li
+                              a(href='#', tabindex='-1')
+                                i.dropdown-icon.fa.fa-envelope
+                                |                                                             Inbox
+                            |                                                     
+                            li
+                              a(href='#', tabindex='-1')
+                                i.dropdown-icon.fa.fa-cloud-download
+                                |                                                             Download
+                            |                                                     
+                            li.divider
+                            |                                                     
+                            li
+                              a(href='#', tabindex='-1')
+                                i.dropdown-icon.glyphicon.glyphicon-cog
+                                |                                                             Settings
+                            |                                                     
+                            li
+                              a(href='#', tabindex='-1')
+                                i.dropdown-icon.glyphicon.glyphicon-log-out
+                                |                                                             Log Out
+                  |                                 
+                  .col-lg-3.col-sm-6.col-xs-12
+                    .well.with-header
+                      .header.bordered-yellow DropDown With Labels &amp; Badges
+                      |                                         
+                      .dropdown-container
+                        .dropdown-preview
+                          ul.dropdown-menu.dropdown-purple
+                            li
+                              a(href='#', tabindex='-1')
+                                | Notifications
+                                span.label.label-darkorange.pull-right 2
+                            |                                                     
+                            li
+                              a(href='#', tabindex='-1')
+                                | Emails
+                                span.badge.badge-info.graded.pull-right 5
+                            |                                                     
+                            li
+                              a(href='#', tabindex='-1') Warnings
+                            |                                                     
+                            li
+                              a(href='#', tabindex='-1') Followers
+                            |                                                     
+                            li
+                              a(href='#', tabindex='-1') Issues
+            |                     
+            .row
+              .col-lg-12.col-sm-12.col-xs-12
+                .well.with-header.with-footer
+                  .header.bordered-blue Colored DropDown Buttons
+                  |                                 
+                  #dropdownbuttons
+                    .btn-group
+                      a.btn.btn-default(href='javascript:void(0);') Default
+                      |                                         
+                      a.btn.btn-default.dropdown-toggle(data-toggle='dropdown', href='javascript:void(0);')
+                        i.fa.fa-angle-down
+                      |                                         
+                      ul.dropdown-menu
+                        li
+                          a(href='javascript:void(0);') Action
+                        |                                             
+                        li
+                          a(href='javascript:void(0);') Another action
+                        |                                             
+                        li
+                          a(href='javascript:void(0);') Something else here
+                        |                                             
+                        li.divider
+                        |                                             
+                        li
+                          a(href='javascript:void(0);') Separated link
+                    |                                     
+                    .btn-group
+                      a.btn.btn-info(href='javascript:void(0);') info
+                      |                                         
+                      a.btn.btn-info.dropdown-toggle(data-toggle='dropdown', href='javascript:void(0);')
+                        i.fa.fa-angle-down
+                      |                                         
+                      ul.dropdown-menu.dropdown-info
+                        li
+                          a(href='javascript:void(0);') Action
+                        |                                             
+                        li
+                          a(href='javascript:void(0);') Another action
+                        |                                             
+                        li
+                          a(href='javascript:void(0);') Something else here
+                        |                                             
+                        li.divider
+                        |                                             
+                        li
+                          a(href='javascript:void(0);') Separated link
+                    |                                     
+                    .btn-group
+                      a.btn.btn-primary(href='javascript:void(0);') Primary
+                      |                                         
+                      a.btn.btn-primary.dropdown-toggle(data-toggle='dropdown', href='javascript:void(0);')
+                        i.fa.fa-angle-down
+                      |                                         
+                      ul.dropdown-menu.dropdown-primary
+                        li
+                          a(href='javascript:void(0);') Action
+                        |                                             
+                        li
+                          a(href='javascript:void(0);') Another action
+                        |                                             
+                        li
+                          a(href='javascript:void(0);') Something else here
+                        |                                             
+                        li.divider
+                        |                                             
+                        li
+                          a(href='javascript:void(0);') Separated link
+                    |                                     
+                    .btn-group
+                      a.btn.btn-success(href='javascript:void(0);') Success
+                      |                                         
+                      a.btn.btn-success.dropdown-toggle(data-toggle='dropdown', href='javascript:void(0);')
+                        i.fa.fa-angle-down
+                      |                                         
+                      ul.dropdown-menu.dropdown-success
+                        li
+                          a(href='javascript:void(0);') Action
+                        |                                             
+                        li
+                          a(href='javascript:void(0);') Another action
+                        |                                             
+                        li
+                          a(href='javascript:void(0);') Something else here
+                        |                                             
+                        li.divider
+                        |                                             
+                        li
+                          a(href='javascript:void(0);') Separated link
+                    |                                     
+                    .btn-group
+                      a.btn.btn-warning(href='javascript:void(0);') Warning
+                      |                                         
+                      a.btn.btn-warning.dropdown-toggle(data-toggle='dropdown', href='javascript:void(0);')
+                        i.fa.fa-angle-down
+                      |                                         
+                      ul.dropdown-menu.dropdown-warning
+                        li
+                          a(href='javascript:void(0);') Action
+                        |                                             
+                        li
+                          a(href='javascript:void(0);') Another action
+                        |                                             
+                        li
+                          a(href='javascript:void(0);') Something else here
+                        |                                             
+                        li.divider
+                        |                                             
+                        li
+                          a(href='javascript:void(0);') Separated link
+                    |                                     
+                    .btn-group
+                      a.btn.btn-danger(href='javascript:void(0);') Danger
+                      |                                         
+                      a.btn.btn-danger.dropdown-toggle(data-toggle='dropdown', href='javascript:void(0);')
+                        i.fa.fa-angle-down
+                      |                                         
+                      ul.dropdown-menu.dropdown-danger
+                        li
+                          a(href='javascript:void(0);') Action
+                        |                                             
+                        li
+                          a(href='javascript:void(0);') Another action
+                        |                                             
+                        li
+                          a(href='javascript:void(0);') Something else here
+                        |                                             
+                        li.divider
+                        |                                             
+                        li
+                          a(href='javascript:void(0);') Separated link
+                    |                                     
+                    .btn-group
+                      a.btn.btn-default(href='javascript:void(0);') Inverse
+                      |                                         
+                      a.btn.btn-default.dropdown-toggle(data-toggle='dropdown', href='javascript:void(0);')
+                        i.fa.fa-angle-down
+                      |                                         
+                      ul.dropdown-menu.dropdown-inverse
+                        li
+                          a(href='javascript:void(0);') Action
+                        |                                             
+                        li
+                          a(href='javascript:void(0);') Another action
+                        |                                             
+                        li
+                          a(href='javascript:void(0);') Something else here
+                        |                                             
+                        li.divider
+                        |                                             
+                        li
+                          a(href='javascript:void(0);') Separated link
+                    |                                     
+                    .btn-group
+                      a.btn.btn-blue(href='javascript:void(0);') Blue
+                      |                                         
+                      a.btn.btn-blue.dropdown-toggle(data-toggle='dropdown', href='javascript:void(0);')
+                        i.fa.fa-angle-down
+                      |                                         
+                      ul.dropdown-menu.dropdown-blue
+                        li
+                          a(href='javascript:void(0);') Action
+                        |                                             
+                        li
+                          a(href='javascript:void(0);') Another action
+                        |                                             
+                        li
+                          a(href='javascript:void(0);') Something else here
+                        |                                             
+                        li.divider
+                        |                                             
+                        li
+                          a(href='javascript:void(0);') Separated link
+                    |                                     
+                    .btn-group
+                      a.btn.btn-maroon(href='javascript:void(0);') Blue
+                      |                                         
+                      a.btn.btn-maroon.dropdown-toggle(data-toggle='dropdown', href='javascript:void(0);')
+                        i.fa.fa-angle-down
+                      |                                         
+                      ul.dropdown-menu.dropdown-maroon
+                        li
+                          a(href='javascript:void(0);') Action
+                        |                                             
+                        li
+                          a(href='javascript:void(0);') Another action
+                        |                                             
+                        li
+                          a(href='javascript:void(0);') Something else here
+                        |                                             
+                        li.divider
+                        |                                             
+                        li
+                          a(href='javascript:void(0);') Separated link
+                    |                                     
+                    .btn-group
+                      a.btn.btn-darkorange(href='javascript:void(0);') Combined
+                      |                                         
+                      a.btn.btn-palegreen.dropdown-toggle(data-toggle='dropdown', href='javascript:void(0);')
+                        i.fa.fa-angle-down
+                      |                                         
+                      ul.dropdown-menu.dropdown-palegreen
+                        li
+                          a(href='javascript:void(0);') Action
+                        |                                             
+                        li
+                          a(href='javascript:void(0);') Another action
+                        |                                             
+                        li
+                          a(href='javascript:void(0);') Something else here
+                        |                                             
+                        li.divider
+                        |                                             
+                        li
+                          a(href='javascript:void(0);') Separated link
+                  |                                 
+                  .footer
+                    code class=&quot;dropdown-menu dropdown-info&quot;
+            |                     
+            .row
+              .col-lg-12.col-sm-12.col-xs-12
+                h5.row-title.before-success
+                  i.glyphicon.glyphicon-arrow-right.success
+                  | Progress Bars
+                |                             
+                .row
+                  .col-lg-6.col-sm-6.col-xs-12
+                    .well.with-header
+                      .header.bordered-purple Simple Progress Bars
+                      |                                         
+                      h6 Basic
+                      |                                         
+                      .progress
+                        .progress-bar.progress-bar-info(role='progressbar', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100', style='width: 20%')
+                          span.sr-only
+                            | 20% Complete
+                      |                                         
+                      .progress
+                        .progress-bar.progress-bar-warning(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%')
+                          span
+                            | 60% Complete (warning)
+                      |                                         
+                      .progress
+                        .progress-bar.progress-bar-danger(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 20%')
+                          span.sr-only
+                            | 80% Complete
+                      |                                         
+                      .progress
+                        .progress-bar.progress-bar-magenta(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 40%')
+                          span.sr-only
+                            | 80% Complete
+                      |                                         
+                      .progress
+                        .progress-bar.progress-bar-purple(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 60%')
+                          span.sr-only
+                            | 80% Complete
+                      |                                         
+                      .progress
+                        .progress-bar.progress-bar-maroon(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 80%')
+                          span.sr-only
+                            | 80% Complete
+                      |                                         
+                      hr.wide
+                      |                                         
+                      h6 Stripped
+                      |                                         
+                      .progress.progress-striped
+                        .progress-bar.progress-bar-palegreen(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='width: 40%')
+                          span.sr-only
+                            | 40% Complete (success)
+                      |                                         
+                      .progress.progress-striped
+                        .progress-bar.progress-bar-inverse(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='width: 40%')
+                          span.sr-only
+                            | 40% Complete (success)
+                      |                                         
+                      .progress.progress-striped
+                        .progress-bar.progress-bar-success(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='width: 40%')
+                          span.sr-only
+                            | 40% Complete (success)
+                      |                                         
+                      .progress.progress-striped
+                        .progress-bar.progress-bar-info(role='progressbar', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100', style='width: 20%')
+                          span.sr-only
+                            | 20% Complete
+                      |                                         
+                      .progress.progress-striped
+                        .progress-bar.progress-bar-warning(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%')
+                          span.sr-only
+                            | 60% Complete (warning)
+                      |                                         
+                      .progress.progress-striped
+                        .progress-bar.progress-bar-danger(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 80%')
+                          span.sr-only
+                            | 80% Complete (danger)
+                      |                                         
+                      hr.wide
+                      |                                         
+                      h6 Animated
+                      |                                         
+                      .progress.progress-striped.active
+                        .progress-bar.progress-bar-orange(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='width: 40%')
+                          span.sr-only
+                            | 40% Complete (success)
+                      |                                         
+                      .progress.progress-striped.active
+                        .progress-bar.progress-bar-inverse(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='width: 40%')
+                          span.sr-only
+                            | 40% Complete (success)
+                      |                                         
+                      .progress.progress-striped.active
+                        .progress-bar.progress-bar-success(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='width: 40%')
+                          span.sr-only
+                            | 40% Complete (success)
+                      |                                         
+                      .progress.progress-striped.active
+                        .progress-bar.progress-bar-info(role='progressbar', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100', style='width: 20%')
+                          span.sr-only
+                            | 20% Complete
+                      |                                         
+                      .progress.progress-striped.active
+                        .progress-bar.progress-bar-warning(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%')
+                          span.sr-only
+                            | 60% Complete (warning)
+                      |                                         
+                      .progress.progress-striped.active
+                        .progress-bar.progress-bar-danger(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 80%')
+                          span.sr-only
+                            | 80% Complete (danger)
+                      |                                         
+                      hr.wide
+                      |                                         
+                      h6 Stacked
+                      |                                         
+                      .progress
+                        .progress-bar.progress-bar-success(style='width: 35%')
+                          span.sr-only
+                            | 35% Complete (success)
+                        |                                             
+                        .progress-bar.progress-bar-warning(style='width: 20%')
+                          span.sr-only
+                            | 20% Complete (warning)
+                        |                                             
+                        .progress-bar.progress-bar-danger(style='width: 10%')
+                          span.sr-only
+                            | 10% Complete (danger)
+                  |                                 
+                  .col-lg-6.col-sm-6.col-xs-12
+                    .well.with-header
+                      .header.bordered-warning Advances Progress Bars
+                      |                                         
+                      h6 Sizes
+                      |                                         
+                      .progress.progress-xxs
+                        .progress-bar.progress-bar-info(role='progressbar', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100', style='width: 20%')
+                          span.sr-only
+                            | 20% Complete
+                      |                                         
+                      .progress.progress-xs
+                        .progress-bar.progress-bar-warning(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%')
+                      |                                         
+                      .progress.progress-sm
+                        .progress-bar.progress-bar-danger(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 20%')
+                          span.sr-only
+                            | 80% Complete
+                      |                                         
+                      .progress
+                        .progress-bar.progress-bar-magenta(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 40%')
+                          span.sr-only
+                            | 80% Complete
+                      |                                         
+                      .progress.progress-lg
+                        .progress-bar.progress-bar-purple(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 60%')
+                          span.sr-only
+                            | 80% Complete
+                      |                                         
+                      .progress.progress-xlg
+                        .progress-bar.progress-bar-maroon(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 80%')
+                          span.sr-only
+                            | 80% Complete
+                      |                                         
+                      hr.wide
+                      |                                         
+                      h6 Bordered
+                      |                                         
+                      .progress.progress-xxs.progress-bordered
+                        .progress-bar.progress-bar-inverse(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='width: 30%')
+                          span.sr-only
+                            | 40% Complete (success)
+                      |                                         
+                      .progress.progress-xs.progress-bordered
+                        .progress-bar.progress-bar-silver(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='width: 20%')
+                          span.sr-only
+                            | 30% Complete (success)
+                      |                                         
+                      .progress.progress-sm.progress-bordered
+                        .progress-bar.progress-bar-blue(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='width: 10%')
+                          span.sr-only
+                            | 20% Complete (success)
+                      |                                         
+                      .progress.progress-bordered
+                        .progress-bar.progress-bar-blueberry(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='width: 60%')
+                          span.sr-only
+                            | 20% Complete (success)
+                      |                                         
+                      .progress.progress-lg.progress-bordered
+                        .progress-bar.progress-bar-darkorange(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='width: 20%')
+                          span
+                            | 20%
+                      |                                         
+                      .progress.progress-xlg.progress-striped.progress-bordered
+                        .progress-bar.progress-bar-magenta(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='width: 40%')
+                          span.sr-only
+                            | 40%
+                      |                                         
+                      hr.wide
+                      |                                         
+                      h6 Right Aligned
+                      |                                         
+                      .progress.progress-right
+                        .progress-bar.progress-bar-blue(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='width: 40%')
+                          span.sr-only
+                            | 40% Complete (success)
+                      |                                         
+                      hr.wide
+                      |                                         
+                      h6 Without Radius Border
+                      |                                         
+                      .progress.progress-no-radius
+                        .progress-bar.progress-bar-inverse(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='width: 40%')
+                          span.sr-only
+                            | 40% Complete (success)
+                      |                                         
+                      hr.wide
+                      |                                         
+                      h6 Shadowed
+                      |                                         
+                      .progress.progress-shadowed
+                        .progress-bar.progress-bar-info(role='progressbar', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100', style='width: 20%')
+                          span.sr-only
+                            | 20% Complete
+                      |                                         
+                      .progress.progress-shadowed
+                        .progress-bar.progress-bar-warning(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%')
+                          span.sr-only
+                            | 60% Complete (warning)
+                      |                                         
+                      .progress.progress-shadowed
+                        .progress-bar.progress-bar-danger(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 80%')
+                          span.sr-only
+                            | 80% Complete (danger)
+                      |                                         
+                      hr.wide
+                      |                                         
+                      h6 Bordered &amp; Stacked
+                      |                                         
+                      .progress.progress-bordered
+                        .progress-bar.progress-bar-success(style='width: 35%')
+                          span.sr-only
+                            | 35% Complete (success)
+                        |                                             
+                        .progress-bar.progress-bar-warning(style='width: 20%')
+                          span.sr-only
+                            | 20% Complete (warning)
+                        |                                             
+                        .progress-bar.progress-bar-danger(style='width: 10%')
+                          span.sr-only
+                            | 10% Complete (danger)
+            |                     
+            .row
+              .col-lg-6.col-sm-6.col-xs-12
+                .well.with-header
+                  .header.bordered-warning Vertical Progress Bars
+                  |                                 
+                  .progress.progress-xlg.progress-vertical
+                    .progress-bar.progress-bar-blue(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='height: 40%')
+                      span
+                        | 40%
+                  |                                 
+                  .progress.progress-xlg.progress-striped.progress-vertical.progress-bottom
+                    .progress-bar.progress-bar-magenta(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='height: 40%')
+                      span
+                        | 40%
+                  |                                 
+                  .progress.progress-lg.progress-striped.progress-vertical.progress-bottom
+                    .progress-bar.progress-bar-magenta(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='height: 40%')
+                      span
+                        | 40%
+                  |                                 
+                  .progress.progress-sm.progress-striped.progress-vertical
+                    .progress-bar.progress-bar-magenta(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='height: 40%')
+                      span
+                        | 40%
+                  |                                 
+                  .progress.progress-xs.progress-vertical
+                    .progress-bar.progress-bar-blue(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='height: 50%')
+                      span
+                        | 40%
+                  |                                 
+                  .progress.progress-xxs.progress-vertical
+                    .progress-bar.progress-bar-maroon(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='height: 40%')
+                      span
+                        | 40%
+                  |                                 
+                  hr.wide
+                  |                                 
+                  h6 Bordered
+                  |                                 
+                  .progress.progress-xlg.progress-vertical.progress-bordered
+                    .progress-bar.progress-bar-blue(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='height: 40%')
+                      span
+                        | 40%
+                  |                                 
+                  .progress.progress-xlg.progress-striped.progress-vertical.progress-bottom.progress-bordered
+                    .progress-bar.progress-bar-magenta(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='height: 40%')
+                      span
+                        | 40%
+                  |                                 
+                  .progress.progress-lg.progress-striped.progress-vertical.progress-bottom.progress-bordered
+                    .progress-bar.progress-bar-magenta(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='height: 40%')
+                      span
+                        | 40%
+                  |                                 
+                  .progress.progress-sm.progress-striped.progress-vertical.progress-bordered
+                    .progress-bar.progress-bar-magenta(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='height: 40%')
+                      span
+                        | 40%
+                  |                                 
+                  .progress.progress-xs.progress-vertical.progress-bordered
+                    .progress-bar.progress-bar-blue(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='height: 50%')
+                      span
+                        | 40%
+                  |                                 
+                  .progress.progress-xxs.progress-vertical.progress-bordered
+                    .progress-bar.progress-bar-maroon(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='height: 40%')
+                      span
+                        | 40%
+              |                         
+              .col-lg-6.col-sm-6.col-xs-12
+                .well.with-header
+                  .header.bordered-lightred Pagination
+                  |                                 
+                  h6 Default
+                  |                                 
+                  ul.pagination
+                    li.disabled
+                      a(href='#') &laquo;
+                    |                                     
+                    li.active
+                      a(href='#')
+                        | 1 
+                        span.sr-only (current)
+                    |                                     
+                    li
+                      a(href='#') 2
+                    |                                     
+                    li
+                      a(href='#') 3
+                    |                                     
+                    li
+                      a(href='#') 4
+                    |                                     
+                    li
+                      a(href='#') 5
+                    |                                     
+                    li
+                      a(href='#') &raquo;
+                  |                                 
+                  hr.wide
+                  |                                 
+                  h6 Sizes
+                  |                                 
+                  div
+                    ul.pagination.pagination-lg
+                      li.disabled
+                        a(href='#') &laquo;
+                      |                                         
+                      li.active
+                        a(href='#')
+                          | 1 
+                          span.sr-only (current)
+                      |                                         
+                      li
+                        a(href='#') 2
+                      |                                         
+                      li
+                        a(href='#') 3
+                      |                                         
+                      li
+                        a(href='#') 4
+                      |                                         
+                      li
+                        a(href='#') 5
+                      |                                         
+                      li
+                        a(href='#') &raquo;
+                  |                                 
+                  div
+                    ul.pagination.pagination-sm
+                      li.disabled
+                        a(href='#') &laquo;
+                      |                                         
+                      li.active
+                        a(href='#')
+                          | 1 
+                          span.sr-only (current)
+                      |                                         
+                      li
+                        a(href='#') 2
+                      |                                         
+                      li
+                        a(href='#') 3
+                      |                                         
+                      li
+                        a(href='#') 4
+                      |                                         
+                      li
+                        a(href='#') 5
+                      |                                         
+                      li
+                        a(href='#') &raquo;
+                  |                                 
+                  hr.wide
+                  |                                 
+                  h6 Pager
+                  |                                 
+                  div
+                    ul.pager
+                      li.disabled
+                        a(href='#') &larr; Older
+                      |                                         
+                      li
+                        a(href='#') Newer &rarr;
+                  |                                 
+                  .horizontal-space
+                  |                                 
+                  hr.wide
+                  |                                 
+                  h6 Aligned Pager
+                  |                                 
+                  ul.pager
+                    li.previous
+                      a(href='#') &larr; Older
+                    |                                     
+                    li.next
+                      a(href='#') Newer &rarr;
+          // /Page Body
+        // /Page Content
+      // /Page Container
+      // Main Container
+    // Basic Scripts
+    script(src='assets/js/jquery.min.js')
+    |     
+    script(src='assets/js/bootstrap.min.js')
+    |     
+    script(src='assets/js/slimscroll/jquery.slimscroll.min.js')
+    // Beyond Scripts
+    script(src='assets/js/beyond.min.js')
+    // Page Related Scripts
+  // /Body

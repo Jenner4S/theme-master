@@ -1,0 +1,318 @@
+// Loading Container
+    .loading-container
+      .loader
+    // /Loading Container
+    // Navbar
+    .navbar
+      .navbar-inner
+        .navbar-container
+          // Navbar Barnd
+          .navbar-header.pull-left
+            a.navbar-brand(href='#')
+              small
+                img(src='assets/img/logo.png', alt='')
+          // /Navbar Barnd
+          // Sidebar Collapse
+          #sidebar-collapse.sidebar-collapse
+            i.collapse-icon.fa.fa-bars
+          // /Sidebar Collapse
+          // Account Area and Settings -
+          .navbar-header.pull-right
+            .navbar-account
+              ul.account-area
+                li
+                  a.dropdown-toggle(data-toggle='dropdown', title='Notifications', href='#')
+                    i.icon.fa.fa-warning
+                  // Notification Dropdown
+                  ul.pull-right.dropdown-menu.dropdown-arrow.dropdown-notifications
+                    li
+                      a(href='#')
+                        .clearfix
+                          .notification-icon
+                            i.fa.fa-phone.bg-themeprimary.white
+                          |                                                 
+                          .notification-body
+                            span.title Skype meeting with Patty
+                            |                                                     
+                            span.description 01:00 pm
+                          |                                                 
+                          .notification-extra
+                            i.fa.fa-clock-o.themeprimary
+                            |                                                     
+                            span.description office
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          .notification-icon
+                            i.fa.fa-check.bg-darkorange.white
+                          |                                                 
+                          .notification-body
+                            span.title Uncharted break
+                            |                                                     
+                            span.description 03:30 pm - 05:15 pm
+                          |                                                 
+                          .notification-extra
+                            i.fa.fa-clock-o.darkorange
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          .notification-icon
+                            i.fa.fa-gift.bg-warning.white
+                          |                                                 
+                          .notification-body
+                            span.title Kate birthday party
+                            |                                                     
+                            span.description 08:30 pm
+                          |                                                 
+                          .notification-extra
+                            i.fa.fa-calendar.warning
+                            |                                                     
+                            i.fa.fa-clock-o.warning
+                            |                                                     
+                            span.description at home
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          .notification-icon
+                            i.fa.fa-glass.bg-success.white
+                          |                                                 
+                          .notification-body
+                            span.title Dinner with friends
+                            |                                                     
+                            span.description 10:30 pm
+                    |                                     
+                    li.dropdown-footer
+                      span
+                        | Today, March 28
+                      |                                         
+                      span.pull-right
+                        | 10&deg;c
+                        i.wi.wi-cloudy
+                  // /Notification Dropdown
+                |                             
+                li
+                  a.dropdown-toggle(data-toggle='dropdown', title='Mails', href='#')
+                    i.icon.fa.fa-envelope
+                    |                                     
+                    span.badge 3
+                  // Messages Dropdown
+                  ul.pull-right.dropdown-menu.dropdown-arrow.dropdown-messages
+                    li
+                      a(href='#')
+                        img.message-avatar(src='assets/img/avatars/divyia.jpg', alt='Divyia Austin')
+                        |                                             
+                        .message
+                          span.message-sender
+                            | Divyia Austin
+                          |                                                 
+                          span.message-time
+                            | 2 minutes ago
+                          |                                                 
+                          span.message-subject
+                            | Here&apos;s the recipe for apple pie
+                          |                                                 
+                          span.message-body
+                            | to identify the sending application when the senders image is shown for the main icon
+                    |                                     
+                    li
+                      a(href='#')
+                        img.message-avatar(src='assets/img/avatars/bing.png', alt='Microsoft Bing')
+                        |                                             
+                        .message
+                          span.message-sender
+                            | Bing.com
+                          |                                                 
+                          span.message-time
+                            | Yesterday
+                          |                                                 
+                          span.message-subject
+                            | Bing Newsletter: The January Issue&rlm;
+                          |                                                 
+                          span.message-body
+                            | Discover new music just in time for the Grammy&reg; Awards.
+                    |                                     
+                    li
+                      a(href='#')
+                        img.message-avatar(src='assets/img/avatars/adam-jansen.jpg', alt='Divyia Austin')
+                        |                                             
+                        .message
+                          span.message-sender
+                            | Nicolas
+                          |                                                 
+                          span.message-time
+                            | Friday, September 22
+                          |                                                 
+                          span.message-subject
+                            | New 4K Cameras
+                          |                                                 
+                          span.message-body
+                            | The 4K revolution has come over the horizon and is reaching the general populous
+                  // /Messages Dropdown
+                |                             
+                li
+                  a.dropdown-toggle(data-toggle='dropdown', title='Tasks', href='#')
+                    i.icon.fa.fa-tasks
+                    |                                     
+                    span.badge 4
+                  // Tasks Dropdown
+                  ul.pull-right.dropdown-menu.dropdown-tasks.dropdown-arrow
+                    li.dropdown-header.bordered-darkorange
+                      i.fa.fa-tasks
+                      |                                         4 Tasks In Progress
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          span.pull-left Account Creation
+                          |                                                 
+                          span.pull-right 65%
+                        |                                             
+                        .progress.progress-xs
+                          .progress-bar(style='width:65%')
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          span.pull-left Profile Data
+                          |                                                 
+                          span.pull-right 35%
+                        |                                             
+                        .progress.progress-xs
+                          .progress-bar.progress-bar-success(style='width:35%')
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          span.pull-left Updating Resume
+                          |                                                 
+                          span.pull-right 75%
+                        |                                             
+                        .progress.progress-xs
+                          .progress-bar.progress-bar-darkorange(style='width:75%')
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          span.pull-left Adding Contacts
+                          |                                                 
+                          span.pull-right 10%
+                        |                                             
+                        .progress.progress-xs
+                          .progress-bar.progress-bar-warning(style='width:10%')
+                    |                                     
+                    li.dropdown-footer
+                      a(href='#')
+                        | See All Tasks
+                      |                                         
+                      button.btn.btn-xs.btn-default.shiny.darkorange.icon-only.pull-right
+                        i.fa.fa-check
+                  // /Tasks Dropdown
+                |                             
+                li
+                  a#chat-link.wave.in(title='Chat', href='#')
+                    i.icon.glyphicon.glyphicon-comment
+                |                             
+                li
+                  a.login-area.dropdown-toggle(data-toggle='dropdown')
+                    .avatar(title='View your public profile')
+                      img(src='assets/img/avatars/adam-jansen.jpg')
+                    |                                     
+                    section
+                      h2
+                        span.profile
+                          span David Stevenson
+                  // Login Area Dropdown
+                  ul.pull-right.dropdown-menu.dropdown-arrow.dropdown-login-area
+                    li.username
+                      a David Stevenson
+                    |                                     
+                    li.email
+                      a David.Stevenson@live.com
+                    // Avatar Area
+                    li
+                      .avatar-area
+                        img.avatar(src='assets/img/avatars/adam-jansen.jpg')
+                        |                                             
+                        span.caption Change Photo
+                    // Avatar Area
+                    li.edit
+                      a.pull-left(href='profile.html') Profile
+                      |                                         
+                      a.pull-right(href='#') Setting
+                    // Theme Selector Area
+                    li.theme-area
+                      ul#skin-changer.colorpicker
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#5DB2FF;', rel='assets/css/skins/blue.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#2dc3e8;', rel='assets/css/skins/azure.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#03B3B2;', rel='assets/css/skins/teal.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#53a93f;', rel='assets/css/skins/green.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#FF8F32;', rel='assets/css/skins/orange.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#cc324b;', rel='assets/css/skins/pink.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#AC193D;', rel='assets/css/skins/darkred.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#8C0095;', rel='assets/css/skins/purple.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#0072C6;', rel='assets/css/skins/darkblue.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#585858;', rel='assets/css/skins/gray.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#474544;', rel='assets/css/skins/black.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#001940;', rel='assets/css/skins/deepblue.min.css')
+                    // /Theme Selector Area
+                    li.dropdown-footer
+                      a(href='login.html')
+                        | Sign out
+                  // /Login Area Dropdown
+                // /Account Area
+                //
+                  Note: notice that setting div must start right after account area list.
+                  no space must be between these elements
+                // Settings
+              .setting
+                a#btn-setting(title='Setting', href='#')
+                  i.icon.glyphicon.glyphicon-cog
+              .setting-container
+                label
+                  input#checkbox_fixednavbar(type='checkbox')
+                  |                                 
+                  span.text Fixed Navbar
+                |                             
+                label
+                  input#checkbox_fixedsidebar(type='checkbox')
+                  |                                 
+                  span.text Fixed SideBar
+                |                             
+                label
+                  input#checkbox_fixedbreadcrumbs(type='checkbox')
+                  |                                 
+                  span.text Fixed BreadCrumbs
+                |                             
+                label
+                  input#checkbox_fixedheader(type='checkbox')
+                  |                                 
+                  span.text Fixed Header
+              // Settings
+          // /Account Area and Settings
+    // /Navbar

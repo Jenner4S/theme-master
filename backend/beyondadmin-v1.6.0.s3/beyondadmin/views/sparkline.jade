@@ -1,0 +1,1128 @@
+doctype html
+//
+  BeyondAdmin - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.6
+  Version: 1.6.0
+  Purchase: https://wrapbootstrap.com/theme/beyondadmin-adminapp-angularjs-mvc-WB06R48S4
+html(xmlns='http://www.w3.org/1999/xhtml')
+  // Head
+  head
+    meta(charset='utf-8')
+    |     
+    title Sparkline
+    |     
+    meta(name='description', content='sparkline charts')
+    |     
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    |     
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    |     
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    |     
+    link(rel='shortcut icon', href='assets/img/favicon.png', type='image/x-icon')
+    // Basic Styles
+    link(href='assets/css/bootstrap.min.css', rel='stylesheet')
+    |     
+    link#bootstrap-rtl-link(href='', rel='stylesheet')
+    |     
+    link(href='assets/css/font-awesome.min.css', rel='stylesheet')
+    |     
+    link(href='assets/css/weather-icons.min.css', rel='stylesheet')
+    // Fonts
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300', rel='stylesheet', type='text/css')
+    // Beyond styles
+    link#beyond-link(href='assets/css/beyond.min.css', rel='stylesheet')
+    |     
+    link(href='assets/css/demo.min.css', rel='stylesheet')
+    |     
+    link(href='assets/css/typicons.min.css', rel='stylesheet')
+    |     
+    link(href='assets/css/animate.min.css', rel='stylesheet')
+    |     
+    link#skin-link(href='', rel='stylesheet', type='text/css')
+    // Skin Script: Place this script in head to load scripts for skins and rtl support
+    script(src='assets/js/skins.min.js')
+  // /Head
+  // Body
+  body
+    // Loading Container
+    .loading-container
+      .loader
+    // /Loading Container
+    // Navbar
+    .navbar
+      .navbar-inner
+        .navbar-container
+          // Navbar Barnd
+          .navbar-header.pull-left
+            a.navbar-brand(href='#')
+              small
+                img(src='assets/img/logo.png', alt='')
+          // /Navbar Barnd
+          // Sidebar Collapse
+          #sidebar-collapse.sidebar-collapse
+            i.collapse-icon.fa.fa-bars
+          // /Sidebar Collapse
+          // Account Area and Settings -
+          .navbar-header.pull-right
+            .navbar-account
+              ul.account-area
+                li
+                  a.dropdown-toggle(data-toggle='dropdown', title='Help', href='#')
+                    i.icon.fa.fa-warning
+                  // Notification Dropdown
+                  ul.pull-right.dropdown-menu.dropdown-arrow.dropdown-notifications
+                    li
+                      a(href='#')
+                        .clearfix
+                          .notification-icon
+                            i.fa.fa-phone.bg-themeprimary.white
+                          |                                                 
+                          .notification-body
+                            span.title Skype meeting with Patty
+                            |                                                     
+                            span.description 01:00 pm
+                          |                                                 
+                          .notification-extra
+                            i.fa.fa-clock-o.themeprimary
+                            |                                                     
+                            span.description office
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          .notification-icon
+                            i.fa.fa-check.bg-darkorange.white
+                          |                                                 
+                          .notification-body
+                            span.title Uncharted break
+                            |                                                     
+                            span.description 03:30 pm - 05:15 pm
+                          |                                                 
+                          .notification-extra
+                            i.fa.fa-clock-o.darkorange
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          .notification-icon
+                            i.fa.fa-gift.bg-warning.white
+                          |                                                 
+                          .notification-body
+                            span.title Kate birthday party
+                            |                                                     
+                            span.description 08:30 pm
+                          |                                                 
+                          .notification-extra
+                            i.fa.fa-calendar.warning
+                            |                                                     
+                            i.fa.fa-clock-o.warning
+                            |                                                     
+                            span.description at home
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          .notification-icon
+                            i.fa.fa-glass.bg-success.white
+                          |                                                 
+                          .notification-body
+                            span.title Dinner with friends
+                            |                                                     
+                            span.description 10:30 pm
+                    |                                     
+                    li.dropdown-footer
+                      span
+                        | Today, March 28
+                      |                                         
+                      span.pull-right
+                        | 10&deg;c
+                        i.wi.wi-cloudy
+                  // /Notification Dropdown
+                |                             
+                li
+                  a.dropdown-toggle(data-toggle='dropdown', title='Mails', href='#')
+                    i.icon.fa.fa-envelope
+                    |                                     
+                    span.badge 3
+                  // Messages Dropdown
+                  ul.pull-right.dropdown-menu.dropdown-arrow.dropdown-messages
+                    li
+                      a(href='#')
+                        img.message-avatar(src='assets/img/avatars/divyia.jpg', alt='Divyia Austin')
+                        |                                             
+                        .message
+                          span.message-sender
+                            | Divyia Austin
+                          |                                                 
+                          span.message-time
+                            | 2 minutes ago
+                          |                                                 
+                          span.message-subject
+                            | Here&apos;s the recipe for apple pie
+                          |                                                 
+                          span.message-body
+                            | to identify the sending application when the senders image is shown for the main icon
+                    |                                     
+                    li
+                      a(href='#')
+                        img.message-avatar(src='assets/img/avatars/bing.png', alt='Microsoft Bing')
+                        |                                             
+                        .message
+                          span.message-sender
+                            | Bing.com
+                          |                                                 
+                          span.message-time
+                            | Yesterday
+                          |                                                 
+                          span.message-subject
+                            | Bing Newsletter: The January Issue&rlm;
+                          |                                                 
+                          span.message-body
+                            | Discover new music just in time for the Grammy&reg; Awards.
+                    |                                     
+                    li
+                      a(href='#')
+                        img.message-avatar(src='assets/img/avatars/adam-jansen.jpg', alt='Divyia Austin')
+                        |                                             
+                        .message
+                          span.message-sender
+                            | Nicolas
+                          |                                                 
+                          span.message-time
+                            | Friday, September 22
+                          |                                                 
+                          span.message-subject
+                            | New 4K Cameras
+                          |                                                 
+                          span.message-body
+                            | The 4K revolution has come over the horizon and is reaching the general populous
+                  // /Messages Dropdown
+                |                             
+                li
+                  a.dropdown-toggle(data-toggle='dropdown', title='Tasks', href='#')
+                    i.icon.fa.fa-tasks
+                    |                                     
+                    span.badge 4
+                  // Tasks Dropdown
+                  ul.pull-right.dropdown-menu.dropdown-tasks.dropdown-arrow
+                    li.dropdown-header.bordered-darkorange
+                      i.fa.fa-tasks
+                      |                                         4 Tasks In Progress
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          span.pull-left Account Creation
+                          |                                                 
+                          span.pull-right 65%
+                        |                                             
+                        .progress.progress-xs
+                          .progress-bar(style='width:65%')
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          span.pull-left Profile Data
+                          |                                                 
+                          span.pull-right 35%
+                        |                                             
+                        .progress.progress-xs
+                          .progress-bar.progress-bar-success(style='width:35%')
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          span.pull-left Updating Resume
+                          |                                                 
+                          span.pull-right 75%
+                        |                                             
+                        .progress.progress-xs
+                          .progress-bar.progress-bar-darkorange(style='width:75%')
+                    |                                     
+                    li
+                      a(href='#')
+                        .clearfix
+                          span.pull-left Adding Contacts
+                          |                                                 
+                          span.pull-right 10%
+                        |                                             
+                        .progress.progress-xs
+                          .progress-bar.progress-bar-warning(style='width:10%')
+                    |                                     
+                    li.dropdown-footer
+                      a(href='#')
+                        | See All Tasks
+                      |                                         
+                      button.btn.btn-xs.btn-default.shiny.darkorange.icon-only.pull-right
+                        i.fa.fa-check
+                  // /Tasks Dropdown
+                |                             
+                li
+                  a#chat-link.wave.in(title='Chat', href='#')
+                    i.icon.glyphicon.glyphicon-comment
+                |                             
+                li
+                  a.login-area.dropdown-toggle(data-toggle='dropdown')
+                    .avatar(title='View your public profile')
+                      img(src='assets/img/avatars/adam-jansen.jpg')
+                    |                                     
+                    section
+                      h2
+                        span.profile
+                          span David Stevenson
+                  // Login Area Dropdown
+                  ul.pull-right.dropdown-menu.dropdown-arrow.dropdown-login-area
+                    li.username
+                      a David Stevenson
+                    |                                     
+                    li.email
+                      a David.Stevenson@live.com
+                    // Avatar Area
+                    li
+                      .avatar-area
+                        img.avatar(src='assets/img/avatars/adam-jansen.jpg')
+                        |                                             
+                        span.caption Change Photo
+                    // Avatar Area
+                    li.edit
+                      a.pull-left(href='profile.html') Profile
+                      |                                         
+                      a.pull-right(href='#') Setting
+                    // Theme Selector Area
+                    li.theme-area
+                      ul#skin-changer.colorpicker
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#5DB2FF;', rel='assets/css/skins/blue.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#2dc3e8;', rel='assets/css/skins/azure.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#03B3B2;', rel='assets/css/skins/teal.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#53a93f;', rel='assets/css/skins/green.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#FF8F32;', rel='assets/css/skins/orange.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#cc324b;', rel='assets/css/skins/pink.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#AC193D;', rel='assets/css/skins/darkred.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#8C0095;', rel='assets/css/skins/purple.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#0072C6;', rel='assets/css/skins/darkblue.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#585858;', rel='assets/css/skins/gray.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#474544;', rel='assets/css/skins/black.min.css')
+                        |                                             
+                        li
+                          a.colorpick-btn(href='#', style='background-color:#001940;', rel='assets/css/skins/deepblue.min.css')
+                    // /Theme Selector Area
+                    li.dropdown-footer
+                      a(href='login.html')
+                        | Sign out
+                  // /Login Area Dropdown
+                // /Account Area
+                //
+                  Note: notice that setting div must start right after account area list.
+                  no space must be between these elements
+                // Settings
+              .setting
+                a#btn-setting(title='Setting', href='#')
+                  i.icon.glyphicon.glyphicon-cog
+              .setting-container
+                label
+                  input#checkbox_fixednavbar(type='checkbox')
+                  |                                 
+                  span.text Fixed Navbar
+                |                             
+                label
+                  input#checkbox_fixedsidebar(type='checkbox')
+                  |                                 
+                  span.text Fixed SideBar
+                |                             
+                label
+                  input#checkbox_fixedbreadcrumbs(type='checkbox')
+                  |                                 
+                  span.text Fixed BreadCrumbs
+                |                             
+                label
+                  input#checkbox_fixedheader(type='checkbox')
+                  |                                 
+                  span.text Fixed Header
+              // Settings
+          // /Account Area and Settings
+    // /Navbar
+    // Main Container
+    .main-container.container-fluid
+      // Page Container
+      .page-container
+        // Page Sidebar
+        #sidebar.page-sidebar
+          // Page Sidebar Header
+          .sidebar-header-wrapper
+            input.searchinput(type='text')
+            |                     
+            i.searchicon.fa.fa-search
+            |                     
+            .searchhelper Search Reports, Charts, Emails or Notifications
+          // /Page Sidebar Header
+          // Sidebar Menu
+          ul.nav.sidebar-menu
+            // Dashboard
+            li
+              a(href='index.html')
+                i.menu-icon.glyphicon.glyphicon-home
+                |                             
+                span.menu-text  Dashboard 
+            // Databoxes
+            li
+              a(href='databoxes.html')
+                i.menu-icon.glyphicon.glyphicon-tasks
+                |                             
+                span.menu-text  Data Boxes 
+            // Widgets
+            li
+              a(href='widgets.html')
+                i.menu-icon.fa.fa-th
+                |                             
+                span.menu-text  Widgets 
+            // UI Elements
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.fa.fa-desktop
+                |                             
+                span.menu-text  Elements 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='elements.html')
+                    span.menu-text Basic Elements
+                |                             
+                li
+                  a.menu-dropdown(href='#')
+                    span.menu-text
+                      | Icons
+                    |                                     
+                    i.menu-expand
+                  |                                 
+                  ul.submenu
+                    li
+                      a(href='font-awesome.html')
+                        i.menu-icon.fa.fa-rocket
+                        |                                             
+                        span.menu-text Font Awesome
+                    |                                     
+                    li
+                      a(href='glyph-icons.html')
+                        i.menu-icon.glyphicon.glyphicon-stats
+                        |                                             
+                        span.menu-text Glyph Icons
+                    |                                     
+                    li
+                      a(href='typicon.html')
+                        i.menu-icon.typcn.typcn-location-outline
+                        |                                             
+                        span.menu-text  Typicons
+                    |                                     
+                    li
+                      a(href='weather-icons.html')
+                        i.menu-icon.wi.wi-hot
+                        |                                             
+                        span.menu-text Weather Icons
+                |                             
+                li
+                  a(href='tabs.html')
+                    span.menu-text Tabs &amp; Accordions
+                |                             
+                li
+                  a(href='alerts.html')
+                    span.menu-text Alerts &amp; Tooltips
+                |                             
+                li
+                  a(href='modals.html')
+                    span.menu-text Modals &amp; Wells
+                |                             
+                li
+                  a(href='buttons.html')
+                    span.menu-text Buttons
+                |                             
+                li
+                  a(href='nestable-list.html')
+                    span.menu-text  Nestable List
+                |                             
+                li
+                  a(href='treeview.html')
+                    span.menu-text Treeview
+            // Tables
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.fa.fa-table
+                |                             
+                span.menu-text  Tables 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='tables-simple.html')
+                    span.menu-text Simple &amp; Responsive
+                |                             
+                li
+                  a(href='tables-data.html')
+                    span.menu-text Data Tables
+            // Forms
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.fa.fa-pencil-square-o
+                |                             
+                span.menu-text  Forms 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='form-layouts.html')
+                    span.menu-text Form Layouts
+                |                             
+                li
+                  a(href='form-inputs.html')
+                    span.menu-text Form Inputs
+                |                             
+                li
+                  a(href='form-pickers.html')
+                    span.menu-text Data Pickers
+                |                             
+                li
+                  a(href='form-wizard.html')
+                    span.menu-text Wizard
+                |                             
+                li
+                  a(href='form-validation.html')
+                    span.menu-text Validation
+                |                             
+                li
+                  a(href='form-editors.html')
+                    span.menu-text Editors
+                |                             
+                li
+                  a(href='form-inputmask.html')
+                    span.menu-text Input Mask
+            // Charts
+            li.active.open
+              a.menu-dropdown(href='#')
+                i.menu-icon.fa.fa-bar-chart-o
+                |                             
+                span.menu-text  Charts 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='flot.html')
+                    span.menu-text Flot Charts
+                |                             
+                li
+                  a(href='morris.html')
+                    span.menu-text  Morris Charts
+                |                             
+                li.active
+                  a(href='sparkline.html')
+                    span.menu-text Sparkline Charts
+                |                             
+                li
+                  a(href='easypiecharts.html')
+                    span.menu-text Easy Pie Charts
+                |                             
+                li
+                  a(href='chartjs.html')
+                    span.menu-text  ChartJS
+            // Profile
+            li
+              a(href='profile.html')
+                i.menu-icon.fa.fa-picture-o
+                |                             
+                span.menu-text Profile
+            // Mail
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.fa.fa-envelope-o
+                |                             
+                span.menu-text  Mail 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='inbox.html')
+                    span.menu-text Inbox
+                |                             
+                li
+                  a(href='message-view.html')
+                    span.menu-text View Message
+                |                             
+                li
+                  a(href='message-compose.html')
+                    span.menu-text Compose Message
+            // Calendar
+            li
+              a(href='calendar.html')
+                i.menu-icon.fa.fa-calendar
+                |                             
+                span.menu-text
+                  | Calendar
+            // Pages
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.glyphicon.glyphicon-paperclip
+                |                             
+                span.menu-text  Pages 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='timeline.html')
+                    span.menu-text Timeline
+                |                             
+                li
+                  a(href='pricing.html')
+                    span.menu-text Pricing Tables
+                |                             
+                li
+                  a(href='invoice.html')
+                    span.menu-text Invoice
+                |                             
+                li
+                  a(href='login.html')
+                    span.menu-text Login
+                |                             
+                li
+                  a(href='register.html')
+                    span.menu-text Register
+                |                             
+                li
+                  a(href='lock.html')
+                    span.menu-text Lock Screen
+                |                             
+                li
+                  a(href='typography.html')
+                    span.menu-text  Typography 
+            // More Pages
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.glyphicon.glyphicon-link
+                |                             
+                span.menu-text
+                  | More Pages
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a(href='error-404.html')
+                    span.menu-text Error 404
+                |                             
+                li
+                  a(href='error-500.html')
+                    span.menu-text  Error 500
+                |                             
+                li
+                  a(href='blank.html')
+                    span.menu-text Blank Page
+                |                             
+                li
+                  a(href='grid.html')
+                    span.menu-text  Grid
+                |                             
+                li
+                  a.menu-dropdown(href='#')
+                    span.menu-text
+                      | Multi Level Menu
+                    |                                     
+                    i.menu-expand
+                  |                                 
+                  ul.submenu
+                    li
+                      a(href='#')
+                        i.menu-icon.fa.fa-camera
+                        |                                             
+                        span.menu-text Level 3
+                    |                                     
+                    li
+                      a.menu-dropdown(href='#')
+                        i.menu-icon.fa.fa-asterisk
+                        |                                             
+                        span.menu-text
+                          | Level 4
+                        |                                             
+                        i.menu-expand
+                      |                                         
+                      ul.submenu
+                        li
+                          a(href='#')
+                            i.menu-icon.fa.fa-bolt
+                            |                                                     
+                            span.menu-text Some Item
+                        |                                             
+                        li
+                          a(href='#')
+                            i.menu-icon.fa.fa-bug
+                            |                                                     
+                            span.menu-text Another Item
+            // Right to Left
+            li
+              a.menu-dropdown(href='#')
+                i.menu-icon.fa.fa-align-right
+                |                             
+                span.menu-text  Right to Left 
+                |                             
+                i.menu-expand
+              |                         
+              ul.submenu
+                li
+                  a
+                    span.menu-text RTL
+                    |                                     
+                    label.pull-right.margin-top-10
+                      input#rtl-changer.checkbox-slider.slider-icon.colored-primary(type='checkbox')
+                      |                                         
+                      span.text
+                |                             
+                li
+                  a(href='index-rtl-ar.html')
+                    span.menu-text Arabic Layout
+                |                             
+                li
+                  a(href='index-rtl-fa.html')
+                    span.menu-text Persian Layout
+            |                     
+            li
+              a(href='versions.html')
+                i.menu-icon.glyphicon.glyphicon-fire.themesecondary
+                |                             
+                span.menu-text
+                  | BeyondAdmin Versions
+          // /Sidebar Menu
+        // /Page Sidebar
+        // Chat Bar
+        #chatbar.page-chatbar
+          .chatbar-contacts
+            .contacts-search
+              input.searchinput(type='text', placeholder='Search Contacts')
+              |                         
+              i.searchicon.fa.fa-search
+              |                         
+              .searchhelper Search Your Contacts and Chat History
+            |                     
+            ul.contacts-list
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/divyia.jpg')
+                |                             
+                .contact-info
+                  .contact-name Divyia Philips
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | last week
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/Nicolai-Larson.jpg')
+                |                             
+                .contact-info
+                  .contact-name Adam Johnson
+                  |                                 
+                  .contact-status
+                    .offline
+                    |                                     
+                    .status left 4 mins ago
+                  |                                 
+                  .last-chat-time
+                    | today
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/John-Smith.jpg')
+                |                             
+                .contact-info
+                  .contact-name John Smith
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | 1:57 am
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/Osvaldus-Valutis.jpg')
+                |                             
+                .contact-info
+                  .contact-name Osvaldus Valutis
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | today
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/Javi-Jimenez.jpg')
+                |                             
+                .contact-info
+                  .contact-name Javi Jimenez
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | today
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/Stephanie-Walter.jpg')
+                |                             
+                .contact-info
+                  .contact-name Stephanie Walter
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | yesterday
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/Sergey-Azovskiy.jpg')
+                |                             
+                .contact-info
+                  .contact-name Sergey Azovskiy
+                  |                                 
+                  .contact-status
+                    .offline
+                    |                                     
+                    .status offline since oct 24
+                  |                                 
+                  .last-chat-time
+                    | 22 oct
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/Lee-Munroe.jpg')
+                |                             
+                .contact-info
+                  .contact-name Lee Munroe
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | today
+              |                         
+              li.contact
+                .contact-avatar
+                  img(src='assets/img/avatars/divyia.jpg')
+                |                             
+                .contact-info
+                  .contact-name Divyia Philips
+                  |                                 
+                  .contact-status
+                    .online
+                    |                                     
+                    .status online
+                  |                                 
+                  .last-chat-time
+                    | last week
+          |                 
+          .chatbar-messages(style='display: none;')
+            .messages-contact
+              .contact-avatar
+                img(src='assets/img/avatars/divyia.jpg')
+              |                         
+              .contact-info
+                .contact-name Divyia Philips
+                |                             
+                .contact-status
+                  .online
+                  |                                 
+                  .status online
+                |                             
+                .last-chat-time
+                  | a moment ago
+                |                             
+                .back
+                  i.fa.fa-arrow-circle-left
+            |                     
+            ul.messages-list
+              li.message
+                .message-info
+                  .bullet
+                  |                                 
+                  .contact-name Me
+                  |                                 
+                  .message-time 10:14 AM, Today
+                |                             
+                .message-body
+                  | Hi, Hope all is good. Are we meeting today?
+              |                         
+              li.message.reply
+                .message-info
+                  .bullet
+                  |                                 
+                  .contact-name Divyia
+                  |                                 
+                  .message-time 10:15 AM, Today
+                |                             
+                .message-body
+                  | Hi, Hope all is good. Are we meeting today?
+              |                         
+              li.message
+                .message-info
+                  .bullet
+                  |                                 
+                  .contact-name Me
+                  |                                 
+                  .message-time 10:14 AM, Today
+                |                             
+                .message-body
+                  | Hi, Hope all is good. Are we meeting today?
+              |                         
+              li.message.reply
+                .message-info
+                  .bullet
+                  |                                 
+                  .contact-name Divyia
+                  |                                 
+                  .message-time 10:15 AM, Today
+                |                             
+                .message-body
+                  | Hi, Hope all is good. Are we meeting today?
+              |                         
+              li.message
+                .message-info
+                  .bullet
+                  |                                 
+                  .contact-name Me
+                  |                                 
+                  .message-time 10:14 AM, Today
+                |                             
+                .message-body
+                  | Hi, Hope all is good. Are we meeting today?
+              |                         
+              li.message.reply
+                .message-info
+                  .bullet
+                  |                                 
+                  .contact-name Divyia
+                  |                                 
+                  .message-time 10:15 AM, Today
+                |                             
+                .message-body
+                  | Hi, Hope all is good. Are we meeting today?
+            |                     
+            .send-message
+              span.input-icon.icon-right
+                textarea.form-control(rows='4', placeholde='Type your message')
+                |                             
+                i.fa.fa-camera.themeprimary
+        // /Chat Bar
+        // Page Content
+        .page-content
+          // Page Breadcrumb
+          .page-breadcrumbs
+            ul.breadcrumb
+              li
+                i.fa.fa-home
+                |                             
+                a(href='#') Home
+              |                         
+              li
+                a(href='#') Graphs &amp; Charts
+              |                         
+              li.active Sparkline Charts
+          // /Page Breadcrumb
+          // Page Header
+          .page-header.position-relative
+            .header-title
+              h1
+                | Sparkline
+                small
+                  i.fa.fa-angle-right
+                  |                                 inline charts
+            // Header Buttons
+            .header-buttons
+              a.sidebar-toggler(href='#')
+                i.fa.fa-arrows-h
+              |                         
+              a#refresh-toggler.refresh(href='')
+                i.glyphicon.glyphicon-refresh
+              |                         
+              a#fullscreen-toggler.fullscreen(href='#')
+                i.glyphicon.glyphicon-fullscreen
+            // Header Buttons End
+          // /Page Header
+          // Page Body
+          .page-body
+            .row
+              .col-lg-12.col-sm-12.col-xs-12
+            |                     
+            .sparkline-preview
+              .row
+                .col-lg-12.col-sm-12.col-xs-12
+                  .row
+                    .col-lg-3.col-sm-6.col-xs-12
+                      .well.with-header.with-footer
+                        .header.bordered-blue Bar Chart
+                        |                                             
+                        span(data-sparkline='bar', data-height='75px', data-width='100%', data-barcolor='themeprimary', data-negbarcolor='themesecondary', data-zerocolor='themethirdcolor', data-barwidth='10px', data-barspacing='5px')
+                          | 5,6,7,2,0,-4,-2,4
+                        |                                             
+                        .footer
+                          code data-sparkline=&quot;bar&quot;
+                    |                                     
+                    .col-lg-3.col-sm-6.col-xs-12
+                      .well.with-header.with-footer
+                        .header.bordered-warning Stacked Chart
+                        |                                             
+                        span(data-sparkline='bar', data-height='75px', data-width='100%', data-barwidth='10px', data-barspacing='5px', data-stackedbarcolor='["#57b5e3", "#f4b400"]')
+                          | 2:2,2:3,3:2,1:3
+                        |                                             
+                        .footer
+                          code data-sparkline=&quot;bar&quot;
+                    |                                     
+                    .col-lg-3.col-sm-6.col-xs-12
+                      .well.with-header.with-footer
+                        .header.bordered-pink Line Chart
+                        |                                             
+                        span(data-sparkline='line', data-height='75px', data-width='100%', data-fillcolor='themeprimary', data-linecolor='themeprimary', data-spotradius='5')
+                          | 5,6,7,9,9,5,3,4,4,3,6,7
+                        |                                             
+                        .footer
+                          code data-sparkline=&quot;line&quot;
+                    |                                     
+                    .col-lg-3.col-sm-6.col-xs-12
+                      .well.with-header.with-footer
+                        .header.bordered-darkorange Composite Line Chart
+                        |                                             
+                        span(data-sparkline='compositeline', data-height='75px', data-width='100%', data-linecolor='themeprimary', data-secondlinecolor='themesecondary', data-fillcolor='false', data-secondfillcolor='false', data-composite='4, 1, 5, 7, 9, 9, 8, 7, 6, 6, 4, 7, 8, 4, 3, 2, 2, 5, 6, 7')
+                          | 8,4,0,0,0,0,1,4,4,10,10,10,10,0,0,0,4,6,5,9,10
+                        |                                             
+                        .footer
+                          code data-sparkline=&quot;compositeline&quot;
+                  |                                 
+                  .row
+                    .col-lg-3.col-sm-6.col-xs-12
+                      .well.with-header.with-footer
+                        .header.bordered-palegreen Composite Bar Chart
+                        |                                             
+                        span(data-sparkline='compositebar', data-height='75px', data-width='100%', data-barcolor='themeprimary', data-negbarcolor='#f4b400', data-zerocolor='#d73d32', data-barwidth='8px', data-barspacing='4px', data-fillcolor='false', data-linecolor='themesecondary', data-spotradius='5', data-linewidth='3', data-composite='4, 1, 5, 7, 9, 9, 8, 7, 6, 6, 4, 7')
+                          | 8,4,0,1,4,6,2,4,4,8,10,7,10
+                        |                                             
+                        .footer
+                          code data-sparkline=&quot;compositebar&quot;
+                    |                                     
+                    .col-lg-3.col-sm-6.col-xs-12
+                      .well.with-header.with-footer
+                        .header.bordered-blueberry Tristate Chart
+                        |                                             
+                        span(data-sparkline='tristate', data-height='75px', data-width='100%', data-posbarcolor='themeprimary', data-negbarcolor='themesecondary', data-zerobarcolor='themethirdcolor', data-barwidth='8px', data-barspacing='4px', data-zeroaxis='false')
+                          | 1,1,0,1,-1,-1,1,-1,0,0,1,1
+                        |                                             
+                        .footer
+                          code data-sparkline=&quot;tristate&quot;
+                    |                                     
+                    .col-lg-3.col-sm-6.col-xs-12
+                      .well.with-header.with-footer
+                        .header.bordered-darkpink Discrete Chart
+                        |                                             
+                        span(data-sparkline='discrete', data-linecolor='#57b5e3', data-thresholdvalue='3', data-thresholdcolor='#d73d32')
+                          | 4,6,7,7,4,3,2,1,4,4
+                        |                                             
+                        .footer
+                          code data-sparkline=&quot;discrete&quot;
+                    |                                     
+                    .col-lg-3.col-sm-6.col-xs-12
+                      .well.with-header.with-footer
+                        .header.bordered-sky Bullet Chart
+                        |                                             
+                        span(data-sparkline='bullet', data-height='30px', data-width='100%', data-targetcolor='#444', data-performancecolor='#11a9cc', data-rangecolors='["#5DB2FF", "#6f85bf", "#4374e0"]')
+                          | 10, 12, 12, 9, 7
+                        |                                             
+                        .footer
+                          code data-sparkline=&quot;bullet&quot;
+                  |                                 
+                  .row
+                    .col-lg-3.col-sm-6.col-xs-12
+                      .well.with-header.with-footer
+                        .header.bordered-carbon Box Plot Chart
+                        |                                             
+                        span(data-sparkline='box', data-height='30px', data-width='100%') 4, 27, 34, 52, 54, 59, 61, 68, 78, 82, 85, 87, 91, 93, 100
+                        |                                             
+                        .footer
+                          code data-sparkline=&quot;box&quot;
+                    |                                     
+                    .col-lg-3.col-sm-6.col-xs-12
+                      .well.with-header.with-footer
+                        .header.bordered-lightred Pie Chart
+                        |                                             
+                        span(data-sparkline='pie', data-height='75px', data-width='75px', data-bordercolor='#fafafa', data-slicecolors='["#5DB2FF", "#f4b400", "#d73d32","8cc474"]')
+                          | 1,1,2,1
+                        |                                             
+                        .footer
+                          code data-sparkline=&quot;pie&quot;
+          // /Page Body
+        // /Page Content
+      // /Page Container
+      // Main Container
+    // Basic Scripts
+    script(src='assets/js/jquery.min.js')
+    |     
+    script(src='assets/js/bootstrap.min.js')
+    |     
+    script(src='assets/js/slimscroll/jquery.slimscroll.min.js')
+    // Beyond Scripts
+    script(src='assets/js/beyond.min.js')
+    // Page Related Scripts
+    script(src='assets/js/charts/sparkline/jquery.sparkline.js')
+    |     
+    script(src='assets/js/charts/sparkline/sparkline-init.js')
+    |     
+    script(type='text/javascript').
+      $(window).bind("load", function () {
+      /*Sets Themed Colors Based on Themes*/
+      themeprimary = getThemeColorFromCss('themeprimary');
+      themesecondary = getThemeColorFromCss('themesecondary');
+      themethirdcolor = getThemeColorFromCss('themethirdcolor');
+      themefourthcolor = getThemeColorFromCss('themefourthcolor');
+      themefifthcolor = getThemeColorFromCss('themefifthcolor');
+      InitiateSparklineCharts.init();
+      });
+  // /Body
